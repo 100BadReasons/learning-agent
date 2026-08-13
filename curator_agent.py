@@ -165,6 +165,23 @@ def main():
             "empty brief. Check the stage output above for the real failure."
         )
 
+    # Don't let a thinner run overwrite a fuller one for the same day. CI
+    # checks out fresh, so data/run/ is empty there: a --skip-research run
+    # would otherwise write a zero-card brief over a good one and push it.
+    # A re-run that finds MORE is still allowed through, so recovering from a
+    # partial failure works without a flag.
+    existing_path = os.path.join(config.BRIEFS_DIR, f"{config.today()}.json")
+    existing = common.read_json(existing_path, None)
+    if existing and len(existing.get("cards", [])) > len(items):
+        if not os.environ.get("FORCE_OVERWRITE"):
+            raise RuntimeError(
+                f"A brief for {config.today()} already exists with "
+                f"{len(existing['cards'])} cards; this run has only {len(items)}. "
+                f"Refusing to replace it with less. Set FORCE_OVERWRITE=1 if that "
+                f"is genuinely what you want."
+            )
+        print(f"[{STAGE}] FORCE_OVERWRITE set — replacing the existing brief.")
+
     print(f"[{STAGE}] curating {len(agentic)} agentic + {len(banking)} banking items "
           f"and {len(terms)} terms.")
 
