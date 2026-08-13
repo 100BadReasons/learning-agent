@@ -1,0 +1,30 @@
+{
+  "urls": {
+    "https://anthropic.com/engineering/building-effective-agents": "2026-08-13",
+    "https://arxiv.org/abs/2407.01502": "2026-08-13",
+    "https://arxiv.org/abs/2503.13657": "2026-08-13",
+    "https://leoniemonigatti.com/blog/ai-agent-from-scratch-in-python.html": "2026-08-13",
+    "https://harperfoley.com/blog/ai-agents-destroyed-production-zero-postmortems": "2026-08-13",
+    "https://glukhov.org/ai-systems/architecture/multi-agent-orchestration-patterns": "2026-08-13",
+    "https://occ.gov/news-issuances/bulletins/2026/bulletin-2026-13.html": "2026-08-13",
+    "https://bafin.de/ref/20002496": "2026-08-13",
+    "https://cnbc.com/2026/06/09/jpmorgan-chase-ai-agents.html": "2026-08-13",
+    "https://claude.com/blog/how-ai-helps-break-cost-barrier-cobol-modernization": "2026-08-13",
+    "https://thoughtworks.medium.com/claude-code-and-cobol-modernization-whats-the-reality-2e6022b5022a": "2026-08-13",
+    "https://pymnts.com/news/banking/2026/wells-fargo-scales-ai-to-meet-surging-customer-demand": "2026-08-13"
+  },
+  "titles": {
+    "building effective agents": "2026-08-13",
+    "ai agents that matter": "2026-08-13",
+    "why do multi agent llm systems fail": "2026-08-13",
+    "building an ai agent from scratch in python": "2026-08-13",
+    "ten ai agents destroyed production zero postmortems": "2026-08-13",
+    "multi agent orchestration patterns a practical guide": "2026-08-13",
+    "model risk management revised guidance occ bulletin 2026 13": "2026-08-13",
+    "bafin guidance on ict risks in the use of ai at financial entities": "2026-08-13",
+    "jpmorgan chase plans to deploy more powerful ai agents this year": "2026-08-13",
+    "how ai helps break the cost barrier to cobol modernization": "2026-08-13",
+    "claude code and cobol modernization what s the reality": "2026-08-13",
+    "wells fargo scales ai to meet surging customer demand": "2026-08-13"
+  }
+}

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Learning Brief — 2026-08-13</title>
+<style>
+:root {
+  --bg: #fbfaf8; --surface: #ffffff; --ink: #1a1a19; --muted: #6b6a66;
+  --line: #e3e0da; --accent: #8a4b2a; --accent-soft: #f3ece6;
+}
+:root:not([data-theme="light"]) { }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14140f; --surface: #1c1c17; --ink: #eceae4; --muted: #96938b;
+    --line: #2e2e26; --accent: #d99a6c; --accent-soft: #26221c;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14140f; --surface: #1c1c17; --ink: #eceae4; --muted: #96938b;
+  --line: #2e2e26; --accent: #d99a6c; --accent-soft: #26221c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+header { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+h1 { font-size: 1.5rem; letter-spacing: -0.02em; margin: 0 0 0.35rem; }
+h1 a { color: inherit; text-decoration: none; }
+.date { color: var(--muted); font-size: 0.9rem; margin: 0; }
+.intro { font-size: 1.05rem; margin: 1.5rem 0 2.5rem; color: var(--ink); }
+h2 {
+  font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.09em;
+  color: var(--muted); margin: 2.75rem 0 1rem; font-weight: 600;
+}
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  padding: 1.25rem 1.35rem; margin-bottom: 1rem;
+}
+.card h3 { font-size: 1.05rem; line-height: 1.4; margin: 0 0 0.5rem; letter-spacing: -0.01em; }
+.card h3 a { color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--accent-soft); }
+.card h3 a:hover { border-bottom-color: var(--accent); }
+.meta { color: var(--muted); font-size: 0.8rem; margin: 0 0 0.75rem; }
+.meta span + span::before { content: " · "; }
+.bite { margin: 0 0 0.75rem; }
+.readif {
+  margin: 0; font-size: 0.88rem; color: var(--muted);
+  border-left: 2px solid var(--line); padding-left: 0.75rem;
+}
+.empty { color: var(--muted); font-style: italic; }
+nav.pager {
+  display: flex; justify-content: space-between; gap: 1rem;
+  margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+nav.pager a { color: var(--accent); text-decoration: none; }
+nav.pager a:hover { text-decoration: underline; }
+ul.archive { list-style: none; padding: 0; margin: 0; }
+ul.archive li { border-bottom: 1px solid var(--line); padding: 0.7rem 0; display: flex; gap: 1rem; }
+ul.archive a { color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+ul.archive a:hover { color: var(--accent); }
+ul.archive .n { color: var(--muted); font-size: 0.85rem; margin-left: auto; }
+footer { margin-top: 3.5rem; color: var(--muted); font-size: 0.8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1><a href="index.html">Daily Learning Brief</a></h1>
+  <p class="date">Agentic AI &amp; automation in banking</p>
+</header>
+<p class="date">Thursday, 13 August 2026</p>
+<p class="intro">Today pairs a solid technical core on agentic AI—what actually counts as an agent, why benchmarks and multi-agent demos mislead, and how to build and break the agent loop yourself—with a genuinely news-heavy banking day: US and EU regulators moving on AI-specific model risk, and three live deployment data points (JPMorgan, Wells Fargo, COBOL modernization) with a sharp rebuttal in the mix.</p>
+<h2>Agentic AI</h2>
+    <article class="card">
+      <h3><a href="https://www.anthropic.com/engineering/building-effective-agents" rel="noopener">Building Effective Agents</a></h3>
+      <p class="meta"><span>Anthropic</span><span>article</span><span>20 min</span><span>working</span><span>2024-12</span></p>
+      <p class="bite">Most production AI systems that work well are simple, composable workflows—prompt chaining, routing, parallel calls—not fully autonomous agents that direct their own tool use. Reserve genuine agentic autonomy for cases where task complexity truly requires an LLM to decide its own steps, and only if you can accept the added latency and cost. This is the primary source nearly all other &#x27;agent architecture&#x27; content on the web is paraphrasing.</p>
+<p class="readif">Read if you want the foundational vocabulary to tell a real agent from a scripted pipeline; skip if you&#x27;ve already read it.</p>
+    </article>
+    <article class="card">
+      <h3><a href="https://arxiv.org/abs/2407.01502" rel="noopener">AI Agents That Matter</a></h3>
+      <p class="meta"><span>Kapoor, Stroebl, Siegel, Nadgir, Narayanan (Princeton) — arXiv</span><span>paper</span><span>35 min</span><span>deep</span><span>2024-07</span></p>
+      <p class="bite">Agent benchmark leaderboards that report accuracy without controlling for cost are misleading, because expensive retry-heavy architectures can look artificially strong against simple, cheap baselines. A rigorous evaluation has to report both accuracy and cost together, or the ranking is close to meaningless. This gives a citable, academic basis for challenging &#x27;which agent scores highest&#x27; as the wrong question.</p>
+<p class="readif">Read if you need a rigorous, citable rebuttal to leaderboard claims; skip if the one-line takeaway is enough for you.</p>
+    </article>
+    <article class="card">
+      <h3><a href="https://arxiv.org/abs/2503.13657" rel="noopener">Why Do Multi-Agent LLM Systems Fail?</a></h3>
+      <p class="meta"><span>Cemri et al. (UC Berkeley) — arXiv</span><span>paper</span><span>30 min</span><span>deep</span><span>2025-03</span></p>
+      <p class="bite">Analyzing over 1,600 traces from seven popular multi-agent frameworks, researchers found most failures aren&#x27;t model limitations but design failures—poor task specification, agents losing track of role or conversation history, and weak verification of outputs. That means better orchestration design fixes more problems than swapping in a bigger model. The paper offers a concrete taxonomy for diagnosing exactly why a multi-agent demo breaks.</p>
+<p class="readif">Read if you regularly troubleshoot or need to explain a failing multi-agent demo; skip if you don&#x27;t work with multi-agent setups.</p>
+    </article>
+    <article class="card">
+      <h3><a href="https://www.leoniemonigatti.com/blog/ai-agent-from-scratch-in-python.html" rel="noopener">Building an AI agent from scratch in Python</a></h3>
+      <p class="meta"><span>Leonie Monigatti</span><span>article</span><span>40 min</span><span>working</span><span>2025-09</span></p>
+      <p class="bite">This walks through building the core agent loop—an LLM, a tool-calling step, and a while-loop that runs until the task completes—using direct API calls, no framework. The point is to see exactly what LangChain, CrewAI, and similar frameworks are abstracting away before you adopt one or evaluate a vendor&#x27;s use of one.</p>
+<p class="readif">Read if you want hands-on grounding in tool-calling mechanics; skip if you&#x27;re not going to write code.</p>
+    </article>
+    <article class="card">
+      <h3><a href="https://www.harperfoley.com/blog/ai-agents-destroyed-production-zero-postmortems" rel="noopener">Ten AI Agents Destroyed Production. Zero Postmortems.</a></h3>
+      <p class="meta"><span>Harper Foley</span><span>article</span><span>15 min</span><span>working</span><span>2026-03</span></p>
+      <p class="bite">A compilation of ten real, documented incidents—including a coding agent that ran a destructive infrastructure command against live production—makes the case that non-bypassable confirmation gates for destructive actions and full command-level audit logging are production-readiness requirements, not nice-to-haves. These are concrete, real-world examples rather than hypothetical risk scenarios.</p>
+<p class="readif">Read if you need real incident stories to counter &#x27;just let the agent handle it&#x27;; skip if you already have your own.</p>
+    </article>
+    <article class="card">
+      <h3><a href="https://www.glukhov.org/ai-systems/architecture/multi-agent-orchestration-patterns/" rel="noopener">Multi-Agent Orchestration Patterns: A Practical Guide</a></h3>
+      <p class="meta"><span>Rost Glukhov</span><span>article</span><span>18 min</span><span>working</span><span>2026-05</span></p>
+      <p class="bite">Comparing orchestrator-worker, hierarchical, fan-out, swarm, and mesh patterns on latency, fault tolerance, and debuggability, the guide argues orchestrator-worker should be the default for production because it gives clear accountability and predictable cost. Escalate to hierarchical or fan-out only when worker count or genuine task parallelism demands it—swarm and mesh remain niche and hard to debug.</p>
+<p class="readif">Read if you need a decision rule for when multi-agent complexity is actually worth it; skip if you only work with single-agent systems.</p>
+    </article><h2>AI in Banking</h2>
+    <article class="card">
+      <h3><a href="https://www.occ.gov/news-issuances/bulletins/2026/bulletin-2026-13.html" rel="noopener">Model Risk Management: Revised Guidance (OCC Bulletin 2026-13)</a></h3>
+      <p class="meta"><span>OCC (with Federal Reserve Board and FDIC)</span><span>docs</span><span>15 min</span><span>working</span><span>2026-04</span></p>
+      <p class="bite">US banking regulators rescinded the 2011 model-risk guidance and the 2021 BSA/AML model-risk statement, replacing them with non-enforceable, risk-based guidance—and explicitly flagged that a forthcoming request for information will address generative and agentic AI model risk specifically, meaning current guidance doesn&#x27;t yet cover it. The framework banks cite as governing is mid-transition, which reshapes what governance tooling they&#x27;ll need next.</p>
+<p class="readif">Read if you sell into US banks; skip if your accounts are entirely outside US-regulated banking.</p>
+    </article>
+    <article class="card">
+      <h3><a href="https://www.bafin.de/ref/20002496" rel="noopener">BaFin Guidance on ICT Risks in the Use of AI at Financial Entities</a></h3>
+      <p class="meta"><span>BaFin (German Federal Financial Supervisory Authority)</span><span>docs</span><span>12 min</span><span>working</span><span>2026-01</span></p>
+      <p class="bite">Germany&#x27;s financial regulator ruled that generative AI and large language models get no special exemption under EU digital-resilience rules—they&#x27;re ICT assets subject to the same third-party, resilience-testing, and outsourcing requirements as any core banking system. The guidance includes a case study of a bank running an LLM assistant across different infrastructures, showing exactly how existing risk-treatment rules apply to a live deployment.</p>
+<p class="readif">Read if you sell into EU banks; skip if your accounts are entirely US-based.</p>
+    </article>
+    <article class="card">
+      <h3><a href="https://www.cnbc.com/2026/06/09/jpmorgan-chase-ai-agents.html" rel="noopener">JPMorgan Chase plans to deploy more powerful AI agents this year</a></h3>
+      <p class="meta"><span>CNBC</span><span>article</span><span>8 min</span><span>intro</span><span>2026-06</span></p>
+      <p class="bite">JPMorgan&#x27;s chief analytics officer says AI is already boosting business results—a 20% increase in private banking gross sales, and a potential 50% expansion in banker client coverage—but fully autonomous, long-running agents still aren&#x27;t cleared for corporate use because of security concerns. It&#x27;s a credible peer benchmark on what&#x27;s actually shipping at the largest US bank versus what remains blocked.</p>
+<p class="readif">Read if you need a grounded reference point for realistic bank AI timelines; skip if you already track JPMorgan&#x27;s statements closely.</p>
+    </article>
+    <article class="card">
+      <h3><a href="https://claude.com/blog/how-ai-helps-break-cost-barrier-cobol-modernization" rel="noopener">How AI helps break the cost barrier to COBOL modernization</a></h3>
+      <p class="meta"><span>Anthropic</span><span>article</span><span>10 min</span><span>working</span><span>2026-02</span></p>
+      <p class="bite">Anthropic claims its agentic coding tool can automate the exploration and analysis phases of COBOL modernization—mapping dependencies, documenting workflows, identifying risks—the phases that consume most of the effort, letting teams modernize legacy codebases in quarters instead of years. This single post moved IBM&#x27;s stock 13% in a day and is now the standard reference point in legacy-modernization conversations, but it addresses only the discovery bottleneck, not full migration.</p>
+<p class="readif">Read if a prospect has raised this post or COBOL modernization with you; skip otherwise.</p>
+    </article>
+    <article class="card">
+      <h3><a href="https://thoughtworks.medium.com/claude-code-and-cobol-modernization-whats-the-reality-2e6022b5022a" rel="noopener">Claude Code and COBOL modernization: What&#x27;s the reality?</a></h3>
+      <p class="meta"><span>Thoughtworks</span><span>article</span><span>10 min</span><span>working</span><span>2026-03</span></p>
+      <p class="bite">Thoughtworks, drawing on 18 months of hands-on legacy modernization work, pushes back directly on the assumption that Anthropic&#x27;s coding-assistant gains mean COBOL modernization is now solved—the hard parts, like business scoping, behavioral equivalence, and organizational change, remain largely untouched by these tools. This is the counter-narrative to have ready when a prospect assumes the problem is fully automated.</p>
+<p class="readif">Read if you&#x27;ve discussed or will discuss the Anthropic COBOL post with an account; skip if that topic never comes up.</p>
+    </article>
+    <article class="card">
+      <h3><a href="https://www.pymnts.com/news/banking/2026/wells-fargo-scales-ai-to-meet-surging-customer-demand/" rel="noopener">Wells Fargo Scales AI to Meet Surging Customer Demand</a></h3>
+      <p class="meta"><span>PYMNTS</span><span>article</span><span>6 min</span><span>intro</span><span>2026-04</span></p>
+      <p class="bite">Wells Fargo&#x27;s AI virtual assistant passed 1 billion customer interactions in under three years, while mobile active users grew from 31.8 million to 33.5 million year-over-year—a second named, quantified example beyond JPMorgan showing that customer-facing conversational AI can scale inside a heavily regulated retail bank.</p>
+<p class="readif">Read if you need a second peer reference point beyond JPMorgan; skip if you already cite Wells Fargo&#x27;s numbers.</p>
+    </article>
+<nav class="pager"><span></span><a href="archive/index.html">All briefs</a><span></span></nav>
+<footer>Generated automatically each morning. Sources link out to the original.</footer>
+</div>
+</body>
+</html>

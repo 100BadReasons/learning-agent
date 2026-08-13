@@ -1,0 +1,125 @@
+name: Daily Learning Brief
+
+# Builds and publishes the brief unattended, then emails the link.
+#
+# Pages serves docs/ on main, so publishing is just a push — no deploy action,
+# no API token to mint. The commit also gives the archive its version history
+# for free.
+
+on:
+  schedule:
+    # 11:00 UTC daily = 7am ET in summer, 6am ET in winter. GitHub's free-tier
+    # scheduler drifts 10-30 minutes under load, so treat this as "early
+    # morning", not an alarm clock.
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+    inputs:
+      skip_research:
+        description: "Skip the two web-research stages (cheap test run)"
+        type: boolean
+        default: false
+      no_notify:
+        description: "Build and publish without sending the email"
+        type: boolean
+        default: false
+
+# The job pushes commits, so a slow run overlapping the next would race on
+# data/seen.json and data/progress.json and lose one of the two writes.
+concurrency:
+  group: daily-learning-brief
+  cancel-in-progress: false
+
+permissions:
+  contents: write  # required to push the rendered site back to main
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30  # a hung run should fail visibly, not burn minutes
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Write runtime files from secrets
+        env:
+          ACRONYMS_JSON: ${{ secrets.ACRONYMS_JSON }}
+          GMAIL_TOKEN_JSON: ${{ secrets.GMAIL_TOKEN_JSON }}
+          GMAIL_CREDENTIALS_JSON: ${{ secrets.GMAIL_CREDENTIALS_JSON }}
+        run: |
+          # Base64-encoded so multi-line JSON and embedded newlines survive the
+          # round trip. acronyms.json is the private glossary — it exists only
+          # for the life of this job and is gitignored, so the publish step
+          # below cannot pick it up.
+          echo "$ACRONYMS_JSON" | base64 -d > acronyms.json
+          echo "$GMAIL_TOKEN_JSON" | base64 -d > gmail_token.json
+          echo "$GMAIL_CREDENTIALS_JSON" | base64 -d > gmail_credentials.json
+          python -c "import json;[json.load(open(f)) for f in ['acronyms.json','gmail_token.json','gmail_credentials.json']]" \
+            && echo "Runtime files decoded and parsed OK"
+
+      - name: Run pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+          SITE_URL: https://100badreasons.github.io/learning-agent
+          # Makes the Gmail OAuth helper raise instead of opening a browser
+          # flow that would block until the job timeout.
+          LEARNING_NON_INTERACTIVE: "1"
+        run: |
+          python orchestrator.py \
+            ${{ inputs.skip_research && '--skip-research' || '' }} \
+            ${{ inputs.no_notify && '--no-notify' || '' }}
+
+      - name: Publish
+        # Runs even when the pipeline exited non-zero: a partial day is still
+        # worth publishing, and the red X above is what tells you to look.
+        if: always()
+        run: |
+          # Belt and braces. .gitignore already excludes the glossary and
+          # everything derived from it, but this job holds the decrypted
+          # secret on disk, so verify rather than assume before pushing.
+          for forbidden in acronyms.json gmail_token.json gmail_credentials.json; do
+            if git check-ignore -q "$forbidden"; then
+              echo "OK: $forbidden is ignored"
+            else
+              echo "FATAL: $forbidden is NOT gitignored — refusing to push."
+              exit 1
+            fi
+          done
+          if [ -n "$(git status --porcelain data/private)" ]; then
+            echo "FATAL: data/private has tracked changes — refusing to push."
+            exit 1
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs data/briefs data/seen.json data/progress.json
+          if git diff --staged --quiet; then
+            echo "Nothing changed — no commit."
+          else
+            git commit -m "Brief for $(date -u +%Y-%m-%d)"
+            # Rebase rather than force: a human commit landing mid-run should
+            # survive, and the generated files are regenerated from data/ anyway.
+            git pull --rebase --autostash origin main
+            git push origin main
+          fi
+
+      - name: Upload run logs
+        if: always()  # most useful precisely when the run failed
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-scratch
+          # data/run/ holds each stage's raw output. It is gitignored, so this
+          # artifact is the only way to see what the agents actually returned
+          # on a failed run. It can contain glossary text — the artifact is
+          # private to the repo's collaborators.
+          path: data/run/
+          if-no-files-found: warn
+          retention-days: 14

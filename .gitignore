@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------------------
+# THIS REPO IS PUBLIC. GitHub Pages is only free on public repos, so everything
+# committed here is world-readable and Google-indexable. Read that sentence
+# again before adding an exception to any rule below.
+# ---------------------------------------------------------------------------
+
+# The acronym glossary is IBM sales/licensing terminology and must never be
+# committed. It arrives at runtime, base64-decoded from the ACRONYMS_JSON
+# GitHub Actions secret, and is deleted when the job ends. Wildcards are
+# deliberate — a rotated copy left behind as acronyms.json.bak would otherwise
+# be swept up by `git add -A`.
+acronyms.json*
+
+# Everything derived from the glossary: the daily term lessons and the
+# curator's cross-links, which quote definitions verbatim. These render into
+# the email only. data/briefs/ holds the public half and IS committed.
+data/private/
+
+# Per-run scratch handed between stages. Regenerated every run.
+data/run/
+
+# Credentials — supplied from Actions secrets, same pattern as bwr-pipeline.
+.env*
+gmail_credentials.json*
+gmail_token.json*
+client_secret_*.json
+*.pem
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store

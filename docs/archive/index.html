@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Learning Brief — Archive</title>
+<style>
+:root {
+  --bg: #fbfaf8; --surface: #ffffff; --ink: #1a1a19; --muted: #6b6a66;
+  --line: #e3e0da; --accent: #8a4b2a; --accent-soft: #f3ece6;
+}
+:root:not([data-theme="light"]) { }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14140f; --surface: #1c1c17; --ink: #eceae4; --muted: #96938b;
+    --line: #2e2e26; --accent: #d99a6c; --accent-soft: #26221c;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14140f; --surface: #1c1c17; --ink: #eceae4; --muted: #96938b;
+  --line: #2e2e26; --accent: #d99a6c; --accent-soft: #26221c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+header { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+h1 { font-size: 1.5rem; letter-spacing: -0.02em; margin: 0 0 0.35rem; }
+h1 a { color: inherit; text-decoration: none; }
+.date { color: var(--muted); font-size: 0.9rem; margin: 0; }
+.intro { font-size: 1.05rem; margin: 1.5rem 0 2.5rem; color: var(--ink); }
+h2 {
+  font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.09em;
+  color: var(--muted); margin: 2.75rem 0 1rem; font-weight: 600;
+}
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  padding: 1.25rem 1.35rem; margin-bottom: 1rem;
+}
+.card h3 { font-size: 1.05rem; line-height: 1.4; margin: 0 0 0.5rem; letter-spacing: -0.01em; }
+.card h3 a { color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--accent-soft); }
+.card h3 a:hover { border-bottom-color: var(--accent); }
+.meta { color: var(--muted); font-size: 0.8rem; margin: 0 0 0.75rem; }
+.meta span + span::before { content: " · "; }
+.bite { margin: 0 0 0.75rem; }
+.readif {
+  margin: 0; font-size: 0.88rem; color: var(--muted);
+  border-left: 2px solid var(--line); padding-left: 0.75rem;
+}
+.empty { color: var(--muted); font-style: italic; }
+nav.pager {
+  display: flex; justify-content: space-between; gap: 1rem;
+  margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+nav.pager a { color: var(--accent); text-decoration: none; }
+nav.pager a:hover { text-decoration: underline; }
+ul.archive { list-style: none; padding: 0; margin: 0; }
+ul.archive li { border-bottom: 1px solid var(--line); padding: 0.7rem 0; display: flex; gap: 1rem; }
+ul.archive a { color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+ul.archive a:hover { color: var(--accent); }
+ul.archive .n { color: var(--muted); font-size: 0.85rem; margin-left: auto; }
+footer { margin-top: 3.5rem; color: var(--muted); font-size: 0.8rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1><a href="../index.html">Daily Learning Brief</a></h1>
+  <p class="date">Agentic AI &amp; automation in banking</p>
+</header>
+<h2>All briefs</h2>
+<ul class="archive">
+  <li><a href="2026-08-13.html">Thursday, 13 August 2026</a><span class="n">12 items</span></li>
+</ul>
+<footer>Generated automatically each morning. Sources link out to the original.</footer>
+</div>
+</body>
+</html>
