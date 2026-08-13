@@ -101,14 +101,16 @@ def render_card(card):
     meta = []
     if card.get("source"):
         meta.append(esc(card["source"]))
+    # Kept next to the source and spelled out, matching the email: a bare
+    # "2026-05" further down the list reads as just another tag.
+    if card.get("published") and card["published"] != "unknown":
+        meta.append(f"published {esc(card['published'])}")
     if card.get("format"):
         meta.append(esc(card["format"]))
     if card.get("est_minutes"):
         meta.append(f"{esc(card['est_minutes'])} min")
     if card.get("level"):
         meta.append(esc(card["level"]))
-    if card.get("published") and card["published"] != "unknown":
-        meta.append(esc(card["published"]))
 
     read_if = (f'<p class="readif">{esc(card["read_if"])}</p>'
                if card.get("read_if") else "")

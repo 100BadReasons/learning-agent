@@ -21,7 +21,7 @@ MODEL = "claude-sonnet-5"
 # stage is one Claude call that runs ~8-12 server-side web searches, billed
 # at $10/1000 searches on top of tokens. Halving these roughly halves the
 # monthly cost.
-ITEMS_PER_RESEARCH_STAGE = 6   # x2 stages = 12 items/day
+ITEMS_PER_RESEARCH_STAGE = 2   # x2 stages = 4 items/day
 TERMS_PER_DAY = 5              # 69 terms -> a full pass every 14 days
 
 # How many previously-seen URLs to list in the exclusion prompt. The ledger

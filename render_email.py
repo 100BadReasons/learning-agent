@@ -35,9 +35,16 @@ def h2(text):
 
 
 def render_card(card):
-    meta = [m for m in [card.get("source"), card.get("format"),
-                        f"{card['est_minutes']} min" if card.get("est_minutes") else None,
-                        card.get("level")] if m]
+    published = card.get("published")
+    meta = [m for m in [
+        card.get("source"),
+        # Spelled out rather than left as a bare date in the list: "2026-05"
+        # sitting between a format and a duration reads as just another tag.
+        f"published {published}" if published and published != "unknown" else None,
+        card.get("format"),
+        f"{card['est_minutes']} min" if card.get("est_minutes") else None,
+        card.get("level"),
+    ] if m]
     read_if = ""
     if card.get("read_if"):
         read_if = (f'<p style="margin:8px 0 0;font-size:13px;color:{MUTED};'
