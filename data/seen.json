@@ -11,7 +11,19 @@
     "https://cnbc.com/2026/06/09/jpmorgan-chase-ai-agents.html": "2026-08-13",
     "https://claude.com/blog/how-ai-helps-break-cost-barrier-cobol-modernization": "2026-08-13",
     "https://thoughtworks.medium.com/claude-code-and-cobol-modernization-whats-the-reality-2e6022b5022a": "2026-08-13",
-    "https://pymnts.com/news/banking/2026/wells-fargo-scales-ai-to-meet-surging-customer-demand": "2026-08-13"
+    "https://pymnts.com/news/banking/2026/wells-fargo-scales-ai-to-meet-surging-customer-demand": "2026-08-13",
+    "https://anthropic.com/engineering/effective-context-engineering-for-ai-agents": "2026-08-13",
+    "https://cognition.com/blog/multi-agents-working": "2026-08-13",
+    "https://metr.org/blog/2026-05-19-frontier-risk-report": "2026-08-13",
+    "https://docs.langchain.com/oss/python/langchain/human-in-the-loop": "2026-08-13",
+    "https://sierra.ai/blog/bench-advancing-agent-benchmarking-to-knowledge-and-voice": "2026-08-13",
+    "https://arxiv.org/abs/2607.05518": "2026-08-13",
+    "https://fisglobal.com/about-us/media-room/press-release/2026/fis-brings-agentic-ai-to-banking-with-anthropic-starting-with-financial-crimes": "2026-08-13",
+    "https://techradar.com/pro/now-thats-an-embarassing-u-turn-bank-forced-to-rehire-human-workers-after-their-ai-replacement-fail-to-perform": "2026-08-13",
+    "https://eba.europa.eu/sites/default/files/2025-11/d8b999ce-a1d9-4964-9606-971bbc2aaf89/ai%20act%20implications%20for%20the%20eu%20banking%20sector.pdf": "2026-08-13",
+    "https://occ.gov/publications-and-resources/publications/semiannual-risk-perspective/files/pub-semiannual-risk-perspective-spring-2026.pdf": "2026-08-13",
+    "https://fca.org.uk/news/press-releases/fca-announces-second-cohort-ai-live-testing": "2026-08-13",
+    "https://temenos.com/press_release/temenos-launches-embedded-ai-capabilities-to-help-banks-move-faster": "2026-08-13"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -25,6 +37,18 @@
     "jpmorgan chase plans to deploy more powerful ai agents this year": "2026-08-13",
     "how ai helps break the cost barrier to cobol modernization": "2026-08-13",
     "claude code and cobol modernization what s the reality": "2026-08-13",
-    "wells fargo scales ai to meet surging customer demand": "2026-08-13"
+    "wells fargo scales ai to meet surging customer demand": "2026-08-13",
+    "effective context engineering for ai agents": "2026-08-13",
+    "multi agents what s actually working": "2026-08-13",
+    "frontier risk report february to march 2026": "2026-08-13",
+    "human in the loop": "2026-08-13",
+    "bench advancing agent evaluation to knowledge and voice": "2026-08-13",
+    "aiauthz off host identity bound authorization for ai agents": "2026-08-13",
+    "fis brings agentic ai to banking with anthropic starting with financial crimes": "2026-08-13",
+    "now that s an embarrassing u turn bank forced to rehire human workers after their ai replacement fails to perform": "2026-08-13",
+    "ai act implications for the eu banking and payments sector": "2026-08-13",
+    "semiannual risk perspective spring 2026": "2026-08-13",
+    "fca announces second cohort for ai live testing": "2026-08-13",
+    "temenos launches embedded ai capabilities to help banks move faster stay in control and create better experiences": "2026-08-13"
   }
 }
