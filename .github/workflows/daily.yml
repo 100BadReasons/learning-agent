@@ -53,6 +53,7 @@ jobs:
           ACRONYMS_JSON: ${{ secrets.ACRONYMS_JSON }}
           GMAIL_TOKEN_JSON: ${{ secrets.GMAIL_TOKEN_JSON }}
           GMAIL_CREDENTIALS_JSON: ${{ secrets.GMAIL_CREDENTIALS_JSON }}
+          RECIPIENTS_JSON: ${{ secrets.RECIPIENTS_JSON }}
         run: |
           # Base64-encoded so multi-line JSON and embedded newlines survive the
           # round trip. acronyms.json is the private glossary — it exists only
@@ -63,6 +64,15 @@ jobs:
           echo "$GMAIL_CREDENTIALS_JSON" | base64 -d > gmail_credentials.json
           python -c "import json;[json.load(open(f)) for f in ['acronyms.json','gmail_token.json','gmail_credentials.json']]" \
             && echo "Runtime files decoded and parsed OK"
+
+          # Optional — no extra recipients is the normal state, and an unset
+          # secret must not fail the run.
+          if [ -n "$RECIPIENTS_JSON" ]; then
+            echo "$RECIPIENTS_JSON" | base64 -d > recipients.json
+            python -c "import json;print(len(json.load(open('recipients.json'))),'extra recipient(s)')"
+          else
+            echo "No RECIPIENTS_JSON secret — mailing the primary recipient only."
+          fi
 
       - name: Run pipeline
         env:
@@ -85,7 +95,7 @@ jobs:
           # Belt and braces. .gitignore already excludes the glossary and
           # everything derived from it, but this job holds the decrypted
           # secret on disk, so verify rather than assume before pushing.
-          for forbidden in acronyms.json gmail_token.json gmail_credentials.json; do
+          for forbidden in acronyms.json gmail_token.json gmail_credentials.json recipients.json; do
             if git check-ignore -q "$forbidden"; then
               echo "OK: $forbidden is ignored"
             else

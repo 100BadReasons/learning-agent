@@ -13,7 +13,14 @@ no interactive approval — it is plain Python on a GitHub Actions cron.
 | Where | What | Visibility |
 |---|---|---|
 | `docs/` → GitHub Pages | Research cards, linking out to sources | **Public** |
-| Daily email | Everything above **plus** the glossary lesson and cross-links | Private |
+| Daily email (primary) | Everything above **plus** the glossary lesson and cross-links | Private |
+| Daily email (extra recipients) | Research cards only, no glossary | Private |
+
+The site has a sidebar with two axes: **Dates**, newest first — a flat list
+until there are 10 briefs, then grouped by month, then by year once there are
+12 months — and **Topics**, which collect every card ever published in a
+track. Key Terms appears there too, as a page explaining that the glossary is
+email-only.
 
 ## The public/private split
 
@@ -68,6 +75,23 @@ Everything that affects cost or reading length is in `config.py`:
 found is governed by the `TOPIC_BRIEF` in each research module — those are
 the editorial policy, and they are meant to be edited.
 
+## Recipients
+
+The primary recipient (`NOTIFY_EMAIL`) gets the full brief. Anyone else gets a
+research-only edition with no term lessons and no cross-links, so adding a
+colleague can never forward internal terminology. Each recipient is mailed
+separately — a reading list should not leak everyone's address to everyone.
+
+```bash
+python recipients.py add colleague@example.com
+python recipients.py list
+python recipients.py push    # syncs to the RECIPIENTS_JSON secret
+```
+
+`recipients.json` is gitignored: addresses are personal data and this repo is
+public. Secrets are write-only, so the local file is the source of truth and
+`push` overwrites the secret with all of it — always `list` before you `push`.
+
 ## Secrets
 
 | Secret | What |
@@ -76,7 +100,8 @@ the editorial policy, and they are meant to be edited.
 | `ACRONYMS_JSON` | base64 of `acronyms.json` |
 | `GMAIL_TOKEN_JSON` | base64 of `gmail_token.json` |
 | `GMAIL_CREDENTIALS_JSON` | base64 of `gmail_credentials.json` |
-| `NOTIFY_EMAIL` | destination address |
+| `NOTIFY_EMAIL` | primary destination address |
+| `RECIPIENTS_JSON` | base64 of `recipients.json` (optional) |
 
 If the daily email stops arriving, the Gmail refresh token has most likely
 expired. `notify.py` fails loudly with the exact re-mint command rather than

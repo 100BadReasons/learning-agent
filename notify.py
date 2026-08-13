@@ -24,6 +24,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 
 import config
+import recipients
 import render_email
 
 
@@ -80,7 +81,6 @@ def send(service, to_email, subject, html_body):
 
 def main():
     brief, private = render_email.latest_brief()
-    body = render_email.build(brief, private)
 
     counts = brief.get("counts", {})
     total = counts.get("agentic", 0) + counts.get("banking", 0)
@@ -92,8 +92,41 @@ def main():
         subject = f"Learning Brief — {brief['date']} (quiet day, terms only)"
 
     service = get_gmail_service()
-    sent = send(service, config.NOTIFY_EMAIL, subject, body)
-    print(f"[notify] sent to {config.NOTIFY_EMAIL} (message id {sent.get('id')}).")
+
+    # Primary first, and let a failure here raise: if the person the brief is
+    # for never receives it, the run has not succeeded.
+    sent = send(service, config.NOTIFY_EMAIL,
+                subject, render_email.build(brief, private))
+    print(f"[notify] full brief -> {config.NOTIFY_EMAIL} (id {sent.get('id')}).")
+
+    extras = recipients.load()
+    if extras:
+        # Built once, outside the loop, so every extra recipient provably gets
+        # the same glossary-free body.
+        research_only = render_email.build(brief, private, include_glossary=False)
+        if private.get("terms"):
+            subject_extra = f"Learning Brief — {brief['date']} ({total} new)"
+        else:
+            subject_extra = subject
+
+        failures = []
+        for address in extras:
+            # One message each rather than a shared To/Cc line: recipients
+            # should not learn each other's addresses from a reading list.
+            try:
+                out = send(service, address, subject_extra, research_only)
+                print(f"[notify] research-only -> {address} (id {out.get('id')}).")
+            except Exception as e:
+                # Keep going: one bad address must not stop the rest.
+                print(f"[notify] FAILED -> {address}: {e}")
+                failures.append(address)
+        if failures:
+            raise RuntimeError(
+                f"Delivered to the primary recipient, but failed for "
+                f"{len(failures)} of {len(extras)} extra recipient(s): "
+                f"{', '.join(failures)}"
+            )
+
     print(f"[notify] site: {config.SITE_URL}")
 
 

@@ -19,6 +19,10 @@ data/private/
 # Per-run scratch handed between stages. Regenerated every run.
 data/run/
 
+# Extra email recipients. Addresses are personal data and this repo is
+# public; the list is loaded at runtime from the RECIPIENTS_JSON secret.
+recipients.json*
+
 # Credentials — supplied from Actions secrets, same pattern as bwr-pipeline.
 .env*
 gmail_credentials.json*

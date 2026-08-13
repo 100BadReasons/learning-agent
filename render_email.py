@@ -100,7 +100,14 @@ def render_connection(conn, cards_by_url):
 </div>"""
 
 
-def build(brief, private):
+def build(brief, private, include_glossary=True):
+    """Render the brief.
+
+    include_glossary=False produces the research-only edition sent to extra
+    recipients: same cards, no term lessons and no cross-links. The glossary
+    is never passed to those recipients rather than being hidden by styling,
+    so there is nothing in the message body to reveal.
+    """
     cards_by_url = {c["url"]: c for c in brief["cards"]}
 
     sections = []
@@ -113,7 +120,7 @@ def build(brief, private):
             sections.append(f'<p style="color:{MUTED};font-style:italic;font-size:14px;">'
                             f'Nothing new worth your time today.</p>')
 
-    if private.get("terms"):
+    if include_glossary and private.get("terms"):
         pass_note = ""
         if private.get("cycle", 1) > 1:
             pass_note = (f' <span style="font-weight:400;text-transform:none;'
@@ -121,7 +128,7 @@ def build(brief, private):
         sections.append(h2("Terms").replace("</h2>", f"{pass_note}</h2>"))
         sections.append("".join(render_term(t) for t in private["terms"]))
 
-    if private.get("connections"):
+    if include_glossary and private.get("connections"):
         sections.append(h2("How these connect"))
         sections.append("".join(render_connection(c, cards_by_url)
                                 for c in private["connections"]))
@@ -143,8 +150,9 @@ def build(brief, private):
   {"".join(sections)}
   <p style="margin:36px 0 0;padding-top:16px;border-top:1px solid {LINE};
      font-size:12px;color:{MUTED};">
-    The Terms and How-these-connect sections are in this email only — they are
-    not published to the public site.
+    {"The Terms and How-these-connect sections are in this email only — they are not published to the public site."
+     if include_glossary else
+     "Everything in this email is also on the web at the link above."}
   </p>
 </div>
 </body></html>"""
