@@ -23,7 +23,11 @@
     "https://eba.europa.eu/sites/default/files/2025-11/d8b999ce-a1d9-4964-9606-971bbc2aaf89/ai%20act%20implications%20for%20the%20eu%20banking%20sector.pdf": "2026-08-13",
     "https://occ.gov/publications-and-resources/publications/semiannual-risk-perspective/files/pub-semiannual-risk-perspective-spring-2026.pdf": "2026-08-13",
     "https://fca.org.uk/news/press-releases/fca-announces-second-cohort-ai-live-testing": "2026-08-13",
-    "https://temenos.com/press_release/temenos-launches-embedded-ai-capabilities-to-help-banks-move-faster": "2026-08-13"
+    "https://temenos.com/press_release/temenos-launches-embedded-ai-capabilities-to-help-banks-move-faster": "2026-08-13",
+    "https://anthropic.com/engineering/multi-agent-research-system": "2026-08-14",
+    "https://arxiv.org/abs/2510.11977": "2026-08-14",
+    "https://medium.com/commbank-technology/project-coral-orchestrating-ai-agents-for-development-at-scale-fc301d1a787f": "2026-08-14",
+    "https://mas.gov.sg/schemes-and-initiatives/project-mindforge": "2026-08-14"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -49,6 +53,10 @@
     "ai act implications for the eu banking and payments sector": "2026-08-13",
     "semiannual risk perspective spring 2026": "2026-08-13",
     "fca announces second cohort for ai live testing": "2026-08-13",
-    "temenos launches embedded ai capabilities to help banks move faster stay in control and create better experiences": "2026-08-13"
+    "temenos launches embedded ai capabilities to help banks move faster stay in control and create better experiences": "2026-08-13",
+    "how we built our multi agent research system": "2026-08-14",
+    "holistic agent leaderboard the missing infrastructure for ai agent evaluation": "2026-08-14",
+    "project coral orchestrating ai agents for development at scale one year on": "2026-08-14",
+    "project mindforge ai risk management toolkit executive handbook operationalisation handbook": "2026-08-14"
   }
 }

@@ -35,7 +35,15 @@ h1 a { color: inherit; text-decoration: none; }
 .layout { display: grid; grid-template-columns: 13rem 1fr; gap: 3rem; align-items: start; }
 @media (max-width: 820px) {
   .layout { grid-template-columns: 1fr; gap: 2rem; }
-  .side { position: static; border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; }
+  /* Content first on a phone. With the newest month expanded the date list
+     runs longer than the viewport, so a nav-first stack would push the brief
+     itself below the fold — and reading today's brief is the whole reason
+     anyone opens this on a phone. Nav sits at the bottom like a footer. */
+  main { order: 1; }
+  .side {
+    order: 2; position: static;
+    border-top: 1px solid var(--line); padding-top: 1.75rem;
+  }
 }
 .side { position: sticky; top: 2rem; font-size: 0.9rem; }
 .side h2 {
@@ -108,15 +116,27 @@ footer { margin-top: 3.5rem; color: var(--muted); font-size: 0.8rem; }
 <aside class="side">
   <section>
     <h2>Topics</h2>
-    <ul><li><a href="../topics/agentic.html">Agentic AI</a> <span class="count">6</span></li><li><a href="../topics/banking.html" class="on">AI in Banking</a> <span class="count">6</span></li><li><a href="../topics/terms.html">Key Terms</a></li></ul>
+    <ul><li><a href="../topics/agentic.html">Agentic AI</a> <span class="count">8</span></li><li><a href="../topics/banking.html" class="on">AI in Banking</a> <span class="count">8</span></li><li><a href="../topics/terms.html">Key Terms</a></li></ul>
   </section>
   <section>
     <h2>Dates</h2>
-    <ul><li><a href="../archive/2026-08-13.html">13 Aug</a></li></ul>
+    <ul><li><a href="../archive/2026-08-14.html">14 Aug</a></li><li><a href="../archive/2026-08-13.html">13 Aug</a></li></ul>
   </section>
 </aside>
 <main>
-<h2 class="sec">AI in Banking</h2><p class="date">6 items across 1 brief.</p><div style="margin-top:1.5rem">    <article class="card">
+<h2 class="sec">AI in Banking</h2><p class="date">8 items across 2 briefs.</p><div style="margin-top:1.5rem">    <article class="card">
+      <h3><a href="https://medium.com/commbank-technology/project-coral-orchestrating-ai-agents-for-development-at-scale-fc301d1a787f" rel="noopener">Project Coral: Orchestrating AI Agents for Development at Scale (One Year On)</a></h3>
+      <p class="meta"><span>CommBank Technology Blog (Commonwealth Bank of Australia)</span><span>published 2026-06</span><span>article</span><span>12 min</span><span>working</span><span><a href="../archive/2026-08-14.html">14 Aug</a></span></p>
+      <p class="bite">Commonwealth Bank&#x27;s engineering team describes how their agentic development platform matured over a year from single-purpose fixer bots into an orchestrator that routes work to specialized agents across their entire engineering estate. The surprising part: the biggest value wasn&#x27;t new feature development — it was maintenance, remediation, and large-scale tech-debt uplift work that had been perpetually deprioritized before agents made it cheap enough to actually do.</p>
+<p class="readif">Read if you want a credible, named-bank reference architecture instead of generic &#x27;banks are adopting AI&#x27; claims; skip if you only care about customer-facing GenAI use cases.</p>
+    </article>
+    <article class="card">
+      <h3><a href="https://www.mas.gov.sg/schemes-and-initiatives/project-mindforge" rel="noopener">Project MindForge: AI Risk Management Toolkit (Executive Handbook &amp; Operationalisation Handbook)</a></h3>
+      <p class="meta"><span>Monetary Authority of Singapore (MAS)</span><span>published 2026-03</span><span>docs</span><span>25 min</span><span>deep</span><span><a href="../archive/2026-08-14.html">14 Aug</a></span></p>
+      <p class="bite">A risk-management toolkit co-written by Singapore&#x27;s central bank with 24 named banks, insurers, and asset managers (DBS, OCBC, UOB, Citi, HSBC, StanChart, BlackRock, GIC and others), giving a risk-tiered governance template that spans traditional AI, generative AI, and agentic AI. Its Operationalisation Handbook — built by working groups led by DBS, UOB, and Standard Chartered — offers a de facto industry-validated governance model rather than something each institution has to invent from scratch.</p>
+<p class="readif">Read if you need concrete, peer-validated language for what regulators consider adequate agentic-AI governance; skip if your deal has no model-risk or compliance component.</p>
+    </article>
+    <article class="card">
       <h3><a href="https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-brings-agentic-ai-to-banking-with-anthropic-starting-with-financial-crimes" rel="noopener">FIS Brings Agentic AI to Banking with Anthropic, Starting with Financial Crimes</a></h3>
       <p class="meta"><span>FIS</span><span>published 2026-05</span><span>docs</span><span>5 min</span><span>working</span><span><a href="../archive/2026-08-13.html">13 Aug</a></span></p>
       <p class="bite">FIS and Anthropic are deploying an anti-money-laundering agent that assembles evidence across a bank&#x27;s core systems and surfaces the highest-risk cases for a human investigator, compressing what used to take hours into minutes. BMO and Amalgamated Bank are among the first live deployments, with a stated roadmap extending into credit decisioning, deposit retention, onboarding, and fraud prevention. The AML use case is the entry point; the real ambition is a governed agent platform sitting on top of a bank&#x27;s existing FIS infrastructure.</p>
