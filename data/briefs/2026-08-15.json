@@ -1,0 +1,77 @@
+{
+  "date": "2026-08-15",
+  "generated_at": "2026-08-15T11:11:56+00:00",
+  "intro": "Today's material is a coherent set: two agentic-AI primers on how to build and secure agents responsibly, paired with two banking examples showing what that discipline looks like in practice — a bank that kept humans in the loop and a modernization approach that has to precede any of it.",
+  "cards": [
+    {
+      "title": "A Practical Guide to Building Agents",
+      "url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/",
+      "source": "OpenAI",
+      "published": "2025-04",
+      "format": "docs",
+      "est_minutes": 45,
+      "level": "working",
+      "track": "agentic",
+      "bite": "Start with a single agent, and only split into multiple agents when you hit concrete failure signals — too many overlapping tools (roughly 15+) or branching logic that's become unmanageable — not because multi-agent sounds more impressive. Guardrails should be layered: input filtering, limits on what tools an agent can invoke, and a human checkpoint for consequential actions, because no single safeguard is enough on its own.",
+      "read_if": "Read if you advise customers on agent architecture decisions; skip if you only need the security angle.",
+      "key_takeaway": "Start with a single agent and only split into multiple agents when you hit concrete failure signals — like tool overload (more than ~15 overlapping tools) or unmanageable branching logic — not because multi-agent sounds more sophisticated; and guardrails should be layered (input filtering, tool-use limits, human-in-the-loop) because no single guardrail is sufficient on its own."
+    },
+    {
+      "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+      "url": "https://arxiv.org/abs/2406.12045",
+      "source": "arXiv (Yao, Shinn, Razavi, Narasimhan / Sierra Research & Princeton)",
+      "published": "2024-06",
+      "format": "paper",
+      "est_minutes": 30,
+      "level": "working",
+      "track": "agentic",
+      "bite": "This benchmark tests agents on realistic multi-turn tasks involving tools and a simulated user, and even top function-calling agents succeeded on fewer than half of them. Its key metric, pass^k, measures success across repeated attempts rather than a single run, and shows reliability drops off sharply the more times you retry — meaning an agent that works in a live demo tells you almost nothing about whether it will work consistently in production.",
+      "read_if": "Read if you need to sanity-check vendor benchmark claims; skip if you're not evaluating agent reliability numbers directly.",
+      "key_takeaway": "Even state-of-the-art function-calling agents were shown to succeed on fewer than half of realistic multi-turn tasks, and the paper's pass^k metric revealed that reliability across repeated attempts is far worse than single-run success rate — meaning a demo that works once tells you almost nothing about production reliability."
+    },
+    {
+      "title": "The lethal trifecta for AI agents: private data, untrusted content, and external communication",
+      "url": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/",
+      "source": "Simon Willison",
+      "published": "2025-06",
+      "format": "article",
+      "est_minutes": 10,
+      "level": "working",
+      "track": "agentic",
+      "bite": "An AI agent becomes genuinely dangerous only when three things are true at once: it has access to private data, it's exposed to untrusted content, and it has a way to send information out. Remove any one leg and the exploit path disappears — which is why the robust fix is architectural (never let one execution path have all three) rather than trusting an instruction telling the agent to behave safely.",
+      "read_if": "Read if you discuss agent permissioning or security architecture with customers; skip if you only care about capability, not risk.",
+      "key_takeaway": "An agent only becomes dangerously exploitable when it simultaneously has all three of: access to private data, exposure to untrusted content, and a way to communicate externally — so the most robust defense is architectural (remove one leg of the trifecta from any given execution path) rather than relying on prompt-level instructions to behave safely."
+    },
+    {
+      "title": "Lloyds Banking Group deploys agentic AI to strengthen real-time fraud protection",
+      "url": "https://www.lloydsbankinggroup.com/media/press-releases/2026/lloyds-banking-group/lloyds-banking-group-deploys-agentic-ai-to-strengthen-real-time-.html",
+      "source": "Lloyds Banking Group (press release)",
+      "published": "2026-06",
+      "format": "article",
+      "est_minutes": 6,
+      "level": "working",
+      "track": "banking",
+      "bite": "A major UK retail bank built its fraud-detection agent in-house, running multiple agents in parallel behind the tools its frontline staff already use. Crucially, the bank kept humans as the accountable decision-makers rather than letting the agents make fraud calls autonomously — a deliberate design choice, not a limitation of the technology.",
+      "read_if": "Read if you're selling into UK or European retail banks on fraud or agentic use cases; skip if you need vendor-neutral technical depth.",
+      "key_takeaway": "Lloyds built its fraud agent in-house on its own secure AI platform (\"Envoy\") with multiple agents running in parallel behind frontline colleague tools, explicitly keeping humans as the accountable decision-makers rather than automating the fraud decision itself."
+    },
+    {
+      "title": "Modernizing Core Banking Systems: A Strategic Guide for Financial Leaders",
+      "url": "https://aws.amazon.com/blogs/industries/modernizing-core-banking-systems-a-strategic-guide-for-financial-leaders/",
+      "source": "AWS for Industries",
+      "published": "2026-05",
+      "format": "article",
+      "est_minutes": 12,
+      "level": "working",
+      "track": "banking",
+      "bite": "Batch-oriented mainframe cores can't feed the real-time, event-driven data that agentic AI needs, which is the real reason many bank AI projects stall before they start. What's changed is that AI can now do the reverse-engineering step — extracting business logic and dependency maps from decades-old COBOL — that used to take months, and new services can run alongside the mainframe during transition instead of requiring a full replacement.",
+      "read_if": "Read if you talk to a bank's infrastructure or core-modernization team; skip if your conversations stay at the business-use-case level.",
+      "key_takeaway": "AI has changed the modernization cost equation by automating the reverse-engineering step — extracting business logic and dependency maps from COBOL/mainframe code that used to take months of manual work — while letting new microservices run alongside the mainframe during transition instead of requiring a rip-and-replace."
+    }
+  ],
+  "counts": {
+    "agentic": 3,
+    "banking": 2,
+    "terms": 5
+  }
+}

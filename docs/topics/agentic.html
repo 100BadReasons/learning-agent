@@ -116,15 +116,33 @@ footer { margin-top: 3.5rem; color: var(--muted); font-size: 0.8rem; }
 <aside class="side">
   <section>
     <h2>Topics</h2>
-    <ul><li><a href="../topics/agentic.html" class="on">Agentic AI</a> <span class="count">8</span></li><li><a href="../topics/banking.html">AI in Banking</a> <span class="count">8</span></li><li><a href="../topics/terms.html">Key Terms</a></li></ul>
+    <ul><li><a href="../topics/agentic.html" class="on">Agentic AI</a> <span class="count">11</span></li><li><a href="../topics/banking.html">AI in Banking</a> <span class="count">10</span></li><li><a href="../topics/terms.html">Key Terms</a></li></ul>
   </section>
   <section>
     <h2>Dates</h2>
-    <ul><li><a href="../archive/2026-08-14.html">14 Aug</a></li><li><a href="../archive/2026-08-13.html">13 Aug</a></li></ul>
+    <ul><li><a href="../archive/2026-08-15.html">15 Aug</a></li><li><a href="../archive/2026-08-14.html">14 Aug</a></li><li><a href="../archive/2026-08-13.html">13 Aug</a></li></ul>
   </section>
 </aside>
 <main>
-<h2 class="sec">Agentic AI</h2><p class="date">8 items across 2 briefs.</p><div style="margin-top:1.5rem">    <article class="card">
+<h2 class="sec">Agentic AI</h2><p class="date">11 items across 3 briefs.</p><div style="margin-top:1.5rem">    <article class="card">
+      <h3><a href="https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/" rel="noopener">A Practical Guide to Building Agents</a></h3>
+      <p class="meta"><span>OpenAI</span><span>published 2025-04</span><span>docs</span><span>45 min</span><span>working</span><span><a href="../archive/2026-08-15.html">15 Aug</a></span></p>
+      <p class="bite">Start with a single agent, and only split into multiple agents when you hit concrete failure signals — too many overlapping tools (roughly 15+) or branching logic that&#x27;s become unmanageable — not because multi-agent sounds more impressive. Guardrails should be layered: input filtering, limits on what tools an agent can invoke, and a human checkpoint for consequential actions, because no single safeguard is enough on its own.</p>
+<p class="readif">Read if you advise customers on agent architecture decisions; skip if you only need the security angle.</p>
+    </article>
+    <article class="card">
+      <h3><a href="https://arxiv.org/abs/2406.12045" rel="noopener">τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains</a></h3>
+      <p class="meta"><span>arXiv (Yao, Shinn, Razavi, Narasimhan / Sierra Research &amp; Princeton)</span><span>published 2024-06</span><span>paper</span><span>30 min</span><span>working</span><span><a href="../archive/2026-08-15.html">15 Aug</a></span></p>
+      <p class="bite">This benchmark tests agents on realistic multi-turn tasks involving tools and a simulated user, and even top function-calling agents succeeded on fewer than half of them. Its key metric, pass^k, measures success across repeated attempts rather than a single run, and shows reliability drops off sharply the more times you retry — meaning an agent that works in a live demo tells you almost nothing about whether it will work consistently in production.</p>
+<p class="readif">Read if you need to sanity-check vendor benchmark claims; skip if you&#x27;re not evaluating agent reliability numbers directly.</p>
+    </article>
+    <article class="card">
+      <h3><a href="https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/" rel="noopener">The lethal trifecta for AI agents: private data, untrusted content, and external communication</a></h3>
+      <p class="meta"><span>Simon Willison</span><span>published 2025-06</span><span>article</span><span>10 min</span><span>working</span><span><a href="../archive/2026-08-15.html">15 Aug</a></span></p>
+      <p class="bite">An AI agent becomes genuinely dangerous only when three things are true at once: it has access to private data, it&#x27;s exposed to untrusted content, and it has a way to send information out. Remove any one leg and the exploit path disappears — which is why the robust fix is architectural (never let one execution path have all three) rather than trusting an instruction telling the agent to behave safely.</p>
+<p class="readif">Read if you discuss agent permissioning or security architecture with customers; skip if you only care about capability, not risk.</p>
+    </article>
+    <article class="card">
       <h3><a href="https://www.anthropic.com/engineering/multi-agent-research-system" rel="noopener">How we built our multi-agent research system</a></h3>
       <p class="meta"><span>Anthropic (Engineering blog)</span><span>published 2025-06</span><span>article</span><span>20 min</span><span>working</span><span><a href="../archive/2026-08-14.html">14 Aug</a></span></p>
       <p class="bite">Anthropic&#x27;s own writeup of the architecture behind Claude&#x27;s Research feature: a lead agent orchestrates parallel subagents that each explore separate parts of a problem. It measurably beats a single agent (90.2% improvement) on open-ended, breadth-first research tasks — but burns roughly 15x the tokens, and for tightly interdependent work like coding, that overhead usually makes a single well-prompted agent the smarter choice.</p>

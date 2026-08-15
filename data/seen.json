@@ -27,7 +27,12 @@
     "https://anthropic.com/engineering/multi-agent-research-system": "2026-08-14",
     "https://arxiv.org/abs/2510.11977": "2026-08-14",
     "https://medium.com/commbank-technology/project-coral-orchestrating-ai-agents-for-development-at-scale-fc301d1a787f": "2026-08-14",
-    "https://mas.gov.sg/schemes-and-initiatives/project-mindforge": "2026-08-14"
+    "https://mas.gov.sg/schemes-and-initiatives/project-mindforge": "2026-08-14",
+    "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents": "2026-08-15",
+    "https://arxiv.org/abs/2406.12045": "2026-08-15",
+    "https://simonwillison.net/2025/jun/16/the-lethal-trifecta": "2026-08-15",
+    "https://lloydsbankinggroup.com/media/press-releases/2026/lloyds-banking-group/lloyds-banking-group-deploys-agentic-ai-to-strengthen-real-time-.html": "2026-08-15",
+    "https://aws.amazon.com/blogs/industries/modernizing-core-banking-systems-a-strategic-guide-for-financial-leaders": "2026-08-15"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -57,6 +62,11 @@
     "how we built our multi agent research system": "2026-08-14",
     "holistic agent leaderboard the missing infrastructure for ai agent evaluation": "2026-08-14",
     "project coral orchestrating ai agents for development at scale one year on": "2026-08-14",
-    "project mindforge ai risk management toolkit executive handbook operationalisation handbook": "2026-08-14"
+    "project mindforge ai risk management toolkit executive handbook operationalisation handbook": "2026-08-14",
+    "a practical guide to building agents": "2026-08-15",
+    "bench a benchmark for tool agent user interaction in real world domains": "2026-08-15",
+    "the lethal trifecta for ai agents private data untrusted content and external communication": "2026-08-15",
+    "lloyds banking group deploys agentic ai to strengthen real time fraud protection": "2026-08-15",
+    "modernizing core banking systems a strategic guide for financial leaders": "2026-08-15"
   }
 }
