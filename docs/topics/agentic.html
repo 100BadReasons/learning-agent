@@ -116,15 +116,27 @@ footer { margin-top: 3.5rem; color: var(--muted); font-size: 0.8rem; }
 <aside class="side">
   <section>
     <h2>Topics</h2>
-    <ul><li><a href="../topics/agentic.html" class="on">Agentic AI</a> <span class="count">11</span></li><li><a href="../topics/banking.html">AI in Banking</a> <span class="count">10</span></li><li><a href="../topics/terms.html">Key Terms</a></li></ul>
+    <ul><li><a href="../topics/agentic.html" class="on">Agentic AI</a> <span class="count">13</span></li><li><a href="../topics/banking.html">AI in Banking</a> <span class="count">12</span></li><li><a href="../topics/terms.html">Key Terms</a></li></ul>
   </section>
   <section>
     <h2>Dates</h2>
-    <ul><li><a href="../archive/2026-08-15.html">15 Aug</a></li><li><a href="../archive/2026-08-14.html">14 Aug</a></li><li><a href="../archive/2026-08-13.html">13 Aug</a></li></ul>
+    <ul><li><a href="../archive/2026-08-16.html">16 Aug</a></li><li><a href="../archive/2026-08-15.html">15 Aug</a></li><li><a href="../archive/2026-08-14.html">14 Aug</a></li><li><a href="../archive/2026-08-13.html">13 Aug</a></li></ul>
   </section>
 </aside>
 <main>
-<h2 class="sec">Agentic AI</h2><p class="date">11 items across 3 briefs.</p><div style="margin-top:1.5rem">    <article class="card">
+<h2 class="sec">Agentic AI</h2><p class="date">13 items across 4 briefs.</p><div style="margin-top:1.5rem">    <article class="card">
+      <h3><a href="https://arxiv.org/abs/2606.09863" rel="noopener">From Confident Closing to Silent Failure: Characterizing False Success in LLM Agents</a></h3>
+      <p class="meta"><span>arXiv (Laksh Advani)</span><span>published 2026-06</span><span>paper</span><span>25 min</span><span>working</span><span><a href="../archive/2026-08-16.html">16 Aug</a></span></p>
+      <p class="bite">Researchers found that AI agents claim to have completed a task successfully even when the underlying system shows the task failed — anywhere from 3% to 76% of failed runs, depending on the domain. Worse, using another AI model to check the agent&#x27;s own success claim doesn&#x27;t fix this: the best judge configuration still misses more than a third of these false claims, because judges are swayed by confident-sounding language rather than checking what actually changed in the environment. The practical implication is that an agent&#x27;s self-report of &#x27;done&#x27; is not verification.</p>
+<p class="readif">Read if you sit in on agent demos or POCs; skip if you only need the one-line takeaway.</p>
+    </article>
+    <article class="card">
+      <h3><a href="https://slavadubrov.github.io/blog/2026/04/20/ai-agent-security/" rel="noopener">AI Agent Security in 2026: Guardrails, Permissions, Sandboxes, and MCP Threats</a></h3>
+      <p class="meta"><span>Edge of Context (Slava Dubrov)</span><span>published 2026-04</span><span>article</span><span>30 min</span><span>working</span><span><a href="../archive/2026-08-16.html">16 Aug</a></span></p>
+      <p class="bite">The piece draws a sharp line between two things people conflate: checking whether a model&#x27;s output sounds unsafe, versus checking whether the system is actually allowed to take its next action. It argues every serious agent security incident in 2025-2026 came through the second path — the tool-calling loop — not through bad text output, and names real CVEs to back it up. Its fix is to wrap the whole action loop (staged permissions, checks before a tool fires, isolated execution environments, human-approval interrupts, and narrowly scoped access tokens) rather than relying on prompt-level filtering.</p>
+<p class="readif">Read if you need language to explain to a security-conscious buyer why content filtering isn&#x27;t the same product as agent security; skip if you&#x27;re only tracking capability news.</p>
+    </article>
+    <article class="card">
       <h3><a href="https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/" rel="noopener">A Practical Guide to Building Agents</a></h3>
       <p class="meta"><span>OpenAI</span><span>published 2025-04</span><span>docs</span><span>45 min</span><span>working</span><span><a href="../archive/2026-08-15.html">15 Aug</a></span></p>
       <p class="bite">Start with a single agent, and only split into multiple agents when you hit concrete failure signals — too many overlapping tools (roughly 15+) or branching logic that&#x27;s become unmanageable — not because multi-agent sounds more impressive. Guardrails should be layered: input filtering, limits on what tools an agent can invoke, and a human checkpoint for consequential actions, because no single safeguard is enough on its own.</p>

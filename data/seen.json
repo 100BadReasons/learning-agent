@@ -32,7 +32,11 @@
     "https://arxiv.org/abs/2406.12045": "2026-08-15",
     "https://simonwillison.net/2025/jun/16/the-lethal-trifecta": "2026-08-15",
     "https://lloydsbankinggroup.com/media/press-releases/2026/lloyds-banking-group/lloyds-banking-group-deploys-agentic-ai-to-strengthen-real-time-.html": "2026-08-15",
-    "https://aws.amazon.com/blogs/industries/modernizing-core-banking-systems-a-strategic-guide-for-financial-leaders": "2026-08-15"
+    "https://aws.amazon.com/blogs/industries/modernizing-core-banking-systems-a-strategic-guide-for-financial-leaders": "2026-08-15",
+    "https://arxiv.org/abs/2606.09863": "2026-08-16",
+    "https://slavadubrov.github.io/blog/2026/04/20/ai-agent-security": "2026-08-16",
+    "https://computerweekly.com/news/366646190/dbs-holds-off-on-letting-ai-agents-run-on-their-own-as-controls-lag-capability": "2026-08-16",
+    "https://bankofengland.co.uk/news/2026/may/boe-fca-and-hm-treasury-joint-statement-on-frontier-ai-models-and-cyber-resilience": "2026-08-16"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -67,6 +71,10 @@
     "bench a benchmark for tool agent user interaction in real world domains": "2026-08-15",
     "the lethal trifecta for ai agents private data untrusted content and external communication": "2026-08-15",
     "lloyds banking group deploys agentic ai to strengthen real time fraud protection": "2026-08-15",
-    "modernizing core banking systems a strategic guide for financial leaders": "2026-08-15"
+    "modernizing core banking systems a strategic guide for financial leaders": "2026-08-15",
+    "from confident closing to silent failure characterizing false success in llm agents": "2026-08-16",
+    "ai agent security in 2026 guardrails permissions sandboxes and mcp threats": "2026-08-16",
+    "dbs holds off on letting ai agents run on their own as controls lag capability": "2026-08-16",
+    "the bank fca and hm treasury joint statement on frontier ai models and cyber resilience": "2026-08-16"
   }
 }
