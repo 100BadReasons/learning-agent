@@ -36,7 +36,12 @@
     "https://arxiv.org/abs/2606.09863": "2026-08-16",
     "https://slavadubrov.github.io/blog/2026/04/20/ai-agent-security": "2026-08-16",
     "https://computerweekly.com/news/366646190/dbs-holds-off-on-letting-ai-agents-run-on-their-own-as-controls-lag-capability": "2026-08-16",
-    "https://bankofengland.co.uk/news/2026/may/boe-fca-and-hm-treasury-joint-statement-on-frontier-ai-models-and-cyber-resilience": "2026-08-16"
+    "https://bankofengland.co.uk/news/2026/may/boe-fca-and-hm-treasury-joint-statement-on-frontier-ai-models-and-cyber-resilience": "2026-08-16",
+    "https://arxiv.org/abs/2506.07982": "2026-08-17",
+    "https://arxiv.org/abs/2603.07670": "2026-08-17",
+    "https://federalreserve.gov/supervisionreg/srletters/sr2602.htm": "2026-08-17",
+    "https://venturebeat.com/orchestration/why-capital-one-built-its-multi-agent-ai-platform-around-open-weight-models": "2026-08-17",
+    "https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-high-risk-deadline-omnibus-20260": "2026-08-17"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -75,6 +80,11 @@
     "from confident closing to silent failure characterizing false success in llm agents": "2026-08-16",
     "ai agent security in 2026 guardrails permissions sandboxes and mcp threats": "2026-08-16",
     "dbs holds off on letting ai agents run on their own as controls lag capability": "2026-08-16",
-    "the bank fca and hm treasury joint statement on frontier ai models and cyber resilience": "2026-08-16"
+    "the bank fca and hm treasury joint statement on frontier ai models and cyber resilience": "2026-08-16",
+    "bench evaluating conversational agents in a dual control environment": "2026-08-17",
+    "memory for autonomous llm agents mechanisms evaluation and emerging frontiers": "2026-08-17",
+    "sr 26 2 revised guidance on model risk management supersedes sr 11 7": "2026-08-17",
+    "why capital one built its multi agent ai platform around open weight models": "2026-08-17",
+    "eu ai act s high risk deadline deferred not cancelled": "2026-08-17"
   }
 }

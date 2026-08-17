@@ -1,0 +1,77 @@
+{
+  "date": "2026-08-17",
+  "generated_at": "2026-08-17T11:19:29+00:00",
+  "intro": "Today's material splits into two honest gaps: agent benchmarks and memory research show how far the underlying technology still has to go, while the banking items show regulators and a top-tier bank both concluding that the rulebook and the platform for agentic AI aren't settled yet.",
+  "cards": [
+    {
+      "title": "τ²-Bench: Evaluating Conversational Agents in a Dual-Control Environment",
+      "url": "https://arxiv.org/abs/2506.07982",
+      "source": "Sierra Research (arXiv)",
+      "published": "2025-06",
+      "format": "paper",
+      "est_minutes": 35,
+      "level": "working",
+      "track": "agentic",
+      "bite": "When an AI agent is tested in a lab setting where it alone controls all the tools, it can look highly capable — but real customer service and telecom scenarios involve a customer who can also take actions mid-conversation. This paper finds that adding an active human on the other side of the interaction causes success rates to collapse, in one case from about 74% down to 34% for the same underlying model. The bottleneck isn't the AI's reasoning — it's coordinating with an unpredictable second party who's also acting.",
+      "read_if": "Read if you sell or evaluate conversational agents for support or telecom use cases; skip if your interest is model architecture, not deployment realism.",
+      "key_takeaway": "Agent performance drops sharply when moving from solo control to dual-control with an active user — the paper's own analysis shows \"pass@1 for GPT-4.1 drops from approximately 74% (retail/airline) to 34% (Telecom),\" isolating communication/coordination overhead as a bigger bottleneck than raw reasoning."
+    },
+    {
+      "title": "Memory for Autonomous LLM Agents: Mechanisms, Evaluation, and Emerging Frontiers",
+      "url": "https://arxiv.org/abs/2603.07670",
+      "source": "arXiv (Pengfei Du)",
+      "published": "2026-03",
+      "format": "paper",
+      "est_minutes": 50,
+      "level": "working",
+      "track": "agentic",
+      "bite": "This paper builds a shared vocabulary for what 'agent memory' actually means, separating it clearly from just having a bigger context window. It breaks memory into how long information is kept, where it's stored, and how the agent decides what to write, keep, or retrieve — then surveys five different technical approaches to doing that well. The core point: an agent's ability to remember and improve over time is a design choice with real engineering tradeoffs, not a side effect of using a more powerful model.",
+      "read_if": "Read if you need precise language to explain 'does it remember me' to a technical or skeptical buyer; skip if you just need the one-paragraph version, which is above.",
+      "key_takeaway": "The paper's own framing states that <cite index=\"34-5,34-6\">it formalizes agent memory as a write--manage--read loop tightly coupled with perception and action, then introduces a three-dimensional taxonomy spanning temporal scope, representational substrate, and control policy, examining five mechanism families in depth: context-resident compression, retrieval-augmented stores, reflective self-improvement, hierarchical virtual context, and policy-learned management</cite> — meaning memory quality, not model swaps, is usually the real differentiator in production agent behavior."
+    },
+    {
+      "title": "SR 26-2: Revised Guidance on Model Risk Management (supersedes SR 11-7)",
+      "url": "https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm",
+      "source": "Federal Reserve Board of Governors (with OCC and FDIC)",
+      "published": "2026-04",
+      "format": "docs",
+      "est_minutes": 15,
+      "level": "working",
+      "track": "banking",
+      "bite": "US banking regulators just replaced their fifteen-year-old model risk rulebook with a more flexible, principles-based framework — but they explicitly excluded generative and agentic AI from it, calling those systems too new and fast-moving to regulate yet. That means banks deploying agentic AI today are doing so under improvised extensions of old guidance, not a finished rule, while a formal industry-wide review is still pending. For anyone selling into a bank's model risk or compliance function, this is the difference between 'here are the rules' and 'we're figuring out the rules as we go.'",
+      "read_if": "Read if you sell any AI or model-driven tool into a US bank's risk, compliance, or model validation team; skip if your buyer is purely on the business/product side.",
+      "key_takeaway": "SR 26-2 replaces SR 11-7's prescriptive rules with a principles-based, risk-tailored framework (most directly binding on banks over $30B in assets), but it carves generative AI and agentic AI models out of scope entirely as \"novel and rapidly evolving,\" pending a still-unpublished interagency RFI — meaning banks are governing today's agentic deployments under ad hoc extensions of old principles, not a settled rule."
+    },
+    {
+      "title": "Why Capital One built its multi-agent AI platform around open-weight models",
+      "url": "https://venturebeat.com/orchestration/why-capital-one-built-its-multi-agent-ai-platform-around-open-weight-models",
+      "source": "VentureBeat",
+      "published": "2026-08",
+      "format": "article",
+      "est_minutes": 8,
+      "level": "working",
+      "track": "banking",
+      "bite": "Capital One's ML engineering leadership explains why they didn't buy an off-the-shelf agent platform: no vendor combination hit their targets for cost, latency, and quality at the same time. Instead they fine-tuned open-weight models themselves, built their own system for coordinating multiple agents, and layered in their own governance controls. Their edge came from owning that full stack, not from picking a better vendor.",
+      "read_if": "Read if you're pitching a foundation-model API or agent platform to a large bank with serious engineering resources; skip if your target buyer is a smaller institution without an in-house ML org.",
+      "key_takeaway": "Capital One's competitive edge came from combining fine-tuned open-weight models, a proprietary multi-agent orchestration harness, and built-in enterprise governance — not from adopting a vendor's off-the-shelf foundation model — because generic platforms couldn't hit their cost, latency, and quality bars simultaneously."
+    },
+    {
+      "title": "EU AI Act's High-Risk Deadline: Deferred, Not Cancelled",
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-high-risk-deadline-omnibus-20260/",
+      "source": "Cloud Security Alliance",
+      "published": "2026-08",
+      "format": "article",
+      "est_minutes": 10,
+      "level": "working",
+      "track": "banking",
+      "bite": "A newly enacted EU regulation pushes the deadline for high-risk AI obligations — including credit scoring systems — from August 2026 to December 2027, giving banks sixteen extra months before those rules bite. But it's not a full reprieve: transparency requirements and obligations on general-purpose AI providers stay on the original timeline. Banks that read this as 'AI Act compliance can wait' are only half right.",
+      "read_if": "Read if you're selling AI or compliance tooling into EU banks and need to know how urgent the buyer's timeline actually is; skip if your business is US-only.",
+      "key_takeaway": "Regulation (EU) 2026/1744 (the Digital Omnibus), in force since July 27 2026, pushes Annex III high-risk AI obligations — including credit scoring — from August 2026 to December 2027, but Article 50 transparency duties and GPAI provider obligations remain on the original schedule, so banks can't treat this as a blanket reprieve."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 3,
+    "terms": 5
+  }
+}
