@@ -41,7 +41,11 @@
     "https://arxiv.org/abs/2603.07670": "2026-08-17",
     "https://federalreserve.gov/supervisionreg/srletters/sr2602.htm": "2026-08-17",
     "https://venturebeat.com/orchestration/why-capital-one-built-its-multi-agent-ai-platform-around-open-weight-models": "2026-08-17",
-    "https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-high-risk-deadline-omnibus-20260": "2026-08-17"
+    "https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-high-risk-deadline-omnibus-20260": "2026-08-17",
+    "https://arxiv.org/abs/2602.16666": "2026-08-18",
+    "https://arxiv.org/abs/2605.08545": "2026-08-18",
+    "https://fsb.org/uploads/p100626.pdf": "2026-08-18",
+    "https://bankofengland.co.uk/minutes/2026/february/summary-of-ai-roundtables-feb-2026": "2026-08-18"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -85,6 +89,10 @@
     "memory for autonomous llm agents mechanisms evaluation and emerging frontiers": "2026-08-17",
     "sr 26 2 revised guidance on model risk management supersedes sr 11 7": "2026-08-17",
     "why capital one built its multi agent ai platform around open weight models": "2026-08-17",
-    "eu ai act s high risk deadline deferred not cancelled": "2026-08-17"
+    "eu ai act s high risk deadline deferred not cancelled": "2026-08-17",
+    "towards a science of ai agent reliability": "2026-08-18",
+    "log analysis is necessary for credible evaluation of ai agents": "2026-08-18",
+    "sound practices for responsible adoption of artificial intelligence ai consultation report": "2026-08-18",
+    "summary of ai roundtables february 2026": "2026-08-18"
   }
 }

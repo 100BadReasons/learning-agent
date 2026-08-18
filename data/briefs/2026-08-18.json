@@ -1,0 +1,64 @@
+{
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T11:19:32+00:00",
+  "intro": "Today's material pairs a rigorous new vocabulary for why agent benchmarks lie with the first real regulatory and internal-bank evidence of what happens when you actually ship an agent into a high-stakes financial workflow.",
+  "cards": [
+    {
+      "title": "Towards a Science of AI Agent Reliability",
+      "url": "https://arxiv.org/abs/2602.16666",
+      "source": "Princeton University (Rabanser, Kapoor, Kirgis, Liu, Utpala, Narayanan) — accepted ICML 2026",
+      "published": "2026-02",
+      "format": "paper",
+      "est_minutes": 40,
+      "level": "deep",
+      "track": "agentic",
+      "bite": "A single accuracy score hides four separate things that can go wrong: the same agent giving different answers to the identical task, breaking when instructions are reworded but not changed in meaning, not knowing when it's wrong, and occasionally failing in unbounded, severe ways. Across 18 months of frontier model releases, raw accuracy improved much faster than any of these four measures did — meaning newer, higher-scoring models aren't necessarily more trustworthy, just more capable.",
+      "read_if": "Read if you need sharper language to question a vendor's benchmark claim; skip if you just want a general AI news update.",
+      "key_takeaway": "A single success-rate number hides four distinct failure modes — inconsistency across identical runs, brittleness to reworded instructions, poor self-knowledge of when it's wrong, and unbounded severity of rare errors — and across 18 months of frontier model releases, accuracy improved far faster than any of these did."
+    },
+    {
+      "title": "Log analysis is necessary for credible evaluation of AI agents",
+      "url": "https://arxiv.org/abs/2605.08545",
+      "source": "Princeton University, UK AISI, Apollo Research, Transluce, Meridian Labs, UC Berkeley (Kirgis, Kapoor, Rabanser, Narayanan et al.)",
+      "published": "2026-05",
+      "format": "paper",
+      "est_minutes": 25,
+      "level": "working",
+      "track": "agentic",
+      "bite": "Researchers re-examined a standard customer-service agent benchmark by reading the actual execution logs instead of trusting the pass/fail score, and found the benchmark had undersold the agent's real capability by nearly 50% because of flawed test tasks. In the same logs they also found the agent taking risky financial actions — wrong refund amounts, wrong payment methods — that the pass/fail number never surfaced at all.",
+      "read_if": "Read if a customer will ask how a vendor's agent was tested before going live; skip if evaluation methodology isn't part of your deals.",
+      "key_takeaway": "Reading the execution logs behind a tau-Bench Airline run — not just the pass/fail score — revealed the benchmark had under-elicited agent capability by nearly 50% due to flawed tasks, while also surfacing risky financial actions (wrong refund amounts, wrong payment methods) that the pass/fail number completely hid."
+    },
+    {
+      "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Consultation report",
+      "url": "https://www.fsb.org/uploads/P100626.pdf",
+      "source": "Financial Stability Board",
+      "published": "2026-06",
+      "format": "docs",
+      "est_minutes": 30,
+      "level": "working",
+      "track": "banking",
+      "bite": "The first international supervisory framework aimed specifically at agentic AI in banks is built on named case studies rather than abstract principles. Its flagship example: a globally systemic bank built an in-house fraud-detection agent in three months that watches over 80 million signals a day and drafts new detection rules — but every single rule it proposes still goes to a human analyst for approval before going live. Regulators hold this up as the model to follow, while noting plainly that manual approval of every action won't hold up once agent activity keeps growing.",
+      "read_if": "Read if you're in risk or compliance conversations with a bank; skip if you're not selling into regulated financial services.",
+      "key_takeaway": "The report's flagship case study shows a G-SIB-scale bank building an agentic fraud-detection system in-house in three months that monitors 80 million+ signals daily, drafts new detection rules, and routes every rule to human analysts for approval before going live — the FSB holds this human-approves-every-action pattern up as the template, while noting it doesn't scale indefinitely as agent volume grows."
+    },
+    {
+      "title": "Summary of AI roundtables - February 2026",
+      "url": "https://www.bankofengland.co.uk/minutes/2026/february/summary-of-ai-roundtables-feb-2026",
+      "source": "Bank of England",
+      "published": "2026-02",
+      "format": "docs",
+      "est_minutes": 8,
+      "level": "intro",
+      "track": "banking",
+      "bite": "In closed-door sessions, UK challenger banks, global banks, and insurers told the Bank of England the same thing: they don't want new AI-specific regulation or a dedicated AI sandbox. They believe the existing principles-based supervisory framework, particularly the rules already governing model risk management, gives them enough room to deploy AI responsibly.",
+      "read_if": "Read if you need to tell genuine regulatory caution apart from a stalling tactic at a specific bank; skip otherwise.",
+      "key_takeaway": "Across all three roundtables (challenger/UK banks, GSIBs, insurers), participants told the Bank of England they don't want new AI-specific rules or a dedicated AI sandbox — they see the PRA's existing principles-based framework, especially Supervisory Statement 1/23 on model risk management, as already giving them enough room to deploy AI responsibly."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 2,
+    "terms": 5
+  }
+}

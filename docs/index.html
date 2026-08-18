@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Learning Brief — 2026-08-17</title>
+<title>Learning Brief — 2026-08-18</title>
 <style>
 :root {
   --bg: #fbfaf8; --surface: #ffffff; --ink: #1a1a19; --muted: #6b6a66;
@@ -116,46 +116,40 @@ footer { margin-top: 3.5rem; color: var(--muted); font-size: 0.8rem; }
 <aside class="side">
   <section>
     <h2>Topics</h2>
-    <ul><li><a href="topics/agentic.html">Agentic AI</a> <span class="count">15</span></li><li><a href="topics/banking.html">AI in Banking</a> <span class="count">15</span></li><li><a href="topics/terms.html">Key Terms</a></li></ul>
+    <ul><li><a href="topics/agentic.html">Agentic AI</a> <span class="count">17</span></li><li><a href="topics/banking.html">AI in Banking</a> <span class="count">17</span></li><li><a href="topics/terms.html">Key Terms</a></li></ul>
   </section>
   <section>
     <h2>Dates</h2>
-    <ul><li><a href="archive/2026-08-17.html" class="on">17 Aug</a></li><li><a href="archive/2026-08-16.html">16 Aug</a></li><li><a href="archive/2026-08-15.html">15 Aug</a></li><li><a href="archive/2026-08-14.html">14 Aug</a></li><li><a href="archive/2026-08-13.html">13 Aug</a></li></ul>
+    <ul><li><a href="archive/2026-08-18.html" class="on">18 Aug</a></li><li><a href="archive/2026-08-17.html">17 Aug</a></li><li><a href="archive/2026-08-16.html">16 Aug</a></li><li><a href="archive/2026-08-15.html">15 Aug</a></li><li><a href="archive/2026-08-14.html">14 Aug</a></li><li><a href="archive/2026-08-13.html">13 Aug</a></li></ul>
   </section>
 </aside>
 <main>
-<p class="date">Monday, 17 August 2026</p>
-<p class="intro">Today&#x27;s material splits into two honest gaps: agent benchmarks and memory research show how far the underlying technology still has to go, while the banking items show regulators and a top-tier bank both concluding that the rulebook and the platform for agentic AI aren&#x27;t settled yet.</p>
+<p class="date">Tuesday, 18 August 2026</p>
+<p class="intro">Today&#x27;s material pairs a rigorous new vocabulary for why agent benchmarks lie with the first real regulatory and internal-bank evidence of what happens when you actually ship an agent into a high-stakes financial workflow.</p>
 <h2 class="sec">Agentic AI</h2>    <article class="card">
-      <h3><a href="https://arxiv.org/abs/2506.07982" rel="noopener">τ²-Bench: Evaluating Conversational Agents in a Dual-Control Environment</a></h3>
-      <p class="meta"><span>Sierra Research (arXiv)</span><span>published 2025-06</span><span>paper</span><span>35 min</span><span>working</span></p>
-      <p class="bite">When an AI agent is tested in a lab setting where it alone controls all the tools, it can look highly capable — but real customer service and telecom scenarios involve a customer who can also take actions mid-conversation. This paper finds that adding an active human on the other side of the interaction causes success rates to collapse, in one case from about 74% down to 34% for the same underlying model. The bottleneck isn&#x27;t the AI&#x27;s reasoning — it&#x27;s coordinating with an unpredictable second party who&#x27;s also acting.</p>
-<p class="readif">Read if you sell or evaluate conversational agents for support or telecom use cases; skip if your interest is model architecture, not deployment realism.</p>
+      <h3><a href="https://arxiv.org/abs/2602.16666" rel="noopener">Towards a Science of AI Agent Reliability</a></h3>
+      <p class="meta"><span>Princeton University (Rabanser, Kapoor, Kirgis, Liu, Utpala, Narayanan) — accepted ICML 2026</span><span>published 2026-02</span><span>paper</span><span>40 min</span><span>deep</span></p>
+      <p class="bite">A single accuracy score hides four separate things that can go wrong: the same agent giving different answers to the identical task, breaking when instructions are reworded but not changed in meaning, not knowing when it&#x27;s wrong, and occasionally failing in unbounded, severe ways. Across 18 months of frontier model releases, raw accuracy improved much faster than any of these four measures did — meaning newer, higher-scoring models aren&#x27;t necessarily more trustworthy, just more capable.</p>
+<p class="readif">Read if you need sharper language to question a vendor&#x27;s benchmark claim; skip if you just want a general AI news update.</p>
     </article>
     <article class="card">
-      <h3><a href="https://arxiv.org/abs/2603.07670" rel="noopener">Memory for Autonomous LLM Agents: Mechanisms, Evaluation, and Emerging Frontiers</a></h3>
-      <p class="meta"><span>arXiv (Pengfei Du)</span><span>published 2026-03</span><span>paper</span><span>50 min</span><span>working</span></p>
-      <p class="bite">This paper builds a shared vocabulary for what &#x27;agent memory&#x27; actually means, separating it clearly from just having a bigger context window. It breaks memory into how long information is kept, where it&#x27;s stored, and how the agent decides what to write, keep, or retrieve — then surveys five different technical approaches to doing that well. The core point: an agent&#x27;s ability to remember and improve over time is a design choice with real engineering tradeoffs, not a side effect of using a more powerful model.</p>
-<p class="readif">Read if you need precise language to explain &#x27;does it remember me&#x27; to a technical or skeptical buyer; skip if you just need the one-paragraph version, which is above.</p>
+      <h3><a href="https://arxiv.org/abs/2605.08545" rel="noopener">Log analysis is necessary for credible evaluation of AI agents</a></h3>
+      <p class="meta"><span>Princeton University, UK AISI, Apollo Research, Transluce, Meridian Labs, UC Berkeley (Kirgis, Kapoor, Rabanser, Narayanan et al.)</span><span>published 2026-05</span><span>paper</span><span>25 min</span><span>working</span></p>
+      <p class="bite">Researchers re-examined a standard customer-service agent benchmark by reading the actual execution logs instead of trusting the pass/fail score, and found the benchmark had undersold the agent&#x27;s real capability by nearly 50% because of flawed test tasks. In the same logs they also found the agent taking risky financial actions — wrong refund amounts, wrong payment methods — that the pass/fail number never surfaced at all.</p>
+<p class="readif">Read if a customer will ask how a vendor&#x27;s agent was tested before going live; skip if evaluation methodology isn&#x27;t part of your deals.</p>
     </article><h2 class="sec">AI in Banking</h2>    <article class="card">
-      <h3><a href="https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm" rel="noopener">SR 26-2: Revised Guidance on Model Risk Management (supersedes SR 11-7)</a></h3>
-      <p class="meta"><span>Federal Reserve Board of Governors (with OCC and FDIC)</span><span>published 2026-04</span><span>docs</span><span>15 min</span><span>working</span></p>
-      <p class="bite">US banking regulators just replaced their fifteen-year-old model risk rulebook with a more flexible, principles-based framework — but they explicitly excluded generative and agentic AI from it, calling those systems too new and fast-moving to regulate yet. That means banks deploying agentic AI today are doing so under improvised extensions of old guidance, not a finished rule, while a formal industry-wide review is still pending. For anyone selling into a bank&#x27;s model risk or compliance function, this is the difference between &#x27;here are the rules&#x27; and &#x27;we&#x27;re figuring out the rules as we go.&#x27;</p>
-<p class="readif">Read if you sell any AI or model-driven tool into a US bank&#x27;s risk, compliance, or model validation team; skip if your buyer is purely on the business/product side.</p>
+      <h3><a href="https://www.fsb.org/uploads/P100626.pdf" rel="noopener">Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Consultation report</a></h3>
+      <p class="meta"><span>Financial Stability Board</span><span>published 2026-06</span><span>docs</span><span>30 min</span><span>working</span></p>
+      <p class="bite">The first international supervisory framework aimed specifically at agentic AI in banks is built on named case studies rather than abstract principles. Its flagship example: a globally systemic bank built an in-house fraud-detection agent in three months that watches over 80 million signals a day and drafts new detection rules — but every single rule it proposes still goes to a human analyst for approval before going live. Regulators hold this up as the model to follow, while noting plainly that manual approval of every action won&#x27;t hold up once agent activity keeps growing.</p>
+<p class="readif">Read if you&#x27;re in risk or compliance conversations with a bank; skip if you&#x27;re not selling into regulated financial services.</p>
     </article>
     <article class="card">
-      <h3><a href="https://venturebeat.com/orchestration/why-capital-one-built-its-multi-agent-ai-platform-around-open-weight-models" rel="noopener">Why Capital One built its multi-agent AI platform around open-weight models</a></h3>
-      <p class="meta"><span>VentureBeat</span><span>published 2026-08</span><span>article</span><span>8 min</span><span>working</span></p>
-      <p class="bite">Capital One&#x27;s ML engineering leadership explains why they didn&#x27;t buy an off-the-shelf agent platform: no vendor combination hit their targets for cost, latency, and quality at the same time. Instead they fine-tuned open-weight models themselves, built their own system for coordinating multiple agents, and layered in their own governance controls. Their edge came from owning that full stack, not from picking a better vendor.</p>
-<p class="readif">Read if you&#x27;re pitching a foundation-model API or agent platform to a large bank with serious engineering resources; skip if your target buyer is a smaller institution without an in-house ML org.</p>
+      <h3><a href="https://www.bankofengland.co.uk/minutes/2026/february/summary-of-ai-roundtables-feb-2026" rel="noopener">Summary of AI roundtables - February 2026</a></h3>
+      <p class="meta"><span>Bank of England</span><span>published 2026-02</span><span>docs</span><span>8 min</span><span>intro</span></p>
+      <p class="bite">In closed-door sessions, UK challenger banks, global banks, and insurers told the Bank of England the same thing: they don&#x27;t want new AI-specific regulation or a dedicated AI sandbox. They believe the existing principles-based supervisory framework, particularly the rules already governing model risk management, gives them enough room to deploy AI responsibly.</p>
+<p class="readif">Read if you need to tell genuine regulatory caution apart from a stalling tactic at a specific bank; skip otherwise.</p>
     </article>
-    <article class="card">
-      <h3><a href="https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-high-risk-deadline-omnibus-20260/" rel="noopener">EU AI Act&#x27;s High-Risk Deadline: Deferred, Not Cancelled</a></h3>
-      <p class="meta"><span>Cloud Security Alliance</span><span>published 2026-08</span><span>article</span><span>10 min</span><span>working</span></p>
-      <p class="bite">A newly enacted EU regulation pushes the deadline for high-risk AI obligations — including credit scoring systems — from August 2026 to December 2027, giving banks sixteen extra months before those rules bite. But it&#x27;s not a full reprieve: transparency requirements and obligations on general-purpose AI providers stay on the original timeline. Banks that read this as &#x27;AI Act compliance can wait&#x27; are only half right.</p>
-<p class="readif">Read if you&#x27;re selling AI or compliance tooling into EU banks and need to know how urgent the buyer&#x27;s timeline actually is; skip if your business is US-only.</p>
-    </article>
-<nav class="pager"><a href="archive/2026-08-16.html">&larr; 2026-08-16</a><a href="archive/index.html">All briefs</a><span></span></nav>
+<nav class="pager"><a href="archive/2026-08-17.html">&larr; 2026-08-17</a><a href="archive/index.html">All briefs</a><span></span></nav>
 </main>
 </div>
 <footer>Generated automatically each morning. Sources link out to the original.</footer>
