@@ -1,0 +1,64 @@
+{
+  "date": "2026-08-19",
+  "generated_at": "2026-08-19T11:17:01+00:00",
+  "intro": "Today's material pairs two academic attempts to define what 'working' actually means for an agent with two real bank deployments that show what happens when that question gets asked in production.",
+  "cards": [
+    {
+      "title": "AgentAtlas: Beyond Outcome Leaderboards for LLM Agents",
+      "url": "https://arxiv.org/abs/2605.20530",
+      "source": "arXiv (Parsa Mazaheri, Kasra Mazaheri — UC Santa Cruz, MIT)",
+      "published": "2026-05",
+      "format": "paper",
+      "est_minutes": 35,
+      "level": "working",
+      "track": "agentic",
+      "bite": "Most agent benchmarks report a single pass/fail number, which hides the difference between an agent that succeeded by being reckless and one that succeeded by handling uncertainty well. This paper proposes scoring agents on their control decisions too — whether they acted, asked for clarification, refused, stopped, confirmed, or recovered at the right moments — using a six-way taxonomy instead of a binary outcome. The point is that two agents with identical success rates can have wildly different risk profiles once you look at how they got there.",
+      "read_if": "Read if you need language to challenge a vendor's benchmark slide; skip if you just want a deployment story.",
+      "key_takeaway": "AgentAtlas argues that <cite index=\"16-2\">agent evaluation should separate outcome success from control-decision quality and trajectory quality</cite>, using a <cite index=\"16-3\">six-state control-decision taxonomy (Act / Ask / Refuse / Stop / Confirm / Recover)</cite> to describe whether an agent handled uncertainty well, not just whether it got the final answer right."
+    },
+    {
+      "title": "Beyond Accuracy: A Multi-Dimensional Framework for Evaluating Enterprise Agentic AI Systems",
+      "url": "https://arxiv.org/abs/2511.14136",
+      "source": "arXiv (Sushant Mehta)",
+      "published": "2025-11",
+      "format": "paper",
+      "est_minutes": 30,
+      "level": "working",
+      "track": "agentic",
+      "bite": "An agent that scores 60% accuracy on a single run can drop to 25% when you require it to get the same answer consistently across eight runs — meaning a one-shot demo score tells you almost nothing about production reliability. The paper also finds that agents tuned purely for accuracy end up 4.4 to 10.8 times more expensive to run than cost-aware alternatives with similar performance. Together these findings argue that accuracy-only evaluation systematically misleads buyers on both reliability and cost.",
+      "read_if": "Read if you're evaluating any agent pitch on a single accuracy number; skip if you already discount demo scores heavily.",
+      "key_takeaway": "The paper finds that <cite index=\"34-3\">agent performance drops from 60% (single run) to 25% (8-run consistency)</cite> and that <cite index=\"34-5\">optimizing for accuracy alone yields agents 4.4-10.8x more expensive than cost-aware alternatives with comparable performance</cite> — so a single-run demo score is close to meaningless for procurement decisions."
+    },
+    {
+      "title": "CommBank develops AI agent that spots new fraud and helps build defences",
+      "url": "https://www.commbank.com.au/articles/newsroom/2026/04/ai-agent-spots-fraud-in-real-time.html",
+      "source": "Commonwealth Bank of Australia (newsroom)",
+      "published": "2026-04",
+      "format": "article",
+      "est_minutes": 6,
+      "level": "working",
+      "track": "banking",
+      "bite": "Commonwealth Bank built its own fraud-detection agent in three months, in-house, on Snowflake and its cloud-based core banking platform, and now monitors more than 80 million signals a day with it. The bank credits it with cutting fraud losses over 20% in the first half of FY26 and says it generated or updated three-quarters of the bank's card fraud rules — but every rule suggestion still goes through human review before it goes live. It's a rare disclosure of build timeline, scale, and results from a tier-1 bank rather than a vendor case study.",
+      "read_if": "Read if you're grounding a fraud/AML pitch in a real bank's numbers; skip if you only need vendor-agnostic theory.",
+      "key_takeaway": "CommBank's in-house agentic fraud system, built in three months on Snowflake and monitoring 80M+ signals/day, is credited with cutting fraud losses over 20% in H1 FY26 and generated or updated three-quarters of the bank's card fraud rules — with every rule suggestion routed through human review before activation."
+    },
+    {
+      "title": "Devin's 2025 Performance Review: Learnings From 18 Months of Agents At Work",
+      "url": "https://cognition.ai/blog/devin-annual-performance-review-2025",
+      "source": "Cognition",
+      "published": "2025-11",
+      "format": "article",
+      "est_minutes": 12,
+      "level": "working",
+      "track": "banking",
+      "bite": "Cognition's own retrospective on 18 months of Devin deployments — including at Goldman Sachs, Santander and Nubank — describes an agent that reads and understands a codebase like a senior engineer but executes changes like a junior one. It's most reliable on tasks with clear upfront requirements and a verifiable outcome, roughly equivalent to 4-8 hours of junior-engineer work, and least reliable on ambiguous or judgment-heavy work. That's a usefully honest scoping line for where an autonomous coding agent belongs in a bank's legacy modernization work — and where it doesn't.",
+      "read_if": "Read if you're scoping autonomous coding agents for bank engineering leadership; skip if coding agents aren't in your patch.",
+      "key_takeaway": "Across real bank deployments, Devin performs like a senior engineer on codebase understanding but a junior engineer on execution, and is most reliable on tasks with clear upfront requirements and verifiable outcomes equivalent to 4-8 hours of junior-engineer work — a concrete way to scope where agentic coding tools should and shouldn't be trusted unsupervised in a bank's legacy estate."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 2,
+    "terms": 5
+  }
+}

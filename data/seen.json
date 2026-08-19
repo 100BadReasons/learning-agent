@@ -45,7 +45,11 @@
     "https://arxiv.org/abs/2602.16666": "2026-08-18",
     "https://arxiv.org/abs/2605.08545": "2026-08-18",
     "https://fsb.org/uploads/p100626.pdf": "2026-08-18",
-    "https://bankofengland.co.uk/minutes/2026/february/summary-of-ai-roundtables-feb-2026": "2026-08-18"
+    "https://bankofengland.co.uk/minutes/2026/february/summary-of-ai-roundtables-feb-2026": "2026-08-18",
+    "https://arxiv.org/abs/2605.20530": "2026-08-19",
+    "https://arxiv.org/abs/2511.14136": "2026-08-19",
+    "https://commbank.com.au/articles/newsroom/2026/04/ai-agent-spots-fraud-in-real-time.html": "2026-08-19",
+    "https://cognition.ai/blog/devin-annual-performance-review-2025": "2026-08-19"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -93,6 +97,10 @@
     "towards a science of ai agent reliability": "2026-08-18",
     "log analysis is necessary for credible evaluation of ai agents": "2026-08-18",
     "sound practices for responsible adoption of artificial intelligence ai consultation report": "2026-08-18",
-    "summary of ai roundtables february 2026": "2026-08-18"
+    "summary of ai roundtables february 2026": "2026-08-18",
+    "agentatlas beyond outcome leaderboards for llm agents": "2026-08-19",
+    "beyond accuracy a multi dimensional framework for evaluating enterprise agentic ai systems": "2026-08-19",
+    "commbank develops ai agent that spots new fraud and helps build defences": "2026-08-19",
+    "devin s 2025 performance review learnings from 18 months of agents at work": "2026-08-19"
   }
 }
