@@ -1,0 +1,64 @@
+{
+  "date": "2026-08-20",
+  "generated_at": "2026-08-20T11:18:44+00:00",
+  "intro": "Today pairs a hands-on primer on how agents are actually built (patterns, memory) with two real-world checks on the agentic-AI hype cycle in banking — one bank centralizing agent control, one market misreading what AI is actually doing to legacy systems.",
+  "cards": [
+    {
+      "title": "Agentic AI",
+      "url": "https://www.deeplearning.ai/courses/agentic-ai",
+      "source": "DeepLearning.AI (Andrew Ng)",
+      "published": "2025-10",
+      "format": "course",
+      "est_minutes": 360,
+      "level": "working",
+      "track": "agentic",
+      "bite": "A vendor-neutral, code-first course built around four design patterns that show up in almost every agent system: reflection (an agent critiquing its own output), tool use, planning, and multi-agent collaboration. It builds toward a working multi-agent pipeline — planner, researcher, writer, editor — that makes the tradeoffs of each pattern concrete rather than abstract.",
+      "read_if": "Read if you want the underlying mechanics in plain terms before you repeat someone else's marketing language about 'agents'; skip if you just need the one-paragraph version for a client conversation.",
+      "key_takeaway": "Reflection, tool use, planning, and multi-agent collaboration are the four composable design patterns underlying almost every agent system; the course culminates in building a multi-agent research pipeline (planner, researcher, writer, editor with reflection) that makes the tradeoffs of each pattern concrete."
+    },
+    {
+      "title": "Anatomy of Agentic Memory: Taxonomy and Empirical Analysis of Evaluation and System Limitations",
+      "url": "https://arxiv.org/abs/2602.19320",
+      "source": "arXiv (Jiang et al., UT Dallas / UC Davis / Texas A&M)",
+      "published": "2026-02",
+      "format": "paper",
+      "est_minutes": 45,
+      "level": "deep",
+      "track": "agentic",
+      "bite": "A rigorous academic taxonomy of how 'agent memory' actually works, sorting systems into four structural types instead of treating memory as one feature. The real finding is that most published benchmarks for these systems are unreliable — too small, measuring the wrong thing, inconsistent across models, and silent on the compute cost of remembering anything.",
+      "read_if": "Read if you need ammunition to question a vendor's 'persistent memory' claims; skip if you don't need that level of technical rigor day to day.",
+      "key_takeaway": "Agentic memory systems are organized into four structural types (Lightweight Semantic, Entity-Centric and Personalized, Episodic and Reflective, Structured and Hierarchical), and their reported performance is fragile because of specific, named failure modes: <cite index=\"18-4\">existing benchmarks are often underscaled, evaluation metrics are misaligned with semantic utility, performance varies significantly across backbone models, and system-level costs are frequently overlooked</cite>."
+    },
+    {
+      "title": "Citi moves into more secure agentic AI (Arc platform launch)",
+      "url": "https://www.axios.com/2026/04/30/exclusive-citi-moves-into-agentic-ai",
+      "source": "Axios",
+      "published": "2026-04",
+      "format": "article",
+      "est_minutes": 5,
+      "level": "working",
+      "track": "banking",
+      "bite": "Citi's new Arc platform isn't a chatbot or a new model — it's a control layer that lets the bank's 180,000+ employees' existing AI tools run as monitored, auditable, and stoppable multi-agent workflows. It's rolling out to developers first, a sequencing choice other large banks are quietly mirroring.",
+      "read_if": "Read if you're selling into or against a large bank building internal AI governance; skip if your buyer is still pre-pilot.",
+      "key_takeaway": "Citi's Arc is not a new model or chatbot but a centralized 'operating system' layer that lets 180,000+ employees' existing AI tool usage be linked into monitored, auditable, stoppable multi-agent workflows — starting with developers before wider rollout, which is the sequencing pattern other large banks are also following."
+    },
+    {
+      "title": "Anthropic touts AI for COBOL, IBM stock takes a hit",
+      "url": "https://www.theregister.com/2026/02/23/ibm_share_dive_anthropic_cobol/",
+      "source": "The Register",
+      "published": "2026-02",
+      "format": "article",
+      "est_minutes": 4,
+      "level": "working",
+      "track": "banking",
+      "bite": "Anthropic's claim that AI can modernize COBOL rattled markets on the assumption it threatens mainframe lock-in — but IBM posted its best mainframe revenue in 20 years the same month, some of it credited to IBM's own AI code-conversion tools. The near-term effect looks less like banks exiting legacy platforms and more like legacy platforms getting cheaper and easier to keep running.",
+      "read_if": "Read if you're pitching modernization as a mainframe-exit story; skip if you already know that pitch usually lands as a maintenance-cost story instead.",
+      "key_takeaway": "Markets reacted to Anthropic's COBOL-modernization claims as an existential threat to mainframe lock-in, but IBM's concurrent record mainframe revenue (partly credited to its own AI code-conversion tools) suggests the real effect so far is cheaper maintenance of legacy estates, not exit from them."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 2,
+    "terms": 5
+  }
+}

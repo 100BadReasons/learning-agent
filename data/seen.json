@@ -49,7 +49,11 @@
     "https://arxiv.org/abs/2605.20530": "2026-08-19",
     "https://arxiv.org/abs/2511.14136": "2026-08-19",
     "https://commbank.com.au/articles/newsroom/2026/04/ai-agent-spots-fraud-in-real-time.html": "2026-08-19",
-    "https://cognition.ai/blog/devin-annual-performance-review-2025": "2026-08-19"
+    "https://cognition.ai/blog/devin-annual-performance-review-2025": "2026-08-19",
+    "https://deeplearning.ai/courses/agentic-ai": "2026-08-20",
+    "https://arxiv.org/abs/2602.19320": "2026-08-20",
+    "https://axios.com/2026/04/30/exclusive-citi-moves-into-agentic-ai": "2026-08-20",
+    "https://theregister.com/2026/02/23/ibm_share_dive_anthropic_cobol": "2026-08-20"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -101,6 +105,10 @@
     "agentatlas beyond outcome leaderboards for llm agents": "2026-08-19",
     "beyond accuracy a multi dimensional framework for evaluating enterprise agentic ai systems": "2026-08-19",
     "commbank develops ai agent that spots new fraud and helps build defences": "2026-08-19",
-    "devin s 2025 performance review learnings from 18 months of agents at work": "2026-08-19"
+    "devin s 2025 performance review learnings from 18 months of agents at work": "2026-08-19",
+    "agentic ai": "2026-08-20",
+    "anatomy of agentic memory taxonomy and empirical analysis of evaluation and system limitations": "2026-08-20",
+    "citi moves into more secure agentic ai arc platform launch": "2026-08-20",
+    "anthropic touts ai for cobol ibm stock takes a hit": "2026-08-20"
   }
 }
