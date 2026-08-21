@@ -1,0 +1,25 @@
+{
+  "date": "2026-08-21",
+  "generated_at": "2026-08-21T11:18:11+00:00",
+  "intro": "Thin day by volume - just one paper and no banking-specific research - but it's a substantive one: a large observational study of real coding-agent sessions that quantifies how these tools actually fail in practice.",
+  "cards": [
+    {
+      "title": "How Coding Agents Fail Their Users: A Large-Scale Analysis of Developer-Agent Misalignment in 20,574 Real-World Sessions",
+      "url": "https://arxiv.org/abs/2605.29442",
+      "source": "Tang, Chen, Xu, Shi, Huang, McMillan, Dong, Li (Notre Dame / Vanderbilt / Google)",
+      "published": "2026-05",
+      "format": "paper",
+      "est_minutes": 25,
+      "level": "working",
+      "track": "agentic",
+      "bite": "Researchers analyzed 20,574 real-world coding-agent sessions to see how developers and agents actually break down when working together. Most failures were low-stakes - wasted effort or eroded trust rather than broken code - but the striking finding is self-awareness: in the vast majority of cases (over 91%) the agent only corrected course after the developer explicitly pushed back, rather than catching its own error. In other words, these tools are already reasonably competent at producing output, but they are still bad at knowing when that output is wrong.",
+      "read_if": "Read if you're positioning coding agents (or any autonomous AI tool) to technical buyers and need grounded language about where human oversight is still doing the real work; skip if you only need a one-line talking point.",
+      "key_takeaway": "In an observational study of 20,574 real coding-agent sessions, most breakdowns weren't catastrophic (90.5% cost effort/trust, not irreversible damage), but the agent almost never caught its own mistake — 91.49% of visible fixes required explicit developer pushback, meaning current agents are far better at doing than at knowing when they're wrong."
+    }
+  ],
+  "counts": {
+    "agentic": 1,
+    "banking": 0,
+    "terms": 5
+  }
+}
