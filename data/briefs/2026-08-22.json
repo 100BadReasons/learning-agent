@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-22",
+  "generated_at": "2026-08-22T11:13:49+00:00",
+  "intro": "Three pieces today triangulate the same practical question from different angles: a math paper on exactly when adding more agents stops helping, a reality check on what AI can and can't yet do in mainframe modernization, and a named bank's live agentic deployment with real numbers to compare against the hype in the other two.",
+  "cards": [
+    {
+      "title": "Phase Transition for Budgeted Multi-Agent Synergy",
+      "url": "https://arxiv.org/abs/2601.17311",
+      "source": "Bang Liu, Linglong Kong, Jian Pei (Université de Montréal/Mila, U Alberta, Duke)",
+      "published": "2026-01",
+      "format": "paper",
+      "est_minutes": 30,
+      "level": "deep",
+      "track": "agentic",
+      "bite": "Under a fixed compute budget, throwing more agents at a problem only beats a single well-run agent when a measurable property of how the agents are organized exceeds how well that single agent scales on its own. Below that threshold, coordination overhead, lossy messages between agents, and correlated failures mean more agents produces flat or worse results — not a diminishing-but-positive return, a genuine reversal. The paper gives this a precise, calculable cutoff rather than leaving it as a vague intuition.",
+      "read_if": "Read if you need a rigorous answer for 'why not just add more agents' in a sales or architecture conversation; skip if you just need the practical bottom line, not the math.",
+      "key_takeaway": "Under a fixed compute budget, adding more agents only pays off when a measurable 'organization exponent' exceeds the single agent's own scaling exponent — otherwise coordination overhead, lossy inter-agent messages, and correlated failures guarantee that more agents means worse or flat performance, not better."
+    },
+    {
+      "title": "Summer Mentorship 2026: Discovery Is Not Migration — Where AI Actually Stands for Mainframe Modernization",
+      "url": "https://openmainframeproject.org/blog/summer-mentorship-2026-discovery-is-not-migration-where-ai-actually-stands-for-mainframe-modernization/",
+      "source": "Open Mainframe Project (Linux Foundation)",
+      "published": "2026-07",
+      "format": "article",
+      "est_minutes": 10,
+      "level": "working",
+      "track": "banking",
+      "bite": "The credible, currently-working use of AI in mainframe modernization is exploring and documenting what old COBOL code actually does — not automatically rewriting or migrating it. Even the incumbent vendor's own tooling is sequenced to explain the legacy logic first, before any conversion is attempted, and other vendors with a commercial reason to talk up automated migration are instead publicly warning that AI-converted code can run identically but still be no easier to maintain. This is the piece that reconciles the two loud, contradictory 2026 headlines about mainframe AI you've probably already seen.",
+      "read_if": "Read if you're selling anything into a bank with a mainframe estate; skip if your accounts have none.",
+      "key_takeaway": "The credible AI use in mainframe modernization is discovery and documentation of legacy logic, not automated migration — even IBM's own watsonx Code Assistant for Z is sequenced to explore and explain COBOL before any conversion happens, and vendors with incentive to oversell (like Rocket Software) are publicly cautioning that AI-converted code can be functionally identical but no more maintainable."
+    },
+    {
+      "title": "OCBC harnesses agentic AI for faster onboarding of wealthy customers (HELIOS)",
+      "url": "https://www.ocbc.com/group/media/release/2026/ocbc-harnesses-agentic-ai-to-quicken-onboarding-customers.page",
+      "source": "OCBC Holdings",
+      "published": "2026-07",
+      "format": "article",
+      "est_minutes": 6,
+      "level": "intro",
+      "track": "banking",
+      "bite": "OCBC's private bank is running an agentic onboarding system live in three markets, with over 100 relationship managers using it and roughly 50 clients fully onboarded so far. It front-loads KYC data gathering and relationship-network mapping before the relationship manager ever meets the prospect, cutting median account-opening time from about six weeks to 15 business days — while humans still make every final call. It's a rare case of a named institution publishing checkable production numbers rather than a vendor's projected range.",
+      "read_if": "Read if you need a concrete, named reference case for agentic AI in wealth onboarding; skip if your buyer is retail banking, not private wealth.",
+      "key_takeaway": "OCBC's Bank of Singapore is running HELIOS live across three markets with over 100 relationship managers and roughly 50 clients fully onboarded, cutting median private-banking account opening from about six weeks to 15 business days by front-loading KYC data collection and relationship-network mapping before the RM ever engages the prospect — while keeping RMs and compliance as the final decision-makers."
+    }
+  ],
+  "counts": {
+    "agentic": 1,
+    "banking": 2,
+    "terms": 5
+  }
+}

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Learning Brief — 2026-08-18</title>
+<title>Learning Brief — 2026-08-22</title>
 <style>
 :root {
   --bg: #fbfaf8; --surface: #ffffff; --ink: #1a1a19; --muted: #6b6a66;
@@ -120,36 +120,30 @@ footer { margin-top: 3.5rem; color: var(--muted); font-size: 0.8rem; }
   </section>
   <section>
     <h2>Dates</h2>
-    <details open><summary>August 2026 <span class="count">10</span></summary><ul><li><a href="../archive/2026-08-22.html">22 Aug</a></li><li><a href="../archive/2026-08-21.html">21 Aug</a></li><li><a href="../archive/2026-08-20.html">20 Aug</a></li><li><a href="../archive/2026-08-19.html">19 Aug</a></li><li><a href="../archive/2026-08-18.html" class="on">18 Aug</a></li><li><a href="../archive/2026-08-17.html">17 Aug</a></li><li><a href="../archive/2026-08-16.html">16 Aug</a></li><li><a href="../archive/2026-08-15.html">15 Aug</a></li><li><a href="../archive/2026-08-14.html">14 Aug</a></li><li><a href="../archive/2026-08-13.html">13 Aug</a></li></ul></details>
+    <details open><summary>August 2026 <span class="count">10</span></summary><ul><li><a href="../archive/2026-08-22.html" class="on">22 Aug</a></li><li><a href="../archive/2026-08-21.html">21 Aug</a></li><li><a href="../archive/2026-08-20.html">20 Aug</a></li><li><a href="../archive/2026-08-19.html">19 Aug</a></li><li><a href="../archive/2026-08-18.html">18 Aug</a></li><li><a href="../archive/2026-08-17.html">17 Aug</a></li><li><a href="../archive/2026-08-16.html">16 Aug</a></li><li><a href="../archive/2026-08-15.html">15 Aug</a></li><li><a href="../archive/2026-08-14.html">14 Aug</a></li><li><a href="../archive/2026-08-13.html">13 Aug</a></li></ul></details>
   </section>
 </aside>
 <main>
-<p class="date">Tuesday, 18 August 2026</p>
-<p class="intro">Today&#x27;s material pairs a rigorous new vocabulary for why agent benchmarks lie with the first real regulatory and internal-bank evidence of what happens when you actually ship an agent into a high-stakes financial workflow.</p>
+<p class="date">Saturday, 22 August 2026</p>
+<p class="intro">Three pieces today triangulate the same practical question from different angles: a math paper on exactly when adding more agents stops helping, a reality check on what AI can and can&#x27;t yet do in mainframe modernization, and a named bank&#x27;s live agentic deployment with real numbers to compare against the hype in the other two.</p>
 <h2 class="sec">Agentic AI</h2>    <article class="card">
-      <h3><a href="https://arxiv.org/abs/2602.16666" rel="noopener">Towards a Science of AI Agent Reliability</a></h3>
-      <p class="meta"><span>Princeton University (Rabanser, Kapoor, Kirgis, Liu, Utpala, Narayanan) — accepted ICML 2026</span><span>published 2026-02</span><span>paper</span><span>40 min</span><span>deep</span></p>
-      <p class="bite">A single accuracy score hides four separate things that can go wrong: the same agent giving different answers to the identical task, breaking when instructions are reworded but not changed in meaning, not knowing when it&#x27;s wrong, and occasionally failing in unbounded, severe ways. Across 18 months of frontier model releases, raw accuracy improved much faster than any of these four measures did — meaning newer, higher-scoring models aren&#x27;t necessarily more trustworthy, just more capable.</p>
-<p class="readif">Read if you need sharper language to question a vendor&#x27;s benchmark claim; skip if you just want a general AI news update.</p>
-    </article>
-    <article class="card">
-      <h3><a href="https://arxiv.org/abs/2605.08545" rel="noopener">Log analysis is necessary for credible evaluation of AI agents</a></h3>
-      <p class="meta"><span>Princeton University, UK AISI, Apollo Research, Transluce, Meridian Labs, UC Berkeley (Kirgis, Kapoor, Rabanser, Narayanan et al.)</span><span>published 2026-05</span><span>paper</span><span>25 min</span><span>working</span></p>
-      <p class="bite">Researchers re-examined a standard customer-service agent benchmark by reading the actual execution logs instead of trusting the pass/fail score, and found the benchmark had undersold the agent&#x27;s real capability by nearly 50% because of flawed test tasks. In the same logs they also found the agent taking risky financial actions — wrong refund amounts, wrong payment methods — that the pass/fail number never surfaced at all.</p>
-<p class="readif">Read if a customer will ask how a vendor&#x27;s agent was tested before going live; skip if evaluation methodology isn&#x27;t part of your deals.</p>
+      <h3><a href="https://arxiv.org/abs/2601.17311" rel="noopener">Phase Transition for Budgeted Multi-Agent Synergy</a></h3>
+      <p class="meta"><span>Bang Liu, Linglong Kong, Jian Pei (Université de Montréal/Mila, U Alberta, Duke)</span><span>published 2026-01</span><span>paper</span><span>30 min</span><span>deep</span></p>
+      <p class="bite">Under a fixed compute budget, throwing more agents at a problem only beats a single well-run agent when a measurable property of how the agents are organized exceeds how well that single agent scales on its own. Below that threshold, coordination overhead, lossy messages between agents, and correlated failures mean more agents produces flat or worse results — not a diminishing-but-positive return, a genuine reversal. The paper gives this a precise, calculable cutoff rather than leaving it as a vague intuition.</p>
+<p class="readif">Read if you need a rigorous answer for &#x27;why not just add more agents&#x27; in a sales or architecture conversation; skip if you just need the practical bottom line, not the math.</p>
     </article><h2 class="sec">AI in Banking</h2>    <article class="card">
-      <h3><a href="https://www.fsb.org/uploads/P100626.pdf" rel="noopener">Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Consultation report</a></h3>
-      <p class="meta"><span>Financial Stability Board</span><span>published 2026-06</span><span>docs</span><span>30 min</span><span>working</span></p>
-      <p class="bite">The first international supervisory framework aimed specifically at agentic AI in banks is built on named case studies rather than abstract principles. Its flagship example: a globally systemic bank built an in-house fraud-detection agent in three months that watches over 80 million signals a day and drafts new detection rules — but every single rule it proposes still goes to a human analyst for approval before going live. Regulators hold this up as the model to follow, while noting plainly that manual approval of every action won&#x27;t hold up once agent activity keeps growing.</p>
-<p class="readif">Read if you&#x27;re in risk or compliance conversations with a bank; skip if you&#x27;re not selling into regulated financial services.</p>
+      <h3><a href="https://openmainframeproject.org/blog/summer-mentorship-2026-discovery-is-not-migration-where-ai-actually-stands-for-mainframe-modernization/" rel="noopener">Summer Mentorship 2026: Discovery Is Not Migration — Where AI Actually Stands for Mainframe Modernization</a></h3>
+      <p class="meta"><span>Open Mainframe Project (Linux Foundation)</span><span>published 2026-07</span><span>article</span><span>10 min</span><span>working</span></p>
+      <p class="bite">The credible, currently-working use of AI in mainframe modernization is exploring and documenting what old COBOL code actually does — not automatically rewriting or migrating it. Even the incumbent vendor&#x27;s own tooling is sequenced to explain the legacy logic first, before any conversion is attempted, and other vendors with a commercial reason to talk up automated migration are instead publicly warning that AI-converted code can run identically but still be no easier to maintain. This is the piece that reconciles the two loud, contradictory 2026 headlines about mainframe AI you&#x27;ve probably already seen.</p>
+<p class="readif">Read if you&#x27;re selling anything into a bank with a mainframe estate; skip if your accounts have none.</p>
     </article>
     <article class="card">
-      <h3><a href="https://www.bankofengland.co.uk/minutes/2026/february/summary-of-ai-roundtables-feb-2026" rel="noopener">Summary of AI roundtables - February 2026</a></h3>
-      <p class="meta"><span>Bank of England</span><span>published 2026-02</span><span>docs</span><span>8 min</span><span>intro</span></p>
-      <p class="bite">In closed-door sessions, UK challenger banks, global banks, and insurers told the Bank of England the same thing: they don&#x27;t want new AI-specific regulation or a dedicated AI sandbox. They believe the existing principles-based supervisory framework, particularly the rules already governing model risk management, gives them enough room to deploy AI responsibly.</p>
-<p class="readif">Read if you need to tell genuine regulatory caution apart from a stalling tactic at a specific bank; skip otherwise.</p>
+      <h3><a href="https://www.ocbc.com/group/media/release/2026/ocbc-harnesses-agentic-ai-to-quicken-onboarding-customers.page" rel="noopener">OCBC harnesses agentic AI for faster onboarding of wealthy customers (HELIOS)</a></h3>
+      <p class="meta"><span>OCBC Holdings</span><span>published 2026-07</span><span>article</span><span>6 min</span><span>intro</span></p>
+      <p class="bite">OCBC&#x27;s private bank is running an agentic onboarding system live in three markets, with over 100 relationship managers using it and roughly 50 clients fully onboarded so far. It front-loads KYC data gathering and relationship-network mapping before the relationship manager ever meets the prospect, cutting median account-opening time from about six weeks to 15 business days — while humans still make every final call. It&#x27;s a rare case of a named institution publishing checkable production numbers rather than a vendor&#x27;s projected range.</p>
+<p class="readif">Read if you need a concrete, named reference case for agentic AI in wealth onboarding; skip if your buyer is retail banking, not private wealth.</p>
     </article>
-<nav class="pager"><a href="../archive/2026-08-17.html">&larr; 2026-08-17</a><a href="../archive/index.html">All briefs</a><a href="../archive/2026-08-19.html">2026-08-19 &rarr;</a></nav>
+<nav class="pager"><a href="../archive/2026-08-21.html">&larr; 2026-08-21</a><a href="../archive/index.html">All briefs</a><span></span></nav>
 </main>
 </div>
 <footer>Generated automatically each morning. Sources link out to the original.</footer>
