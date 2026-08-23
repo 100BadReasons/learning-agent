@@ -57,7 +57,10 @@
     "https://arxiv.org/abs/2605.29442": "2026-08-21",
     "https://arxiv.org/abs/2601.17311": "2026-08-22",
     "https://openmainframeproject.org/blog/summer-mentorship-2026-discovery-is-not-migration-where-ai-actually-stands-for-mainframe-modernization": "2026-08-22",
-    "https://ocbc.com/group/media/release/2026/ocbc-harnesses-agentic-ai-to-quicken-onboarding-customers.page": "2026-08-22"
+    "https://ocbc.com/group/media/release/2026/ocbc-harnesses-agentic-ai-to-quicken-onboarding-customers.page": "2026-08-22",
+    "https://developers.googleblog.com/production-ready-ai-agents-5-lessons-from-refactoring-a-monolith": "2026-08-23",
+    "https://bankingsupervision.europa.eu/press/letterstobanks/shared/pdf/2026/ssm.2026_letter_on_ai_enabled_cybersecurity_threats.en.pdf": "2026-08-23",
+    "https://investors.fiserv.com/news-releases/news-release-details/fiserv-launches-agentos-operating-system-agentic-ai-banking": "2026-08-23"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -117,6 +120,9 @@
     "how coding agents fail their users a large scale analysis of developer agent misalignment in 20 574 real world sessions": "2026-08-21",
     "phase transition for budgeted multi agent synergy": "2026-08-22",
     "summer mentorship 2026 discovery is not migration where ai actually stands for mainframe modernization": "2026-08-22",
-    "ocbc harnesses agentic ai for faster onboarding of wealthy customers helios": "2026-08-22"
+    "ocbc harnesses agentic ai for faster onboarding of wealthy customers helios": "2026-08-22",
+    "production ready ai agents 5 lessons from refactoring a monolith": "2026-08-23",
+    "addressing ai enabled cybersecurity threats letter ssm 2026 0301 to significant institutions": "2026-08-23",
+    "fiserv launches agentos the operating system for agentic ai in banking": "2026-08-23"
   }
 }

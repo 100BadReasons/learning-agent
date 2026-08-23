@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-23",
+  "generated_at": "2026-08-23T11:15:20+00:00",
+  "intro": "Three unconnected but useful data points today: a concrete lesson on how a real sales-research agent breaks and gets fixed in production, a hard regulatory deadline forcing EU banks to fold AI-driven cyber risk into existing resilience programs, and a core-banking platform vendor turning agent governance into a built-in feature for banks too small to build it themselves.",
+  "cards": [
+    {
+      "title": "Production-Ready AI Agents: 5 Lessons from Refactoring a Monolith",
+      "url": "https://developers.googleblog.com/production-ready-ai-agents-5-lessons-from-refactoring-a-monolith/",
+      "source": "Google Developers Blog",
+      "published": "2026-04",
+      "format": "article",
+      "est_minutes": 15,
+      "level": "working",
+      "track": "agentic",
+      "bite": "A single-script sales-research agent kept silently stalling because one failed sub-task took down the whole pipeline with no clear failure point. The fix wasn't a better model — it was breaking the monolith into narrow, independently-testable sub-agents (a Company Researcher, a Case Study Researcher, a Selector, an Email Drafter) each responsible for one job, plus circuit breakers that cap runaway token spend when something goes wrong. The lesson generalizes: agent reliability problems are usually architecture problems wearing an AI costume.",
+      "read_if": "Read if you sell or evaluate agent tooling and want a believable, specific failure story rather than a vendor pitch; skip if you only care about banking-specific outcomes.",
+      "key_takeaway": "The original agent's biggest problem wasn't the model, it was architecture: a single linear script meant one failed sub-task silently stalled the entire pipeline, and the fix was decomposing it into narrow, independently-testable sub-agents (Company Researcher, Case Study Researcher, Selector, Email Drafter) plus circuit breakers to cap runaway token spend."
+    },
+    {
+      "title": "Addressing AI-enabled cybersecurity threats (Letter SSM-2026-0301 to significant institutions)",
+      "url": "https://www.bankingsupervision.europa.eu/press/letterstobanks/shared/pdf/2026/ssm.2026_letter_on_AI_enabled_cybersecurity_threats.en.pdf",
+      "source": "ECB Banking Supervision",
+      "published": "2026-07",
+      "format": "docs",
+      "est_minutes": 15,
+      "level": "working",
+      "track": "banking",
+      "bite": "The ECB just sent its first letter to banks in over four years, and it's not a new AI rulebook — it's an instruction to fold AI-accelerated cyber threats into resilience programs banks already run under existing EU digital-operational-resilience rules. Every euro-area significant institution now owes its supervisory team a board-owned action plan by October 31, 2026, with a cross-bank comparison to follow. The message: frontier AI has shortened the gap between a discovered vulnerability and an actual exploit, so existing risk programs have to explicitly account for that speed.",
+      "read_if": "Read if you sell into EU banks and need a real date to anchor a compliance-driven conversation; skip if your book is US-only.",
+      "key_takeaway": "The ECB is not writing new AI rules; it is telling the ~110 banks it directly supervises that frontier AI has compressed the vulnerability-to-exploit timeline enough that DORA-mandated ICT resilience programs must now explicitly account for AI-accelerated attacks, with a board-owned action plan due by 31 October 2026 and a horizontal peer analysis to follow."
+    },
+    {
+      "title": "Fiserv Launches agentOS: The Operating System for Agentic AI in Banking",
+      "url": "https://investors.fiserv.com/news-releases/news-release-details/fiserv-launches-agentos-operating-system-agentic-ai-banking",
+      "source": "Fiserv, Inc.",
+      "published": "2026-05",
+      "format": "docs",
+      "est_minutes": 10,
+      "level": "working",
+      "track": "banking",
+      "bite": "Fiserv is packaging agent governance — identity-bound execution, policy enforcement, observability, audit trails — as built-in infrastructure rather than something each bank has to assemble, and launching it with a marketplace of Fiserv-built and third-party agents (OpenAI and AWS among the launch partners). For the thousands of mid-sized banks and credit unions running on Fiserv's core, payments, and servicing rails, this means agent governance arrives pre-installed instead of requiring a build-out. That materially changes what a smaller institution needs to buy versus what it already gets by staying on the platform.",
+      "read_if": "Read if you sell orchestration, governance, or observability tooling to community banks or credit unions; skip if your accounts are large banks running their own stacks.",
+      "key_takeaway": "agentOS bundles identity-bound execution, policy enforcement, observability and traceability as native platform primitives and ships with a marketplace of Fiserv-built and third-party agents (with OpenAI and AWS as launch collaborators), meaning banks on this stack get governance-by-design agent infrastructure rather than having to assemble it themselves."
+    }
+  ],
+  "counts": {
+    "agentic": 1,
+    "banking": 2,
+    "terms": 5
+  }
+}

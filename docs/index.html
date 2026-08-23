@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Learning Brief — 2026-08-22</title>
+<title>Learning Brief — 2026-08-23</title>
 <style>
 :root {
   --bg: #fbfaf8; --surface: #ffffff; --ink: #1a1a19; --muted: #6b6a66;
@@ -116,34 +116,34 @@ footer { margin-top: 3.5rem; color: var(--muted); font-size: 0.8rem; }
 <aside class="side">
   <section>
     <h2>Topics</h2>
-    <ul><li><a href="topics/agentic.html">Agentic AI</a> <span class="count">23</span></li><li><a href="topics/banking.html">AI in Banking</a> <span class="count">23</span></li><li><a href="topics/terms.html">Key Terms</a></li></ul>
+    <ul><li><a href="topics/agentic.html">Agentic AI</a> <span class="count">24</span></li><li><a href="topics/banking.html">AI in Banking</a> <span class="count">25</span></li><li><a href="topics/terms.html">Key Terms</a></li></ul>
   </section>
   <section>
     <h2>Dates</h2>
-    <details open><summary>August 2026 <span class="count">10</span></summary><ul><li><a href="archive/2026-08-22.html" class="on">22 Aug</a></li><li><a href="archive/2026-08-21.html">21 Aug</a></li><li><a href="archive/2026-08-20.html">20 Aug</a></li><li><a href="archive/2026-08-19.html">19 Aug</a></li><li><a href="archive/2026-08-18.html">18 Aug</a></li><li><a href="archive/2026-08-17.html">17 Aug</a></li><li><a href="archive/2026-08-16.html">16 Aug</a></li><li><a href="archive/2026-08-15.html">15 Aug</a></li><li><a href="archive/2026-08-14.html">14 Aug</a></li><li><a href="archive/2026-08-13.html">13 Aug</a></li></ul></details>
+    <details open><summary>August 2026 <span class="count">11</span></summary><ul><li><a href="archive/2026-08-23.html" class="on">23 Aug</a></li><li><a href="archive/2026-08-22.html">22 Aug</a></li><li><a href="archive/2026-08-21.html">21 Aug</a></li><li><a href="archive/2026-08-20.html">20 Aug</a></li><li><a href="archive/2026-08-19.html">19 Aug</a></li><li><a href="archive/2026-08-18.html">18 Aug</a></li><li><a href="archive/2026-08-17.html">17 Aug</a></li><li><a href="archive/2026-08-16.html">16 Aug</a></li><li><a href="archive/2026-08-15.html">15 Aug</a></li><li><a href="archive/2026-08-14.html">14 Aug</a></li><li><a href="archive/2026-08-13.html">13 Aug</a></li></ul></details>
   </section>
 </aside>
 <main>
-<p class="date">Saturday, 22 August 2026</p>
-<p class="intro">Three pieces today triangulate the same practical question from different angles: a math paper on exactly when adding more agents stops helping, a reality check on what AI can and can&#x27;t yet do in mainframe modernization, and a named bank&#x27;s live agentic deployment with real numbers to compare against the hype in the other two.</p>
+<p class="date">Sunday, 23 August 2026</p>
+<p class="intro">Three unconnected but useful data points today: a concrete lesson on how a real sales-research agent breaks and gets fixed in production, a hard regulatory deadline forcing EU banks to fold AI-driven cyber risk into existing resilience programs, and a core-banking platform vendor turning agent governance into a built-in feature for banks too small to build it themselves.</p>
 <h2 class="sec">Agentic AI</h2>    <article class="card">
-      <h3><a href="https://arxiv.org/abs/2601.17311" rel="noopener">Phase Transition for Budgeted Multi-Agent Synergy</a></h3>
-      <p class="meta"><span>Bang Liu, Linglong Kong, Jian Pei (Université de Montréal/Mila, U Alberta, Duke)</span><span>published 2026-01</span><span>paper</span><span>30 min</span><span>deep</span></p>
-      <p class="bite">Under a fixed compute budget, throwing more agents at a problem only beats a single well-run agent when a measurable property of how the agents are organized exceeds how well that single agent scales on its own. Below that threshold, coordination overhead, lossy messages between agents, and correlated failures mean more agents produces flat or worse results — not a diminishing-but-positive return, a genuine reversal. The paper gives this a precise, calculable cutoff rather than leaving it as a vague intuition.</p>
-<p class="readif">Read if you need a rigorous answer for &#x27;why not just add more agents&#x27; in a sales or architecture conversation; skip if you just need the practical bottom line, not the math.</p>
+      <h3><a href="https://developers.googleblog.com/production-ready-ai-agents-5-lessons-from-refactoring-a-monolith/" rel="noopener">Production-Ready AI Agents: 5 Lessons from Refactoring a Monolith</a></h3>
+      <p class="meta"><span>Google Developers Blog</span><span>published 2026-04</span><span>article</span><span>15 min</span><span>working</span></p>
+      <p class="bite">A single-script sales-research agent kept silently stalling because one failed sub-task took down the whole pipeline with no clear failure point. The fix wasn&#x27;t a better model — it was breaking the monolith into narrow, independently-testable sub-agents (a Company Researcher, a Case Study Researcher, a Selector, an Email Drafter) each responsible for one job, plus circuit breakers that cap runaway token spend when something goes wrong. The lesson generalizes: agent reliability problems are usually architecture problems wearing an AI costume.</p>
+<p class="readif">Read if you sell or evaluate agent tooling and want a believable, specific failure story rather than a vendor pitch; skip if you only care about banking-specific outcomes.</p>
     </article><h2 class="sec">AI in Banking</h2>    <article class="card">
-      <h3><a href="https://openmainframeproject.org/blog/summer-mentorship-2026-discovery-is-not-migration-where-ai-actually-stands-for-mainframe-modernization/" rel="noopener">Summer Mentorship 2026: Discovery Is Not Migration — Where AI Actually Stands for Mainframe Modernization</a></h3>
-      <p class="meta"><span>Open Mainframe Project (Linux Foundation)</span><span>published 2026-07</span><span>article</span><span>10 min</span><span>working</span></p>
-      <p class="bite">The credible, currently-working use of AI in mainframe modernization is exploring and documenting what old COBOL code actually does — not automatically rewriting or migrating it. Even the incumbent vendor&#x27;s own tooling is sequenced to explain the legacy logic first, before any conversion is attempted, and other vendors with a commercial reason to talk up automated migration are instead publicly warning that AI-converted code can run identically but still be no easier to maintain. This is the piece that reconciles the two loud, contradictory 2026 headlines about mainframe AI you&#x27;ve probably already seen.</p>
-<p class="readif">Read if you&#x27;re selling anything into a bank with a mainframe estate; skip if your accounts have none.</p>
+      <h3><a href="https://www.bankingsupervision.europa.eu/press/letterstobanks/shared/pdf/2026/ssm.2026_letter_on_AI_enabled_cybersecurity_threats.en.pdf" rel="noopener">Addressing AI-enabled cybersecurity threats (Letter SSM-2026-0301 to significant institutions)</a></h3>
+      <p class="meta"><span>ECB Banking Supervision</span><span>published 2026-07</span><span>docs</span><span>15 min</span><span>working</span></p>
+      <p class="bite">The ECB just sent its first letter to banks in over four years, and it&#x27;s not a new AI rulebook — it&#x27;s an instruction to fold AI-accelerated cyber threats into resilience programs banks already run under existing EU digital-operational-resilience rules. Every euro-area significant institution now owes its supervisory team a board-owned action plan by October 31, 2026, with a cross-bank comparison to follow. The message: frontier AI has shortened the gap between a discovered vulnerability and an actual exploit, so existing risk programs have to explicitly account for that speed.</p>
+<p class="readif">Read if you sell into EU banks and need a real date to anchor a compliance-driven conversation; skip if your book is US-only.</p>
     </article>
     <article class="card">
-      <h3><a href="https://www.ocbc.com/group/media/release/2026/ocbc-harnesses-agentic-ai-to-quicken-onboarding-customers.page" rel="noopener">OCBC harnesses agentic AI for faster onboarding of wealthy customers (HELIOS)</a></h3>
-      <p class="meta"><span>OCBC Holdings</span><span>published 2026-07</span><span>article</span><span>6 min</span><span>intro</span></p>
-      <p class="bite">OCBC&#x27;s private bank is running an agentic onboarding system live in three markets, with over 100 relationship managers using it and roughly 50 clients fully onboarded so far. It front-loads KYC data gathering and relationship-network mapping before the relationship manager ever meets the prospect, cutting median account-opening time from about six weeks to 15 business days — while humans still make every final call. It&#x27;s a rare case of a named institution publishing checkable production numbers rather than a vendor&#x27;s projected range.</p>
-<p class="readif">Read if you need a concrete, named reference case for agentic AI in wealth onboarding; skip if your buyer is retail banking, not private wealth.</p>
+      <h3><a href="https://investors.fiserv.com/news-releases/news-release-details/fiserv-launches-agentos-operating-system-agentic-ai-banking" rel="noopener">Fiserv Launches agentOS: The Operating System for Agentic AI in Banking</a></h3>
+      <p class="meta"><span>Fiserv, Inc.</span><span>published 2026-05</span><span>docs</span><span>10 min</span><span>working</span></p>
+      <p class="bite">Fiserv is packaging agent governance — identity-bound execution, policy enforcement, observability, audit trails — as built-in infrastructure rather than something each bank has to assemble, and launching it with a marketplace of Fiserv-built and third-party agents (OpenAI and AWS among the launch partners). For the thousands of mid-sized banks and credit unions running on Fiserv&#x27;s core, payments, and servicing rails, this means agent governance arrives pre-installed instead of requiring a build-out. That materially changes what a smaller institution needs to buy versus what it already gets by staying on the platform.</p>
+<p class="readif">Read if you sell orchestration, governance, or observability tooling to community banks or credit unions; skip if your accounts are large banks running their own stacks.</p>
     </article>
-<nav class="pager"><a href="archive/2026-08-21.html">&larr; 2026-08-21</a><a href="archive/index.html">All briefs</a><span></span></nav>
+<nav class="pager"><a href="archive/2026-08-22.html">&larr; 2026-08-22</a><a href="archive/index.html">All briefs</a><span></span></nav>
 </main>
 </div>
 <footer>Generated automatically each morning. Sources link out to the original.</footer>
