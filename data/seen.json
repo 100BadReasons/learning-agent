@@ -62,7 +62,10 @@
     "https://bankingsupervision.europa.eu/press/letterstobanks/shared/pdf/2026/ssm.2026_letter_on_ai_enabled_cybersecurity_threats.en.pdf": "2026-08-23",
     "https://investors.fiserv.com/news-releases/news-release-details/fiserv-launches-agentos-operating-system-agentic-ai-banking": "2026-08-23",
     "https://theregister.com/2026/05/12/us-bank-reports-itself-after-ai-customer-data-mishap": "2026-08-24",
-    "https://forrester.com/blogs/agentic-payments-in-b2c-commerce-where-we-are-now": "2026-08-24"
+    "https://forrester.com/blogs/agentic-payments-in-b2c-commerce-where-we-are-now": "2026-08-24",
+    "https://cameronrwolfe.substack.com/p/agent-evals": "2026-09-03",
+    "https://bankingsupervision.europa.eu/press/speeches/date/2026/html/ssm.sp260224~6c5b64a77a.en.html": "2026-09-03",
+    "https://hsbc.com/who-we-are/hsbc-and-digital/hsbc-and-ai/transforming-hsbc-with-ai": "2026-09-03"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -127,6 +130,9 @@
     "addressing ai enabled cybersecurity threats letter ssm 2026 0301 to significant institutions": "2026-08-23",
     "fiserv launches agentos the operating system for agentic ai in banking": "2026-08-23",
     "us bank reports itself after slinging customer data at unauthorized ai app": "2026-08-24",
-    "agentic payments in b2c commerce where we are now": "2026-08-24"
+    "agentic payments in b2c commerce where we are now": "2026-08-24",
+    "agent evaluation a detailed guide": "2026-09-03",
+    "technology is neutral governance is not ai adoption in the banking sector": "2026-09-03",
+    "transforming hsbc with ai": "2026-09-03"
   }
 }

@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-03",
+  "generated_at": "2026-09-03T14:49:18+00:00",
+  "intro": "Today's material is thin but pointed: one rigorous look at how to actually test whether an agent works, and two banking pieces that show the gap between what regulators say governance requires and what a leading bank claims to have already deployed at scale.",
+  "cards": [
+    {
+      "title": "Agent Evaluation: A Detailed Guide",
+      "url": "https://cameronrwolfe.substack.com/p/agent-evals",
+      "source": "Deep (Learning) Focus — Cameron R. Wolfe, Ph.D.",
+      "published": "2026-05",
+      "format": "article",
+      "est_minutes": 25,
+      "level": "working",
+      "track": "agentic",
+      "bite": "A single benchmark score tells you almost nothing about whether an agent will hold up in production. Real evaluation means inspecting full execution traces, building human-verified 'correct' answers to compare against, and treating your test suite as something that keeps growing every time the agent fails in a new way once it's live. Static, one-time testing is effectively theater.",
+      "read_if": "Read if you need to answer 'how do we know it's working' credibly in a sales or deployment conversation; skip if you just want a product overview.",
+      "key_takeaway": "Single-run, held-out benchmark scores are close to meaningless for agents; real evaluation requires trace-level inspection, human-verified oracle solutions, and treating the eval suite as a living artifact that grows every time the agent fails in a new way in production."
+    },
+    {
+      "title": "Technology is neutral, governance is not: AI adoption in the banking sector",
+      "url": "https://www.bankingsupervision.europa.eu/press/speeches/date/2026/html/ssm.sp260224~6c5b64a77a.en.html",
+      "source": "European Central Bank / SSM (Pedro Machado, Supervisory Board)",
+      "published": "2026-02",
+      "format": "article",
+      "est_minutes": 12,
+      "level": "working",
+      "track": "banking",
+      "bite": "The ECB's own supervisor says over 85% of significant European banks already use AI, but ownership of AI-driven decisions is routinely split across IT, data science, and business lines with nobody clearly accountable. The speech is explicit that generative and agentic AI can't just be bolted onto existing model-risk frameworks — the control gaps are structural, not incidental.",
+      "read_if": "Read if you sell into bank risk or compliance functions and need to know exactly what they'll be graded on before approving new AI; skip if you only care about deployment wins.",
+      "key_takeaway": "More than 85% of significant European banks already use AI, but the ECB has found accountability for AI-driven decisions frequently fragmented across IT, data science and business lines with no single owner — and it explicitly states that generative and agentic AI cannot be governed by simply extending existing model-risk frameworks."
+    },
+    {
+      "title": "Transforming HSBC with AI",
+      "url": "https://www.hsbc.com/who-we-are/hsbc-and-digital/hsbc-and-ai/transforming-hsbc-with-ai",
+      "source": "HSBC Holdings plc",
+      "published": "2026-06",
+      "format": "article",
+      "est_minutes": 6,
+      "level": "intro",
+      "track": "banking",
+      "bite": "HSBC publishes hard numbers instead of a flagship pilot story: 600+ AI use cases live, 20,000+ developers on coding assistants for a 15% time reduction, a generative AI assistant handling 3 million corporate and institutional banking interactions a year with 88% client satisfaction, and generative AI now writing directly into credit-application workflows.",
+      "read_if": "Read if you want a concrete benchmark of what 'AI maturity' looks like at a global bank; skip if you've already seen HSBC's investor-day AI numbers.",
+      "key_takeaway": "HSBC runs over 600 AI use cases in production and reports specific, checkable numbers rather than vague claims: 20,000+ developers on coding assistants for a 15% coding-time reduction, a generative AI assistant handling 3 million CIB client interactions a year with 88% of clients rating service easy, and generative AI now embedded directly in credit-application write-ups."
+    }
+  ],
+  "counts": {
+    "agentic": 1,
+    "banking": 2,
+    "terms": 5
+  }
+}
