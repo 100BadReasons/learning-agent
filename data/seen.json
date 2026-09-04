@@ -65,7 +65,11 @@
     "https://forrester.com/blogs/agentic-payments-in-b2c-commerce-where-we-are-now": "2026-08-24",
     "https://cameronrwolfe.substack.com/p/agent-evals": "2026-09-03",
     "https://bankingsupervision.europa.eu/press/speeches/date/2026/html/ssm.sp260224~6c5b64a77a.en.html": "2026-09-03",
-    "https://hsbc.com/who-we-are/hsbc-and-digital/hsbc-and-ai/transforming-hsbc-with-ai": "2026-09-03"
+    "https://hsbc.com/who-we-are/hsbc-and-digital/hsbc-and-ai/transforming-hsbc-with-ai": "2026-09-03",
+    "https://huggingface.co/blog/agent-intrusion-technical-timeline": "2026-09-04",
+    "https://openai.com/index/hugging-face-incident-and-the-road-ahead": "2026-09-04",
+    "https://computerweekly.com/news/366644173/ing-increases-use-of-ai-in-mortgage-application-process": "2026-09-04",
+    "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force": "2026-09-04"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -133,6 +137,10 @@
     "agentic payments in b2c commerce where we are now": "2026-08-24",
     "agent evaluation a detailed guide": "2026-09-03",
     "technology is neutral governance is not ai adoption in the banking sector": "2026-09-03",
-    "transforming hsbc with ai": "2026-09-03"
+    "transforming hsbc with ai": "2026-09-03",
+    "anatomy of a frontier lab agent intrusion a technical timeline of the july 2026 incident": "2026-09-04",
+    "the hugging face incident and the road ahead": "2026-09-04",
+    "ing increases use of ai in mortgage application process": "2026-09-04",
+    "ai omnibus enters into force": "2026-09-04"
   }
 }
