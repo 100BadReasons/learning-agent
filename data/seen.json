@@ -69,7 +69,10 @@
     "https://huggingface.co/blog/agent-intrusion-technical-timeline": "2026-09-04",
     "https://openai.com/index/hugging-face-incident-and-the-road-ahead": "2026-09-04",
     "https://computerweekly.com/news/366644173/ing-increases-use-of-ai-in-mortgage-application-process": "2026-09-04",
-    "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force": "2026-09-04"
+    "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force": "2026-09-04",
+    "https://huyenchip.com/2025/01/07/agents.html": "2026-09-05",
+    "https://santander.com/en/press-room/press-releases/2026/03/santander-and-mastercard-complete-europes-first-live-end-to-end-payment-executed-by-an-ai-agent": "2026-09-05",
+    "https://fca.org.uk/publications/corporate-documents/mills-review": "2026-09-05"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -141,6 +144,9 @@
     "anatomy of a frontier lab agent intrusion a technical timeline of the july 2026 incident": "2026-09-04",
     "the hugging face incident and the road ahead": "2026-09-04",
     "ing increases use of ai in mortgage application process": "2026-09-04",
-    "ai omnibus enters into force": "2026-09-04"
+    "ai omnibus enters into force": "2026-09-04",
+    "agents": "2026-09-05",
+    "santander and mastercard complete europe s first live end to end payment executed by an ai agent": "2026-09-05",
+    "ai and the future of retail financial services the mills review": "2026-09-05"
   }
 }

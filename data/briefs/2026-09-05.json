@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-05",
+  "generated_at": "2026-09-05T13:37:49+00:00",
+  "intro": "Today's material traces one arc end to end: what actually makes an AI system an 'agent,' a live production example of one executing a real payment inside a regulated bank, and the first regulator-initiated response to that kind of deployment.",
+  "cards": [
+    {
+      "title": "Agents",
+      "url": "https://huyenchip.com/2025/01/07/agents.html",
+      "source": "Chip Huyen",
+      "published": "2025-01",
+      "format": "article",
+      "est_minutes": 35,
+      "level": "working",
+      "track": "agentic",
+      "bite": "An agent's real capability comes down to two things: the set of tools it's allowed to call, and how well it can plan a sequence of steps using them. Most of the hard engineering work isn't in the underlying model at all — it's in deciding what tools to expose and constraining how the agent is allowed to use them. That reframing matters because it means 'agent' isn't a marketing feature, it's an architecture decision with real limits.",
+      "read_if": "Read if you want a grounded, non-marketing mental model of what an 'agent' actually is; skip if you're only after product news.",
+      "key_takeaway": "An agent's capability is bounded by two things — the set of tools it can call and its ability to plan multi-step tool use — and most of the hard engineering work is in designing and constraining that toolset, not in the model itself."
+    },
+    {
+      "title": "Santander and Mastercard complete Europe's first live end-to-end payment executed by an AI agent",
+      "url": "https://www.santander.com/en/press-room/press-releases/2026/03/santander-and-mastercard-complete-europes-first-live-end-to-end-payment-executed-by-an-ai-agent",
+      "source": "Banco Santander (press release)",
+      "published": "2026-03",
+      "format": "article",
+      "est_minutes": 5,
+      "level": "intro",
+      "track": "banking",
+      "bite": "A top-20 global bank ran an AI-agent-initiated payment through its actual live payments infrastructure, not an isolated test environment, using tokenized agent-payment rails with a separate orchestrator layer in between. The point of the exercise wasn't proving the transaction could happen technically — that's the easy part — it was validating that the operational and control framework around it holds up under real regulatory conditions.",
+      "read_if": "Read if you need a citable, real-world proof point for a bank prospect asking 'has this actually been done in production?'; skip if you don't sell into payments or banking infrastructure.",
+      "key_takeaway": "Santander deliberately ran the AI-agent-initiated transaction through its live payments infrastructure (not an isolated test environment) specifically to validate the end-to-end operational and control framework under real regulatory conditions — the story is the control wrapper, not the transaction itself."
+    },
+    {
+      "title": "AI and the future of retail financial services (The Mills Review)",
+      "url": "https://www.fca.org.uk/publications/corporate-documents/mills-review",
+      "source": "UK Financial Conduct Authority",
+      "published": "2026-07",
+      "format": "docs",
+      "est_minutes": 35,
+      "level": "deep",
+      "track": "banking",
+      "bite": "A UK financial regulator, not an industry group, has published the first major study on how agentic AI should be governed in retail financial services — and it's proposing new supervisory machinery, including a trusted-identity framework for agents and an autonomy-spectrum model for who's accountable when one acts. Its own verdict is that the existing consumer-protection and management-accountability regime is 'broadly sound' but under strain, and its top near-term move is a 3-6 month review of whether general-purpose AI providers that influence financial decisions but sit outside the regulated perimeter need to be brought inside it.",
+      "read_if": "Read if you sell into UK-regulated banks and need to anticipate what they'll be permitted to deploy over the next year; skip if your pipeline is elsewhere.",
+      "key_takeaway": "The FCA's own read is that the existing Consumer Duty/Senior Managers regime is 'broadly sound' but under strain, and its top near-term move is a 3-6 month review of the regulatory perimeter to decide whether general-purpose AI providers (Claude, Gemini, etc.) that influence financial decisions but sit outside the bank/advice perimeter need to be brought inside it."
+    }
+  ],
+  "counts": {
+    "agentic": 1,
+    "banking": 2,
+    "terms": 5
+  }
+}

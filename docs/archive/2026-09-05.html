@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Learning Brief — 2026-08-22</title>
+<title>Learning Brief — 2026-09-05</title>
 <style>
 :root {
   --bg: #fbfaf8; --surface: #ffffff; --ink: #1a1a19; --muted: #6b6a66;
@@ -120,30 +120,30 @@ footer { margin-top: 3.5rem; color: var(--muted); font-size: 0.8rem; }
   </section>
   <section>
     <h2>Dates</h2>
-    <details open><summary>September 2026 <span class="count">3</span></summary><ul><li><a href="../archive/2026-09-05.html">5 Sep</a></li><li><a href="../archive/2026-09-04.html">4 Sep</a></li><li><a href="../archive/2026-09-03.html">3 Sep</a></li></ul></details><details open><summary>August 2026 <span class="count">11</span></summary><ul><li><a href="../archive/2026-08-23.html">23 Aug</a></li><li><a href="../archive/2026-08-22.html" class="on">22 Aug</a></li><li><a href="../archive/2026-08-21.html">21 Aug</a></li><li><a href="../archive/2026-08-20.html">20 Aug</a></li><li><a href="../archive/2026-08-19.html">19 Aug</a></li><li><a href="../archive/2026-08-18.html">18 Aug</a></li><li><a href="../archive/2026-08-17.html">17 Aug</a></li><li><a href="../archive/2026-08-16.html">16 Aug</a></li><li><a href="../archive/2026-08-15.html">15 Aug</a></li><li><a href="../archive/2026-08-14.html">14 Aug</a></li><li><a href="../archive/2026-08-13.html">13 Aug</a></li></ul></details>
+    <details open><summary>September 2026 <span class="count">3</span></summary><ul><li><a href="../archive/2026-09-05.html" class="on">5 Sep</a></li><li><a href="../archive/2026-09-04.html">4 Sep</a></li><li><a href="../archive/2026-09-03.html">3 Sep</a></li></ul></details><details><summary>August 2026 <span class="count">11</span></summary><ul><li><a href="../archive/2026-08-23.html">23 Aug</a></li><li><a href="../archive/2026-08-22.html">22 Aug</a></li><li><a href="../archive/2026-08-21.html">21 Aug</a></li><li><a href="../archive/2026-08-20.html">20 Aug</a></li><li><a href="../archive/2026-08-19.html">19 Aug</a></li><li><a href="../archive/2026-08-18.html">18 Aug</a></li><li><a href="../archive/2026-08-17.html">17 Aug</a></li><li><a href="../archive/2026-08-16.html">16 Aug</a></li><li><a href="../archive/2026-08-15.html">15 Aug</a></li><li><a href="../archive/2026-08-14.html">14 Aug</a></li><li><a href="../archive/2026-08-13.html">13 Aug</a></li></ul></details>
   </section>
 </aside>
 <main>
-<p class="date">Saturday, 22 August 2026</p>
-<p class="intro">Three pieces today triangulate the same practical question from different angles: a math paper on exactly when adding more agents stops helping, a reality check on what AI can and can&#x27;t yet do in mainframe modernization, and a named bank&#x27;s live agentic deployment with real numbers to compare against the hype in the other two.</p>
+<p class="date">Saturday, 5 September 2026</p>
+<p class="intro">Today&#x27;s material traces one arc end to end: what actually makes an AI system an &#x27;agent,&#x27; a live production example of one executing a real payment inside a regulated bank, and the first regulator-initiated response to that kind of deployment.</p>
 <h2 class="sec">Agentic AI</h2>    <article class="card">
-      <h3><a href="https://arxiv.org/abs/2601.17311" rel="noopener">Phase Transition for Budgeted Multi-Agent Synergy</a></h3>
-      <p class="meta"><span>Bang Liu, Linglong Kong, Jian Pei (Université de Montréal/Mila, U Alberta, Duke)</span><span>published 2026-01</span><span>paper</span><span>30 min</span><span>deep</span></p>
-      <p class="bite">Under a fixed compute budget, throwing more agents at a problem only beats a single well-run agent when a measurable property of how the agents are organized exceeds how well that single agent scales on its own. Below that threshold, coordination overhead, lossy messages between agents, and correlated failures mean more agents produces flat or worse results — not a diminishing-but-positive return, a genuine reversal. The paper gives this a precise, calculable cutoff rather than leaving it as a vague intuition.</p>
-<p class="readif">Read if you need a rigorous answer for &#x27;why not just add more agents&#x27; in a sales or architecture conversation; skip if you just need the practical bottom line, not the math.</p>
+      <h3><a href="https://huyenchip.com/2025/01/07/agents.html" rel="noopener">Agents</a></h3>
+      <p class="meta"><span>Chip Huyen</span><span>published 2025-01</span><span>article</span><span>35 min</span><span>working</span></p>
+      <p class="bite">An agent&#x27;s real capability comes down to two things: the set of tools it&#x27;s allowed to call, and how well it can plan a sequence of steps using them. Most of the hard engineering work isn&#x27;t in the underlying model at all — it&#x27;s in deciding what tools to expose and constraining how the agent is allowed to use them. That reframing matters because it means &#x27;agent&#x27; isn&#x27;t a marketing feature, it&#x27;s an architecture decision with real limits.</p>
+<p class="readif">Read if you want a grounded, non-marketing mental model of what an &#x27;agent&#x27; actually is; skip if you&#x27;re only after product news.</p>
     </article><h2 class="sec">AI in Banking</h2>    <article class="card">
-      <h3><a href="https://openmainframeproject.org/blog/summer-mentorship-2026-discovery-is-not-migration-where-ai-actually-stands-for-mainframe-modernization/" rel="noopener">Summer Mentorship 2026: Discovery Is Not Migration — Where AI Actually Stands for Mainframe Modernization</a></h3>
-      <p class="meta"><span>Open Mainframe Project (Linux Foundation)</span><span>published 2026-07</span><span>article</span><span>10 min</span><span>working</span></p>
-      <p class="bite">The credible, currently-working use of AI in mainframe modernization is exploring and documenting what old COBOL code actually does — not automatically rewriting or migrating it. Even the incumbent vendor&#x27;s own tooling is sequenced to explain the legacy logic first, before any conversion is attempted, and other vendors with a commercial reason to talk up automated migration are instead publicly warning that AI-converted code can run identically but still be no easier to maintain. This is the piece that reconciles the two loud, contradictory 2026 headlines about mainframe AI you&#x27;ve probably already seen.</p>
-<p class="readif">Read if you&#x27;re selling anything into a bank with a mainframe estate; skip if your accounts have none.</p>
+      <h3><a href="https://www.santander.com/en/press-room/press-releases/2026/03/santander-and-mastercard-complete-europes-first-live-end-to-end-payment-executed-by-an-ai-agent" rel="noopener">Santander and Mastercard complete Europe&#x27;s first live end-to-end payment executed by an AI agent</a></h3>
+      <p class="meta"><span>Banco Santander (press release)</span><span>published 2026-03</span><span>article</span><span>5 min</span><span>intro</span></p>
+      <p class="bite">A top-20 global bank ran an AI-agent-initiated payment through its actual live payments infrastructure, not an isolated test environment, using tokenized agent-payment rails with a separate orchestrator layer in between. The point of the exercise wasn&#x27;t proving the transaction could happen technically — that&#x27;s the easy part — it was validating that the operational and control framework around it holds up under real regulatory conditions.</p>
+<p class="readif">Read if you need a citable, real-world proof point for a bank prospect asking &#x27;has this actually been done in production?&#x27;; skip if you don&#x27;t sell into payments or banking infrastructure.</p>
     </article>
     <article class="card">
-      <h3><a href="https://www.ocbc.com/group/media/release/2026/ocbc-harnesses-agentic-ai-to-quicken-onboarding-customers.page" rel="noopener">OCBC harnesses agentic AI for faster onboarding of wealthy customers (HELIOS)</a></h3>
-      <p class="meta"><span>OCBC Holdings</span><span>published 2026-07</span><span>article</span><span>6 min</span><span>intro</span></p>
-      <p class="bite">OCBC&#x27;s private bank is running an agentic onboarding system live in three markets, with over 100 relationship managers using it and roughly 50 clients fully onboarded so far. It front-loads KYC data gathering and relationship-network mapping before the relationship manager ever meets the prospect, cutting median account-opening time from about six weeks to 15 business days — while humans still make every final call. It&#x27;s a rare case of a named institution publishing checkable production numbers rather than a vendor&#x27;s projected range.</p>
-<p class="readif">Read if you need a concrete, named reference case for agentic AI in wealth onboarding; skip if your buyer is retail banking, not private wealth.</p>
+      <h3><a href="https://www.fca.org.uk/publications/corporate-documents/mills-review" rel="noopener">AI and the future of retail financial services (The Mills Review)</a></h3>
+      <p class="meta"><span>UK Financial Conduct Authority</span><span>published 2026-07</span><span>docs</span><span>35 min</span><span>deep</span></p>
+      <p class="bite">A UK financial regulator, not an industry group, has published the first major study on how agentic AI should be governed in retail financial services — and it&#x27;s proposing new supervisory machinery, including a trusted-identity framework for agents and an autonomy-spectrum model for who&#x27;s accountable when one acts. Its own verdict is that the existing consumer-protection and management-accountability regime is &#x27;broadly sound&#x27; but under strain, and its top near-term move is a 3-6 month review of whether general-purpose AI providers that influence financial decisions but sit outside the regulated perimeter need to be brought inside it.</p>
+<p class="readif">Read if you sell into UK-regulated banks and need to anticipate what they&#x27;ll be permitted to deploy over the next year; skip if your pipeline is elsewhere.</p>
     </article>
-<nav class="pager"><a href="../archive/2026-08-21.html">&larr; 2026-08-21</a><a href="../archive/index.html">All briefs</a><a href="../archive/2026-08-23.html">2026-08-23 &rarr;</a></nav>
+<nav class="pager"><a href="../archive/2026-09-04.html">&larr; 2026-09-04</a><a href="../archive/index.html">All briefs</a><span></span></nav>
 </main>
 </div>
 <footer>Generated automatically each morning. Sources link out to the original.</footer>
