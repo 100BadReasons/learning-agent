@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-06",
+  "generated_at": "2026-09-06T13:52:37+00:00",
+  "intro": "Thin day with only two banking items, but they share one useful thread: both concern AI performance claims (efficiency targets, forecast accuracy) that banks and vendors are publishing without disclosing what was actually measured.",
+  "cards": [
+    {
+      "title": "DBS Put 1,500 Bankers on Agents. The 30% Is a Goal.",
+      "url": "https://www.beri.net/article/dbs-agentic-credit-memo-1500-bankers-target-not-measured-result",
+      "source": "THE D*AI*LY BRIEF (beri.net)",
+      "published": "2026-08",
+      "format": "article",
+      "est_minutes": 8,
+      "level": "working",
+      "track": "banking",
+      "bite": "DBS expanded an AI-assisted credit-memo tool from a 150-person pilot to 1,500 relationship and credit-risk managers. The much-repeated '30% time savings' number, though, turns out to be a stated goal for the rollout, not a result DBS measured and published from the pilot. The lesson: task-level productivity claims and whole-role capacity savings are different things, and neither means much without a disclosed before-and-after baseline.",
+      "read_if": "Read if you'll be citing a peer bank's AI efficiency numbers in a sales conversation; skip if you just need the headline adoption figure.",
+      "key_takeaway": "Distinguish task-level productivity claims from capacity-level (whole-role) savings, and always ask whether a bank published a pre/post baseline before citing its efficiency number — DBS's own release describes a 'successful pilot' but does not disclose what was actually measured."
+    },
+    {
+      "title": "Global Banks Adopt Ant's Falcon Forex AI Model",
+      "url": "https://www.technology.org/2026/08/20/ant-international-falcon-tst-2-banks-forex-ai/",
+      "source": "Technology.org",
+      "published": "2026-08",
+      "format": "article",
+      "est_minutes": 6,
+      "level": "working",
+      "track": "banking",
+      "bite": "Barclays, Citi, Deutsche Bank, HSBC, Standard Chartered and others are wiring Ant International's FalconTST 2.0 time-series model into named internal platforms — BARX NetFX, Fixed FX Rates, SCALE FX — for FX and cashflow forecasting. It's solid evidence that a non-chatbot category of AI, time-series forecasting models, is actually reaching production at tier-1 banks, not just being piloted. The 93% accuracy and 60% hedging-cost-cut figures being quoted, though, are Ant's own benchmarks, and the adopting banks are also Ant's treasury and technology customers — worth remembering when reading the results as independent validation.",
+      "read_if": "Read if you track how AI model types beyond LLMs are entering bank infrastructure; skip if your focus is generative AI agents specifically.",
+      "key_takeaway": "The accuracy and cost-reduction percentages banks cite (93% forecast accuracy, 60% hedging-cost cuts) are Ant's own benchmark claims; the only independently verifiable fact is which named platform each bank actually wired the model into, and the same banks are simultaneously Ant's treasury clients and technology customers, which should temper how the partnership is read."
+    }
+  ],
+  "counts": {
+    "agentic": 0,
+    "banking": 2,
+    "terms": 5
+  }
+}
