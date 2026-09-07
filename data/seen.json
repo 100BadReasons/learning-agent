@@ -74,7 +74,12 @@
     "https://santander.com/en/press-room/press-releases/2026/03/santander-and-mastercard-complete-europes-first-live-end-to-end-payment-executed-by-an-ai-agent": "2026-09-05",
     "https://fca.org.uk/publications/corporate-documents/mills-review": "2026-09-05",
     "https://beri.net/article/dbs-agentic-credit-memo-1500-bankers-target-not-measured-result": "2026-09-06",
-    "https://technology.org/2026/08/20/ant-international-falcon-tst-2-banks-forex-ai": "2026-09-06"
+    "https://technology.org/2026/08/20/ant-international-falcon-tst-2-banks-forex-ai": "2026-09-06",
+    "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation": "2026-09-07",
+    "https://arxiv.org/abs/2608.26081": "2026-09-07",
+    "https://bankofengland.co.uk/minutes/2026/june/ai-consortium-minutes-3-june-2026": "2026-09-07",
+    "https://cnbc.com/2026/02/06/anthropic-goldman-sachs-ai-model-accounting.html": "2026-09-07",
+    "https://elibrary.imf.org/view/journals/068/2026/004/article-a001-en.xml": "2026-09-07"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -151,6 +156,11 @@
     "santander and mastercard complete europe s first live end to end payment executed by an ai agent": "2026-09-05",
     "ai and the future of retail financial services the mills review": "2026-09-05",
     "dbs put 1 500 bankers on agents the 30 is a goal": "2026-09-06",
-    "global banks adopt ant s falcon forex ai model": "2026-09-06"
+    "global banks adopt ant s falcon forex ai model": "2026-09-06",
+    "brief independent investigation of agents behavior reasoning and collaboration in the openai hugging face hacking incident": "2026-09-07",
+    "swarmworld stigmergic technological evolution in societies of language model agents": "2026-09-07",
+    "artificial intelligence consortium minutes june 2026": "2026-09-07",
+    "goldman sachs taps anthropic s claude to automate accounting compliance roles": "2026-09-07",
+    "how agentic ai will reshape payments": "2026-09-07"
   }
 }
