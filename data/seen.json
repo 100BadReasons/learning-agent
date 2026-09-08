@@ -79,7 +79,11 @@
     "https://arxiv.org/abs/2608.26081": "2026-09-07",
     "https://bankofengland.co.uk/minutes/2026/june/ai-consortium-minutes-3-june-2026": "2026-09-07",
     "https://cnbc.com/2026/02/06/anthropic-goldman-sachs-ai-model-accounting.html": "2026-09-07",
-    "https://elibrary.imf.org/view/journals/068/2026/004/article-a001-en.xml": "2026-09-07"
+    "https://elibrary.imf.org/view/journals/068/2026/004/article-a001-en.xml": "2026-09-07",
+    "https://arxiv.org/abs/2602.02475": "2026-09-08",
+    "https://arxiv.org/abs/2509.08646": "2026-09-08",
+    "https://computerweekly.com/news/366643529/natwest-inks-ai-deal-for-trade-finance": "2026-09-08",
+    "https://federalreserve.gov/newsevents/speech/bowman20260501a.htm": "2026-09-08"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -161,6 +165,10 @@
     "swarmworld stigmergic technological evolution in societies of language model agents": "2026-09-07",
     "artificial intelligence consortium minutes june 2026": "2026-09-07",
     "goldman sachs taps anthropic s claude to automate accounting compliance roles": "2026-09-07",
-    "how agentic ai will reshape payments": "2026-09-07"
+    "how agentic ai will reshape payments": "2026-09-07",
+    "agentrx diagnosing ai agent failures from execution trajectories": "2026-09-08",
+    "architecting resilient llm agents a guide to secure plan then execute implementations": "2026-09-08",
+    "natwest inks ai deal for trade finance": "2026-09-08",
+    "artificial intelligence in the financial system fsoc ai roundtable speech": "2026-09-08"
   }
 }

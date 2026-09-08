@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-08",
+  "generated_at": "2026-09-08T14:51:55+00:00",
+  "intro": "Today's four items split cleanly into two technical papers on making agents debuggable and secure, and two banking-world signals showing where AI is actually landing (trade finance back offices) and how regulators are choosing not to govern it yet (agentic AI explicitly carved out of formal model-risk rules) — together they sketch a gap between engineering rigor and regulatory catch-up that a seller should be ready to name in the room.",
+  "cards": [
+    {
+      "title": "AgentRx: Diagnosing AI Agent Failures from Execution Trajectories",
+      "url": "https://arxiv.org/abs/2602.02475",
+      "source": "Microsoft Research (arXiv)",
+      "published": "2026-02",
+      "format": "paper",
+      "est_minutes": 35,
+      "level": "working",
+      "track": "agentic",
+      "bite": "Researchers show agent failures can be automatically traced to the single step where things went wrong, by generating expected-behavior rules from the tools an agent uses and checking the agent's actual run against them step by step. The break gets sorted into one of nine recurring failure types — things like the agent abandoning its own plan versus the agent fabricating information it never actually retrieved. That turns 'the AI made a mistake' into a specific, checkable diagnosis instead of a shrug.",
+      "read_if": "Read if you need precise language for why an agent failed in a customer demo or pilot; skip if you only need the headline that failures happen.",
+      "key_takeaway": "Agent failures can be automatically localized to a single critical step by synthesizing invariants from tool schemas and checking them step-by-step against the trajectory, then classifying the break into one of nine grounded-theory-derived failure categories (e.g. plan adherence failure vs. invented information) — turning debugging from prompt guesswork into systematic engineering."
+    },
+    {
+      "title": "Architecting Resilient LLM Agents: A Guide to Secure Plan-then-Execute Implementations",
+      "url": "https://arxiv.org/abs/2509.08646",
+      "source": "arXiv (Del Rosario, Krawiecka, Schroeder de Witt)",
+      "published": "2025-09",
+      "format": "paper",
+      "est_minutes": 30,
+      "level": "working",
+      "track": "agentic",
+      "bite": "This is a hands-on blueprint for building agents where planning and execution are strictly separated, so a compromised or manipulated input can't easily hijack what the agent actually does — a structural defense against prompt injection, not just a prompting trick. It includes working implementations across three major agent frameworks. The authors are clear that this architecture alone isn't enough: it has to be paired with tightly scoped tool permissions and sandboxed execution to actually hold up.",
+      "read_if": "Read if you talk to technical buyers about agent security architecture; skip if your conversations stay at the business-outcome level.",
+      "key_takeaway": "Separating planning from execution (Plan-then-Execute) establishes control-flow integrity that makes indirect prompt injection structurally harder to exploit than reactive ReAct loops, but it only works as part of defense-in-depth alongside least-privilege tool scoping and sandboxed execution — architecture is a security control, not just a performance one."
+    },
+    {
+      "title": "NatWest inks AI deal for trade finance",
+      "url": "https://www.computerweekly.com/news/366643529/NatWest-inks-AI-deal-for-trade-finance",
+      "source": "Computer Weekly",
+      "published": "2026-05",
+      "format": "article",
+      "est_minutes": 5,
+      "level": "working",
+      "track": "banking",
+      "bite": "NatWest has signed on to use Cleareye.ai's ClearTrade platform to automate compliance checks in trade finance — the document-heavy, rules-bound process of verifying transactions against anti-money-laundering and international trade rules. Lloyds made the same move with the same vendor back in 2024, so this isn't a one-off pilot; it's a vendor repeating a proven deal across competing UK banks. It's a sign that bank AI spend is shifting from customer-facing chatbots toward unglamorous, regulation-heavy back-office work.",
+      "read_if": "Read if you sell into UK or trade-finance-adjacent banking functions; skip if your accounts don't touch trade operations.",
+      "key_takeaway": "AI adoption in banking is moving past customer chatbots into unglamorous, document-heavy regulated workflows like trade finance compliance checks, and vendors are landing repeatable deals across multiple UK banks with the same platform."
+    },
+    {
+      "title": "Artificial Intelligence in the Financial System (FSOC AI Roundtable speech)",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260501a.htm",
+      "source": "Federal Reserve Board (Vice Chair for Supervision Michelle Bowman)",
+      "published": "2026-05",
+      "format": "article",
+      "est_minutes": 12,
+      "level": "working",
+      "track": "banking",
+      "bite": "The Fed's top bank supervisor explains that the 2026 overhaul of model risk management guidance deliberately excludes generative and agentic AI from formal scope — not an oversight, but a correction, because supervisors had been stretching a 2011 framework built for statistical models onto tools it was never designed to govern. A joint request for information from the Fed, OCC, and FDIC on AI-specific model risk is coming next, meaning the current gap is a pause, not a permanent exemption.",
+      "read_if": "Read if you engage with a bank's risk, compliance, or model-governance teams; skip if your deals never touch that layer.",
+      "key_takeaway": "Together with the OCC and FDIC, the Fed narrowed model risk management guidance to exclude generative and agentic AI because supervisors had stretched the 2011 framework beyond its original intent, and a joint request for information on AI-specific model risk management is coming next."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 2,
+    "terms": 4
+  }
+}
