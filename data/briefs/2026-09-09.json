@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-09",
+  "generated_at": "2026-09-09T14:56:49+00:00",
+  "intro": "Today's material lines up two hard truths for anyone selling agentic AI into banks: the technology still can't reliably explain its own failures or its own latency costs, while banks and regulators are already producing hard numbers — headcount cuts, incident counts, production maturity — that will shape how those failures get priced and contracted.",
+  "cards": [
+    {
+      "title": "AgentHallu: Benchmarking Automated Hallucination Attribution of LLM-based Agents",
+      "url": "https://arxiv.org/abs/2601.06818",
+      "source": "arXiv (Liu, Yang, Li, Li, He)",
+      "published": "2026-01",
+      "format": "paper",
+      "est_minutes": 25,
+      "level": "working",
+      "track": "agentic",
+      "bite": "Researchers built a benchmark to test whether frontier models can pinpoint which step in a multi-step agent task caused a hallucination — not just detect that one happened. Even GPT-5 and Gemini-2.5-Pro only localize the failing step correctly 41% of the time overall, and when the failure comes from a tool call rather than the model's own reasoning, accuracy collapses to under 12%. The practical implication: an agent can execute five steps that look fine and a sixth that quietly corrupts everything after it, with today's best models barely able to trace the damage back to its source.",
+      "read_if": "Read if you need language for explaining to a customer why debugging an agent is fundamentally different from debugging a chatbot; skip if you already assume agent failures are opaque and just need the number.",
+      "key_takeaway": "Even frontier models (GPT-5, Gemini-2.5-Pro) achieve only 41.1% accuracy at localizing which step in a multi-step trajectory caused a hallucination, and tool-use hallucinations are the hardest category to catch (11.6% accuracy) — meaning your agent can look like it's working right up until a tool call quietly poisons everything downstream."
+    },
+    {
+      "title": "Orchestration Patterns for Multi-Agent Systems: Performance and Trade-offs",
+      "url": "https://devblogs.microsoft.com/ise/coordinator-patterns-multi-agent-systems/",
+      "source": "Microsoft ISE Developer Blog",
+      "published": "2026-06",
+      "format": "article",
+      "est_minutes": 18,
+      "level": "working",
+      "track": "agentic",
+      "bite": "A team migrated a production retail chatbot from a single-router setup to a four-agent coordinator architecture and measured the real cost: about 950ms of pure coordination overhead stacked on top of 500ms of actual processing work — nearly doubling response time for the same task. The point isn't that multi-agent design is bad, it's that modularity and reuse are purchased with latency and compute, not delivered for free.",
+      "read_if": "Read if you're pricing or scoping a multi-agent proposal and need honest overhead numbers instead of vendor claims; skip if latency isn't a constraint for your use case.",
+      "key_takeaway": "In this real production migration, a 4-agent coordinator pipeline added roughly 950ms of pure coordination overhead on top of 500ms of actual processing — a concrete illustration that multi-agent architecture is a latency and cost tax you pay for reuse and modularity, not a free upgrade in capability."
+    },
+    {
+      "title": "ESAs Publish the First Report on DORA Major ICT-Related Incidents",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/esas-publish-first-report-dora-major-ict-related-incidents",
+      "source": "European Banking Authority (EBA/EIOPA/ESMA)",
+      "published": "2026-06",
+      "format": "docs",
+      "est_minutes": 12,
+      "level": "working",
+      "track": "banking",
+      "bite": "The first empirical tally of major ICT incidents reported under Europe's operational resilience rules covers 3,383 incidents in 2025. Roughly a third trace back to third-party ICT providers and a third had effects crossing national borders — meaning supervisors now have real evidence pointing at vendor concentration and cross-border contagion, not just generic cyberattack volume, as the areas to tighten next.",
+      "read_if": "Read if you sell into EU banks and need current regulatory pressure points; skip if your accounts are outside DORA's scope.",
+      "key_takeaway": "Roughly a third of major incidents were traced to ICT third-party providers and a third had cross-border impact, meaning DORA's Article 30 vendor-contract and concentration-risk obligations are the area regulators will keep pressing hardest, not generic cyber-incident volume."
+    },
+    {
+      "title": "StanChart Eyes More Than 7,800 Job Cuts by 2030 in AI Embrace",
+      "url": "https://www.bankingdive.com/news/standard-chartered-7800-job-cuts-ai-winters/820627/",
+      "source": "Banking Dive",
+      "published": "2026-05",
+      "format": "article",
+      "est_minutes": 5,
+      "level": "intro",
+      "track": "banking",
+      "bite": "Standard Chartered has attached a specific number — over 7,800 roles — and a 2030 deadline to AI-driven back-office reduction. CEO Bill Winters is careful to frame this to investors as capital reallocation toward higher-value work rather than simple cost-cutting, explicitly saying role reduction in favor of automation will accelerate.",
+      "read_if": "Read if you want a concrete, board-level example of how a G-SIB justifies AI investment financially; skip if you've already seen enough of these headcount announcements this year.",
+      "key_takeaway": "Standard Chartered CEO Bill Winters framed the cuts explicitly as capital reallocation, not cost-cutting, telling investors: \"we don't have job losses, but we do have job role reductions in favor of the machines, and that will accelerate as we go forward into AI.\""
+    },
+    {
+      "title": "AI Agents in Singapore Banking: Where We Actually Stand",
+      "url": "https://nextgenprodman.substack.com/p/ai-agents-in-singapore-banking-where",
+      "source": "NextGenProdMan (Substack)",
+      "published": "2026-05",
+      "format": "article",
+      "est_minutes": 14,
+      "level": "working",
+      "track": "banking",
+      "bite": "A practitioner comparison of DBS, OCBC, and Standard Chartered finds that public visibility and production maturity aren't the same thing: DBS gets the most press, but the analysis argues OCBC has more genuinely autonomous systems in live use — five agentic deployments, including one that cut wealth report preparation from 10 days to 1 hour.",
+      "read_if": "Read if you're benchmarking a bank's AI claims against actual peer deployments; skip if you don't sell into Southeast Asian banking.",
+      "key_takeaway": "The bank with the loudest AI PR (DBS) is not necessarily the one furthest along in production agent autonomy; the analysis argues OCBC's five live agentic systems, including one that cut wealth report prep from 10 days to 1 hour, put it ahead on genuine autonomy despite less publicity."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 3,
+    "terms": 5
+  }
+}
