@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-10",
+  "generated_at": "2026-09-10T14:44:40+00:00",
+  "intro": "Today pairs a practitioner's ground-level view of what actually makes an AI agent work (context management, tool orchestration) with two live examples of how banks are packaging and governing that capability internally and from vendors.",
+  "cards": [
+    {
+      "title": "Context Engineering for AI Agents: Lessons from Building Manus",
+      "url": "https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus",
+      "source": "Manus (Yichao 'Peak' Ji)",
+      "published": "2025-07",
+      "format": "article",
+      "est_minutes": 25,
+      "level": "working",
+      "track": "agentic",
+      "bite": "The biggest lever in a production agent isn't model choice or prompt cleverness — it's how much of the growing context window can be reused from cache step to step, since cached tokens can cost roughly 10x less than fresh ones and agent context balloons with every action while the model's actual output stays short. The piece also argues for masking tools rather than removing them mid-task and for deliberately leaving failed attempts in context so the model doesn't repeat them.",
+      "read_if": "Read if you want concrete, engineer-level reasons agents behave the way they do; skip if you only need the high-level pitch.",
+      "key_takeaway": "The single most important production metric for an agent isn't accuracy on a benchmark — it's KV-cache hit rate, because agent context grows every step while output stays short, and the article notes cached tokens can cost 10x less than uncached ones."
+    },
+    {
+      "title": "The Evolution of Tool Use in LLM Agents: From Single-Tool Call to Multi-Tool Orchestration",
+      "url": "https://arxiv.org/abs/2603.22862",
+      "source": "arXiv (Xu et al.)",
+      "published": "2026-03",
+      "format": "paper",
+      "est_minutes": 50,
+      "level": "deep",
+      "track": "agentic",
+      "bite": "This survey traces agent tool-use research from models picking one correct API call to orchestrating many tools across long sequences of steps, with safety and cost constraints now built into the evaluation. It organizes the field around six dimensions — including planning/execution and safety/control — that double as a checklist for telling a genuine multi-step agent architecture from a chatbot with a plugin attached.",
+      "read_if": "Read if you need a rigorous framework for interrogating vendor 'agent' claims; skip if you just want a practical build story.",
+      "key_takeaway": "The paper frames the field's central shift as moving from 'can the model pick one right tool' to long-horizon orchestration, organizing progress around six dimensions including planning and execution, safety and control, and benchmark design — a checklist useful for probing any vendor's agent claims."
+    },
+    {
+      "title": "Introducing Gemini Enterprise for Financial Services",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-financial-services",
+      "source": "Google Cloud Blog",
+      "published": "2026-08",
+      "format": "article",
+      "est_minutes": 10,
+      "level": "working",
+      "track": "banking",
+      "bite": "Google's new financial-services agent platform was co-designed with Deutsche Bank around data residency, governance, and auditability rather than raw model capability, and ships pre-wired to market-data providers like FactSet, LSEG, Moody's, MSCI, PitchBook, S&P Global, and SEC Edgar. Deutsche Bank is rolling it out first inside Corporate Bank only, with financial-crime risk management as a possible next stage — a real example of a regulated institution staging scope deliberately rather than deploying everything at once.",
+      "read_if": "Read if you sell into capital markets or corporate banking and need to know what a 'bank-ready' agent stack actually includes; skip if you're focused purely on model research.",
+      "key_takeaway": "Deutsche Bank co-designed the agent specifically around data residency, governance and auditability constraints rather than raw capability, and is starting it in one division (Corporate Bank) before considering expansion into financial-crime risk management — a real illustration of how regulated deployment scope is staged."
+    },
+    {
+      "title": "Unlocking Value with BNY's Enterprise AI Platform",
+      "url": "https://www.bny.com/corporate/global/en/insights/unlocking-potential-enterprise-ai-platform-bny.html",
+      "source": "BNY",
+      "published": "2026-05",
+      "format": "article",
+      "est_minutes": 8,
+      "level": "working",
+      "track": "banking",
+      "bite": "BNY didn't buy a single AI tool — it built an internal platform giving every employee access to a menu of models, with credentials and human 'supervisors' attached to each automated workflow. It reports 75% quarter-over-quarter growth in AI use cases actually running in production, spanning lead generation, coding, payments, onboarding, and reconciliations.",
+      "read_if": "Read if you want to see what 'AI-native bank operations' looks like from the inside; skip if you only care about customer-facing products.",
+      "key_takeaway": "BNY treats AI adoption as a builder-platform problem, not a single tool purchase: it gives every employee access to a menu of models inside its own Eliza platform, and reports 75% quarter-over-quarter growth in AI solutions actually in production across lead generation, coding, payment processing, onboarding and reconciliations."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 2,
+    "terms": 5
+  }
+}

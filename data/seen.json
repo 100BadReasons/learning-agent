@@ -88,7 +88,11 @@
     "https://devblogs.microsoft.com/ise/coordinator-patterns-multi-agent-systems": "2026-09-09",
     "https://eba.europa.eu/publications-and-media/press-releases/esas-publish-first-report-dora-major-ict-related-incidents": "2026-09-09",
     "https://bankingdive.com/news/standard-chartered-7800-job-cuts-ai-winters/820627": "2026-09-09",
-    "https://nextgenprodman.substack.com/p/ai-agents-in-singapore-banking-where": "2026-09-09"
+    "https://nextgenprodman.substack.com/p/ai-agents-in-singapore-banking-where": "2026-09-09",
+    "https://manus.im/blog/context-engineering-for-ai-agents-lessons-from-building-manus": "2026-09-10",
+    "https://arxiv.org/abs/2603.22862": "2026-09-10",
+    "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-financial-services": "2026-09-10",
+    "https://bny.com/corporate/global/en/insights/unlocking-potential-enterprise-ai-platform-bny.html": "2026-09-10"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -179,6 +183,10 @@
     "orchestration patterns for multi agent systems performance and trade offs": "2026-09-09",
     "esas publish the first report on dora major ict related incidents": "2026-09-09",
     "stanchart eyes more than 7 800 job cuts by 2030 in ai embrace": "2026-09-09",
-    "ai agents in singapore banking where we actually stand": "2026-09-09"
+    "ai agents in singapore banking where we actually stand": "2026-09-09",
+    "context engineering for ai agents lessons from building manus": "2026-09-10",
+    "the evolution of tool use in llm agents from single tool call to multi tool orchestration": "2026-09-10",
+    "introducing gemini enterprise for financial services": "2026-09-10",
+    "unlocking value with bny s enterprise ai platform": "2026-09-10"
   }
 }
