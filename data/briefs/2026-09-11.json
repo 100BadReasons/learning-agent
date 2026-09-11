@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-11",
+  "generated_at": "2026-09-11T14:44:06+00:00",
+  "intro": "Today's four pieces split cleanly into two lessons: on the technical side, more agent architecture (multi-agent orchestration) and more agent autonomy both carry costs that need justifying rather than assuming, and on the banking side, both the regulator's own numbers and a rigorous LLM-explainability study confirm that surface-level AI adoption is running well ahead of real understanding or real trust.",
+  "cards": [
+    {
+      "title": "OWASP Top 10 for Agentic Applications 2026",
+      "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+      "source": "OWASP GenAI Security Project",
+      "published": "2025-12",
+      "format": "docs",
+      "est_minutes": 30,
+      "level": "working",
+      "track": "agentic",
+      "bite": "This is the emerging standard vocabulary for what can go wrong with AI agents specifically, as opposed to plain chatbots. The core distinction: an agent isn't just answering a question, it holds goals, credentials, tools, and memory, and can chain actions together over many steps without a human checking each one — so a single bad decision or manipulated instruction can compound across a whole task chain before anyone notices. Expect security teams to reference these categories by code name in procurement conversations.",
+      "read_if": "Read if you'll ever sit across from a customer's security or risk team; skip if you only need the one-line summary of 'agents need new security thinking.'",
+      "key_takeaway": "Agent-specific risk is a different animal from LLM chatbot risk because agents hold delegated authority over time and across steps; the framework's own framing is that it covers systems with \"goals, credentials, tools, memory, and the autonomy to chain them together over many steps.\""
+    },
+    {
+      "title": "OpenAI single-agent LLM architecture reduces computational overhead relative to multi-agent orchestration in a simulated mars rover decision-support benchmark",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1877762/full",
+      "source": "Frontiers in Robotics and AI (Sanabria, 2026)",
+      "published": "2026-07",
+      "format": "paper",
+      "est_minutes": 25,
+      "level": "working",
+      "track": "agentic",
+      "bite": "A controlled benchmark pitted a single AI agent against a team of specialized agents on a decision task where all the needed information already fit in one input. The specialist-team setup didn't produce better decisions — it just used substantially more compute and took longer to respond. The takeaway isn't 'multi-agent is bad,' it's that splitting an agent into multiple specialists is a cost you have to justify with the task's actual complexity, not a default upgrade.",
+      "read_if": "Read if you need a straight answer for 'should we architect this as multiple agents?'; skip if your customer's use case is already known to be complex and multi-step.",
+      "key_takeaway": "For short-context, tool-less, static decision tasks where all relevant information fits in a single input, the study's conclusion is that <cite index=\"70-6,70-7\">multi-agent orchestration should be treated as a cost-bearing design choice rather than an assumed improvement, contributing a reproducible architecture-level benchmark for evaluating when LLM-based orchestration is worth its operational cost</cite>, since <cite index=\"38-1\">the most reliable difference found was computational efficiency: the single-agent architecture required substantially lower latency and token usage than the prompt-defined multi-agent orchestration architecture</cite>."
+    },
+    {
+      "title": "Research Note: AI in UK financial services",
+      "url": "https://www.fca.org.uk/publications/research-notes/ai-uk-financial-services",
+      "source": "FCA / Bank of England",
+      "published": "2025-11",
+      "format": "docs",
+      "est_minutes": 20,
+      "level": "working",
+      "track": "banking",
+      "bite": "Surveying 118 UK banks, insurers, and market infrastructure firms, the regulator found adoption is broad but shallow: foundation models are only 17% of AI use cases, a mere 2% of automated decisions run fully autonomously, and just 34% of firms say they completely understand the AI systems they've already deployed. The gap between 'we've deployed it' and 'we understand it' is the actual risk here, not the underlying technology.",
+      "read_if": "Read if you sell into UK or EU-regulated financial firms and want real numbers instead of vendor talking points; skip if your accounts are purely US retail banks.",
+      "key_takeaway": "Adoption looks high but depth is shallow: foundation models make up 17% of use cases, only 2% of automated-decision use cases are fully autonomous, and just 34% of firms report 'complete understanding' of the AI systems they've deployed — the gap between adoption and comprehension is the real risk, not the technology itself."
+    },
+    {
+      "title": "Communicating Credit Risk with Large Language Models: Evaluation of Explanations from Standard and Alternative Data-Based Models",
+      "url": "https://arxiv.org/abs/2608.17715",
+      "source": "arXiv",
+      "published": "2026-08",
+      "format": "paper",
+      "est_minutes": 35,
+      "level": "deep",
+      "track": "banking",
+      "bite": "Tested on real mortgage data with actual credit risk professionals, this study found that AI-generated plain-language explanations of credit decisions are only as good as the underlying evidence method feeding them (SHAP-style feature attribution vs. graph-based explainers vs. combined approaches) — swapping which language model narrates the explanation barely matters. Critically, credit professionals graded these explanations by stricter evidentiary standards, while non-experts were more easily persuaded by confident, clear writing regardless of whether it was actually well-supported.",
+      "read_if": "Read if you're pitching 'explainable AI' for credit decisioning to a risk or compliance audience; skip if your deal doesn't touch model explainability.",
+      "key_takeaway": "The binding constraint on explanation quality is the underlying evidence representation (SHAP vs. GNNExplainer vs. bimodal), not which LLM narrates it — and credit risk professionals judge these AI-generated narratives by stricter evidentiary standards than non-professionals do, who are swayed more by how clear the writing sounds."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 2,
+    "terms": 5
+  }
+}
