@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-12",
+  "generated_at": "2026-09-12T13:50:59+00:00",
+  "intro": "Today's material is thin but pointed: one technical paper complicates the 'bigger context window fixes everything' pitch, and two banking pieces show how a real AML vendor deal exposes the gap left by regulators explicitly excluding agentic AI from formal model risk oversight.",
+  "cards": [
+    {
+      "title": "Context Rot: How Increasing Input Tokens Impacts LLM Performance",
+      "url": "https://research.trychroma.com/context-rot",
+      "source": "Chroma (Kelly Hong, Anton Troynikov, Jeff Huber)",
+      "published": "2025-07",
+      "format": "paper",
+      "est_minutes": 20,
+      "level": "working",
+      "track": "agentic",
+      "bite": "Chroma tested 18 frontier models — GPT-4.1, Claude 4, Gemini 2.5, Qwen3 — on tasks where the correct answer is present in the input but the input length varies. Every model got less reliable as input grew, even well within its advertised context limit. The finding cuts against a common sales claim: stuffing more into the context window is not a substitute for retrieving and curating what actually matters.",
+      "read_if": "Read if you need data to push back on 'our context window is big enough to handle it all' claims; skip if you're not evaluating LLM architecture decisions.",
+      "key_takeaway": "Testing 18 frontier models (GPT-4.1, Claude 4, Gemini 2.5, Qwen3) on tasks where the answer is present but input length varies, Chroma found that every model's reliability degrades as input grows longer, even well within the advertised context window — meaning careful retrieval and context curation still beat 'just stuff it all in.'"
+    },
+    {
+      "title": "Socure Bought Fravity. Your Examiner Reads 70% Backwards.",
+      "url": "https://www.beri.net/article/socure-fravity-acquisition-aml-alert-disposition-model-validation",
+      "source": "THE D*AI*LY BRIEF (Rajesh Beri)",
+      "published": "2026-08",
+      "format": "article",
+      "est_minutes": 8,
+      "level": "working",
+      "track": "banking",
+      "bite": "Socure's acquisition of agentic AML/fraud platform Fravity, which already serves top-five US banks, puts a live deal behind an abstract problem: in anti-money-laundering work, a vendor's 'false positive reduction' number is indistinguishable from suppressed true detections until the bank itself proves the suppressed alerts were never productive. New 2026 model risk guidance leaves agentic AI outside formal scope, so that proof burden falls entirely on the bank, not the vendor. Sellers who pitch false-positive reduction as a pure win in front of BSA/compliance buyers are missing this.",
+      "read_if": "Read if you sell into AML, fraud, or compliance functions; skip if your deals never touch alert disposition.",
+      "key_takeaway": "In AML (unlike fraud), a vendor's false-positive reduction number is indistinguishable from suppressed detection until the bank itself proves the suppressed alerts were never productive — and April 2026's model risk guidance explicitly excludes agentic AI, so that validation burden falls entirely on the bank, not the vendor."
+    },
+    {
+      "title": "Visual memo: Key changes under the federal banking agencies' revised model risk management guidance",
+      "url": "https://www.davispolk.com/insights/client-update/visual-memo-key-changes-under-federal-banking-agencies-revised-model-risk",
+      "source": "Davis Polk & Wardwell",
+      "published": "2026-04",
+      "format": "article",
+      "est_minutes": 12,
+      "level": "working",
+      "track": "banking",
+      "bite": "The first rewrite of federal model risk management guidance in fifteen years replaces prescriptive rules with six high-level principles, adds a $30B asset-size threshold for full applicability, and explicitly excludes generative and agentic AI from formal scope. In practice banks aren't waiting for the rule to catch up — they're already applying the old validation principles to LLM and agent deployments by analogy, so vendors should expect examiner-style scrutiny even where nothing technically requires it yet.",
+      "read_if": "Read if you need to know what a bank will demand you prove about an AI system before it buys; skip if you don't sell to regulated financial institutions.",
+      "key_takeaway": "The 2026 guidance replaces prescriptive SR 11-7 rules with six high-level principles and explicitly excludes generative and agentic AI models from formal scope — but banks are already applying the old principles to LLM and agent deployments 'by analogy,' so vendors should expect examiner-style scrutiny even where no rule technically requires it yet."
+    }
+  ],
+  "counts": {
+    "agentic": 1,
+    "banking": 2,
+    "terms": 5
+  }
+}

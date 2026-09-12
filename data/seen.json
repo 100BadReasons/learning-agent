@@ -96,7 +96,10 @@
     "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026": "2026-09-11",
     "https://frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1877762/full": "2026-09-11",
     "https://fca.org.uk/publications/research-notes/ai-uk-financial-services": "2026-09-11",
-    "https://arxiv.org/abs/2608.17715": "2026-09-11"
+    "https://arxiv.org/abs/2608.17715": "2026-09-11",
+    "https://research.trychroma.com/context-rot": "2026-09-12",
+    "https://beri.net/article/socure-fravity-acquisition-aml-alert-disposition-model-validation": "2026-09-12",
+    "https://davispolk.com/insights/client-update/visual-memo-key-changes-under-federal-banking-agencies-revised-model-risk": "2026-09-12"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -195,6 +198,9 @@
     "owasp top 10 for agentic applications 2026": "2026-09-11",
     "openai single agent llm architecture reduces computational overhead relative to multi agent orchestration in a simulated mars rover decision support benchmark": "2026-09-11",
     "research note ai in uk financial services": "2026-09-11",
-    "communicating credit risk with large language models evaluation of explanations from standard and alternative data based models": "2026-09-11"
+    "communicating credit risk with large language models evaluation of explanations from standard and alternative data based models": "2026-09-11",
+    "context rot how increasing input tokens impacts llm performance": "2026-09-12",
+    "socure bought fravity your examiner reads 70 backwards": "2026-09-12",
+    "visual memo key changes under the federal banking agencies revised model risk management guidance": "2026-09-12"
   }
 }
