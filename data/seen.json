@@ -99,7 +99,10 @@
     "https://arxiv.org/abs/2608.17715": "2026-09-11",
     "https://research.trychroma.com/context-rot": "2026-09-12",
     "https://beri.net/article/socure-fravity-acquisition-aml-alert-disposition-model-validation": "2026-09-12",
-    "https://davispolk.com/insights/client-update/visual-memo-key-changes-under-federal-banking-agencies-revised-model-risk": "2026-09-12"
+    "https://davispolk.com/insights/client-update/visual-memo-key-changes-under-federal-banking-agencies-revised-model-risk": "2026-09-12",
+    "https://hidekazu-konishi.com/entry/agent_reliability_engineering_design_guide.html": "2026-09-13",
+    "https://cloud.google.com/blog/topics/financial-services/building-operational-resilience-with-agentic-ai-in-financial-services": "2026-09-13",
+    "https://ukstories.microsoft.com/features/nationwide-building-its-ai-future-one-foundation-at-a-time": "2026-09-13"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -201,6 +204,9 @@
     "communicating credit risk with large language models evaluation of explanations from standard and alternative data based models": "2026-09-11",
     "context rot how increasing input tokens impacts llm performance": "2026-09-12",
     "socure bought fravity your examiner reads 70 backwards": "2026-09-12",
-    "visual memo key changes under the federal banking agencies revised model risk management guidance": "2026-09-12"
+    "visual memo key changes under the federal banking agencies revised model risk management guidance": "2026-09-12",
+    "agent reliability engineering design guide retries loop detection timeout budgets and human escalation for ai agents": "2026-09-13",
+    "building operational resilience with agentic ai in financial services": "2026-09-13",
+    "nationwide building its ai future one foundation at a time": "2026-09-13"
   }
 }

@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-13",
+  "generated_at": "2026-09-13T14:46:50+00:00",
+  "intro": "Today pairs a hands-on engineering guide to making agents fail safely with two banking case studies showing that real agentic deployment gets gated by regulatory pressure (DORA) and by unglamorous legacy-system replacement, not by the AI layer itself.",
+  "cards": [
+    {
+      "title": "Agent Reliability Engineering Design Guide — Retries, Loop Detection, Timeout Budgets, and Human Escalation for AI Agents",
+      "url": "https://hidekazu-konishi.com/entry/agent_reliability_engineering_design_guide.html",
+      "source": "hidekazu-konishi.com",
+      "published": "2026-08",
+      "format": "article",
+      "est_minutes": 35,
+      "level": "working",
+      "track": "agentic",
+      "bite": "A demo-ready agent and an operable agent are different things: production requires that when the agent gets stuck, an on-call engineer with no context can name the failure, know its bounds, see it happening, and recover it — at 3am, without the original builder around. The piece's sharpest point is about step budgets: if a retried action doesn't count against the budget, the budget doesn't actually limit anything, because a step that keeps failing and retrying never advances the counter. That bug is common precisely because the retry logic usually lives inside a tool wrapper, invisible to whatever is supposed to be counting.",
+      "read_if": "Read if you need a credible answer to a customer's 'what happens when it gets stuck?' question; skip if you only need the marketing-level pitch.",
+      "key_takeaway": "<cite index=\"40-2,40-3,40-4,40-5\">An AI agent that works in a demo and an AI agent that can be operated are different artifacts — production needs the agent to fail in ways an on-call engineer can name, bound, observe, and recover from, at three in the morning, without the builder present</cite>, and budgets only work if retries are visible to them: <cite index=\"40-7,40-8\">if a retried step does not decrement the step budget, the budget does not bound anything, because a loop that fails and retries indefinitely never advances the counter — a mistake that happens constantly because the retry is often implemented inside the tool wrapper where the budget is invisible</cite>."
+    },
+    {
+      "title": "Building operational resilience with agentic AI in financial services",
+      "url": "https://cloud.google.com/blog/topics/financial-services/building-operational-resilience-with-agentic-ai-in-financial-services",
+      "source": "Google Cloud Blog",
+      "published": "2026-08",
+      "format": "article",
+      "est_minutes": 8,
+      "level": "working",
+      "track": "banking",
+      "bite": "The real pattern emerging under Europe's operational-resilience rules isn't a customer-facing chatbot — it's agents that ingest architecture diagrams, logs, incident history, and telemetry to automatically produce the evidence regulators want for resilience testing. Deutsche Bank's compliance-tech lead frames the payoff as a continuously adaptive model of operational resilience, not a one-time report.",
+      "read_if": "Read if you're selling into a bank's compliance or resilience function; skip if your angle is customer-experience AI.",
+      "key_takeaway": "The winning DORA-era pattern isn't customer-facing chatbots — it's agents that build enterprise context from architecture, logs, incident history and telemetry to generate regulator-ready resilience evidence automatically, because Deutsche Bank's exec states plainly that the platform gave them \"an intelligent, continuously adaptive model for operational resilience.\""
+    },
+    {
+      "title": "Nationwide: Building its AI future one foundation at a time",
+      "url": "https://ukstories.microsoft.com/features/nationwide-building-its-ai-future-one-foundation-at-a-time/",
+      "source": "Microsoft UK Stories",
+      "published": "2026-09",
+      "format": "article",
+      "est_minutes": 7,
+      "level": "working",
+      "track": "banking",
+      "bite": "Nationwide's AI rollout — 2,500 engineers on GitHub Copilot, near-half of finance staff using M365 Copilot daily — only became possible after it finished migrating 15 million accounts off a 45-year-old core banking system while also absorbing Virgin Money. The CTO's framing is telling: the modernization's goal was to be invisible to customers, not to enable AI headlines.",
+      "read_if": "Read if you need a real-world timeline for what precedes an AI layer at a legacy institution; skip if you're only tracking AI feature announcements.",
+      "key_takeaway": "AI deployment at scale (2,500 engineers on GitHub Copilot, daily M365 Copilot use by nearly half of finance staff) followed, rather than preceded, the unglamorous work of replacing the core banking engine and customer data platform — CTO Paul Ballard frames the goal as modernizing so thoroughly that \"we don't disrupt your life.\""
+    }
+  ],
+  "counts": {
+    "agentic": 1,
+    "banking": 2,
+    "terms": 5
+  }
+}
