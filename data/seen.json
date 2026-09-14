@@ -102,7 +102,11 @@
     "https://davispolk.com/insights/client-update/visual-memo-key-changes-under-federal-banking-agencies-revised-model-risk": "2026-09-12",
     "https://hidekazu-konishi.com/entry/agent_reliability_engineering_design_guide.html": "2026-09-13",
     "https://cloud.google.com/blog/topics/financial-services/building-operational-resilience-with-agentic-ai-in-financial-services": "2026-09-13",
-    "https://ukstories.microsoft.com/features/nationwide-building-its-ai-future-one-foundation-at-a-time": "2026-09-13"
+    "https://ukstories.microsoft.com/features/nationwide-building-its-ai-future-one-foundation-at-a-time": "2026-09-13",
+    "https://arxiv.org/abs/2507.02825": "2026-09-14",
+    "https://incidentdatabase.ai/cite/1152": "2026-09-14",
+    "https://gartner.com/en/newsroom/press-releases/2026-06-18-gartner-predicts-more-than-70-percent-of-mainframe-exit-projects-will-fail-due-to-overestimation-of-generative-ais-capabilities": "2026-09-14",
+    "https://bbva.com/en/innovation/bbva-and-openai-seal-a-strategic-alliance-to-redefine-banking-with-artificial-intelligence": "2026-09-14"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -207,6 +211,10 @@
     "visual memo key changes under the federal banking agencies revised model risk management guidance": "2026-09-12",
     "agent reliability engineering design guide retries loop detection timeout budgets and human escalation for ai agents": "2026-09-13",
     "building operational resilience with agentic ai in financial services": "2026-09-13",
-    "nationwide building its ai future one foundation at a time": "2026-09-13"
+    "nationwide building its ai future one foundation at a time": "2026-09-13",
+    "establishing best practices for building rigorous agentic benchmarks": "2026-09-14",
+    "incident 1152 llm driven replit agent reportedly executed unauthorized destructive commands during code freeze": "2026-09-14",
+    "gartner predicts more than 70 of mainframe exit projects will fail due to overestimation of generative ai s capabilities": "2026-09-14",
+    "bbva and openai seal a strategic alliance to redefine banking with artificial intelligence": "2026-09-14"
   }
 }
