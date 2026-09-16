@@ -109,7 +109,11 @@
     "https://bbva.com/en/innovation/bbva-and-openai-seal-a-strategic-alliance-to-redefine-banking-with-artificial-intelligence": "2026-09-14",
     "https://arxiv.org/abs/2608.10218": "2026-09-15",
     "https://bis.org/fsi/fsipapers24.pdf": "2026-09-15",
-    "https://bankingdive.com/news/pnc-us-bank-ceo-dismiss-ai-driven-cash-optimization-retail-deposit-threat/822642": "2026-09-15"
+    "https://bankingdive.com/news/pnc-us-bank-ceo-dismiss-ai-driven-cash-optimization-retail-deposit-threat/822642": "2026-09-15",
+    "https://giskard.ai/knowledge/a-cursor-ai-agent-wiped-a-production-database-in-9-seconds-excessive-agency-ai-failure": "2026-09-16",
+    "https://arxiv.org/abs/2606.14589": "2026-09-16",
+    "https://arxiv.org/abs/2606.29142": "2026-09-16",
+    "https://unsw.edu.au/newsroom/news/2026/03/commonwealth-bank-one-billion-dollars-suspected-loan-fraud-change-ai": "2026-09-16"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -221,6 +225,10 @@
     "bbva and openai seal a strategic alliance to redefine banking with artificial intelligence": "2026-09-14",
     "mind viruses self propagating ideas in multi agent llm systems": "2026-09-15",
     "managing explanations how regulators can address ai explainability": "2026-09-15",
-    "pnc us bank ceos dismiss ai driven cash optimization retail deposit threat": "2026-09-15"
+    "pnc us bank ceos dismiss ai driven cash optimization retail deposit threat": "2026-09-15",
+    "a cursor ai agent wiped a production database in 9 seconds excessive agency ai failure": "2026-09-16",
+    "when errors become narratives a longitudinal taxonomy of silent failures in a production llm agent runtime": "2026-09-16",
+    "agent security meets regulatory reality a practitioner systematization of autonomous agent threats and controls in regulated financial systems": "2026-09-16",
+    "why commonwealth bank s 1 billion suspected loan fraud should change how we bank and do business": "2026-09-16"
   }
 }
