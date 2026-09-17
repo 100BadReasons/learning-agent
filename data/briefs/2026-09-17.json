@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-17",
+  "generated_at": "2026-09-17T15:25:52+00:00",
+  "intro": "Today's material sits on two ends of the same problem: the LangChain and Arize pieces show how to build and prove out an agent yourself, while the banking pieces show what happens once agents start acting as counterparties in real money movement and real bank infrastructure.",
+  "cards": [
+    {
+      "title": "LangGraph 101: Hands-On Notebooks for Building Agents, Multi-Agent Systems, and Deep Agents",
+      "url": "https://github.com/langchain-ai/langgraph-101",
+      "source": "LangChain (official)",
+      "published": "unknown",
+      "format": "repo",
+      "est_minutes": 180,
+      "level": "working",
+      "track": "agentic",
+      "bite": "This is a hands-on, notebook-based curriculum that starts with a bare tool-calling agent loop and adds one capability at a time: middleware and guardrails, human-in-the-loop checkpoints, a supervisor coordinating multiple agents, and finally a 'deep agent' with planning, file-based memory, and delegation to subagents. Each added layer exists to fix one specific, named failure mode of the simpler version before it — nothing is added for its own sake. Working through it in order teaches you which problems actually require multi-agent architecture and which don't.",
+      "read_if": "Read if you want to be able to say, specifically, why a customer's agent setup needs (or doesn't need) a given layer of complexity; skip if you just need the vocabulary, not the build.",
+      "key_takeaway": "Each added layer of agent complexity (middleware, multi-agent supervisors, deep-agent planning/filesystem/subagents) solves a specific, named failure mode — so you can tell a customer precisely why their use case does or doesn't need that layer, instead of reaching for a multi-agent architecture by default."
+    },
+    {
+      "title": "How to Build Agent Evals from Traces: A Developer Tutorial",
+      "url": "https://arize.com/resources/agent-evals-from-traces/",
+      "source": "Arize AI",
+      "published": "2026-08",
+      "format": "article",
+      "est_minutes": 25,
+      "level": "working",
+      "track": "agentic",
+      "bite": "This tutorial shows how real evaluation systems for agents actually get built: not by guessing failure modes in advance, but by reviewing real production traces, finding where the agent actually broke, and turning those specific breaks into deterministic checks or LLM-judge tests. Critically, any LLM judge used this way first gets validated against human ratings before it's trusted to run unsupervised at scale. The result is a regression dataset that grows from what actually went wrong, not from a checklist written before anyone saw the agent run.",
+      "read_if": "Read if you need a credible, non-hand-wavy answer to 'how do you know your agent works'; skip if you're not yet past the pilot stage.",
+      "key_takeaway": "Good evals aren't designed up front from guesses about failure modes — they're mined from real production traces you've already reviewed, then validated against human judgment before being trusted to run at scale."
+    },
+    {
+      "title": "Ant International, Mastercard and Visa Initiate Collaboration on Know-Your-Agent Interoperability to Scale Agentic Commerce",
+      "url": "https://www.ant-intl.com/en/news/detail/?id=ant-international-mastercard-and-visa-initiate-collaboration-on-know-your-agent-interoperability-to-scale-agentic-commerce",
+      "source": "Ant International (press release)",
+      "published": "2026-09",
+      "format": "article",
+      "est_minutes": 5,
+      "level": "working",
+      "track": "banking",
+      "bite": "Visa, Mastercard, and Ant International are working toward a shared standard for verifying that an AI agent transacting on someone's behalf is actually authorized to do so — Visa's Trusted Agent Protocol, Mastercard's Verifiable Intent, and Ant's Agentic Mobile Protocol are converging on interoperable trust signals under a regulator-linked framework. Until that convergence actually ships, an agent-driven payment still needs separate certification on each network it touches. This is the identity layer any agentic-commerce pitch into a bank will eventually run into.",
+      "read_if": "Read if you're selling anything that touches agent-initiated payments; skip if your deployment never moves money.",
+      "key_takeaway": "Visa's Trusted Agent Protocol, Mastercard's Verifiable Intent, and Ant's Agentic Mobile Protocol are moving toward interoperable trust signals under MAS's SAFR framework via BuildFin.ai — meaning a vendor's agent won't need bespoke certification per network once this lands, but until it does, expect duplicated identity-verification work across rails."
+    },
+    {
+      "title": "AI in Banking Just Got Real",
+      "url": "https://www.ccgcatalyst.com/thought-leadership/commentary/ai-in-banking-just-got-real/",
+      "source": "CCG Catalyst",
+      "published": "2026-05",
+      "format": "article",
+      "est_minutes": 8,
+      "level": "working",
+      "track": "banking",
+      "bite": "Real production AI is already live in banking — FIS's financial-crimes agent compressing AML investigation time, Salient running end-to-end loan servicing for lenders like Westlake Financial — but the piece's real point is structural: three core banking providers serve over 70% of U.S. depository institutions, so a community or regional bank's AI capability is set by its core provider's roadmap, not its own ambition. Selling faster deployment means influencing the core relationship, not just the bank's own IT team.",
+      "read_if": "Read if you sell into community or regional banks; skip if your customers run their own core.",
+      "key_takeaway": "With three core providers serving over 70% of U.S. depository institutions, a community or regional bank's AI roadmap is effectively dictated by its core provider's roadmap rather than its own ambition — sell the core-provider relationship, not just the bank, if you want deployment velocity."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 2,
+    "terms": 5
+  }
+}

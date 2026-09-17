@@ -113,7 +113,11 @@
     "https://giskard.ai/knowledge/a-cursor-ai-agent-wiped-a-production-database-in-9-seconds-excessive-agency-ai-failure": "2026-09-16",
     "https://arxiv.org/abs/2606.14589": "2026-09-16",
     "https://arxiv.org/abs/2606.29142": "2026-09-16",
-    "https://unsw.edu.au/newsroom/news/2026/03/commonwealth-bank-one-billion-dollars-suspected-loan-fraud-change-ai": "2026-09-16"
+    "https://unsw.edu.au/newsroom/news/2026/03/commonwealth-bank-one-billion-dollars-suspected-loan-fraud-change-ai": "2026-09-16",
+    "https://github.com/langchain-ai/langgraph-101": "2026-09-17",
+    "https://arize.com/resources/agent-evals-from-traces": "2026-09-17",
+    "https://ant-intl.com/en/news/detail": "2026-09-17",
+    "https://ccgcatalyst.com/thought-leadership/commentary/ai-in-banking-just-got-real": "2026-09-17"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -229,6 +233,10 @@
     "a cursor ai agent wiped a production database in 9 seconds excessive agency ai failure": "2026-09-16",
     "when errors become narratives a longitudinal taxonomy of silent failures in a production llm agent runtime": "2026-09-16",
     "agent security meets regulatory reality a practitioner systematization of autonomous agent threats and controls in regulated financial systems": "2026-09-16",
-    "why commonwealth bank s 1 billion suspected loan fraud should change how we bank and do business": "2026-09-16"
+    "why commonwealth bank s 1 billion suspected loan fraud should change how we bank and do business": "2026-09-16",
+    "langgraph 101 hands on notebooks for building agents multi agent systems and deep agents": "2026-09-17",
+    "how to build agent evals from traces a developer tutorial": "2026-09-17",
+    "ant international mastercard and visa initiate collaboration on know your agent interoperability to scale agentic commerce": "2026-09-17",
+    "ai in banking just got real": "2026-09-17"
   }
 }
