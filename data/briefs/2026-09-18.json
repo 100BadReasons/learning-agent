@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-18",
+  "generated_at": "2026-09-18T14:45:21+00:00",
+  "intro": "Today's four pieces all do the same job in different domains: they replace a vendor or headline claim about agentic AI with the concrete mechanism underneath it — how memory systems actually fail, how guardrails actually enforce control, why agentic payments are actually stalled, and which stage of COBOL modernization AI actually speeds up.",
+  "cards": [
+    {
+      "title": "Are We Ready For An Agent-Native Memory System?",
+      "url": "https://arxiv.org/abs/2606.24775",
+      "source": "arXiv (Zhou et al., Shanghai Jiao Tong University)",
+      "published": "2026-06",
+      "format": "paper",
+      "est_minutes": 35,
+      "level": "deep",
+      "track": "agentic",
+      "bite": "Testing real memory systems (Mem0, Letta, Zep, A-MEM) as data-management systems rather than scoring them only on end-task success reveals failure modes that stay invisible otherwise — like an agent confidently reusing a fact after the underlying data changed. The paper argues memory should be evaluated across four separable layers: how it's stored, extracted, retrieved, and maintained, because a system can look fine on retrieval while quietly failing to ever forget or update. That's the difference between an architecture and a marketing claim about 'remembering everything.'",
+      "read_if": "Read if you need to pressure-test a vendor's memory or context claims; skip if you just need the one-line version.",
+      "key_takeaway": "Agent memory should be evaluated as a data system with four decomposable modules (representation/storage, extraction, retrieval/routing, maintenance) rather than as a black box scored only on end-task accuracy, because failures in one module (e.g. stale memory reuse after facts change) don't show up until you look at the system-level trace."
+    },
+    {
+      "title": "Guardrails and human review",
+      "url": "https://developers.openai.com/api/docs/guides/agents/guardrails-approvals",
+      "source": "OpenAI (Agents SDK documentation)",
+      "published": "2026-09",
+      "format": "docs",
+      "est_minutes": 15,
+      "level": "working",
+      "track": "agentic",
+      "bite": "This documentation draws a hard line between two different control types: guardrails, which automatically decide whether a run continues or stops, and human approval, which asks a person to explicitly approve or reject one specific sensitive action. The right design puts both checks at the exact tool boundary where the side effect actually happens — not just at the start or end of a run — and fails closed if nobody responds in time.",
+      "read_if": "Read if you need to explain concretely how an agent framework enforces safety rather than just claiming it does; skip if you already know the guardrail-vs-approval distinction.",
+      "key_takeaway": "Guardrails and human approval are different control types that answer different questions — guardrails decide continue/stop automatically, human review decides approve/reject for a specific sensitive action — and the right design puts validation and approval checks at the exact tool boundary where a side effect happens, not just at the start or end of a run."
+    },
+    {
+      "title": "Agentic Banking: An Authorisation Problem, Not AI",
+      "url": "https://digitalbankexpert.com/2026/07/agentic-banking-authorisation-not-automation",
+      "source": "Digital Bank Expert",
+      "published": "2026-07",
+      "format": "article",
+      "est_minutes": 12,
+      "level": "working",
+      "track": "banking",
+      "bite": "The real blocker on agentic payments isn't AI capability — it's that PSD2 and UK Strong Customer Authentication were written assuming a human authorizes every transaction, and nothing yet defines how a delegated AI agent satisfies that requirement or who's liable when it fails. The piece grounds this in live examples, not hypotheticals: Fiserv's agentOS is in beta at two institutions, and FIS/Anthropic's financial-crimes agent is already running at BMO and Amalgamated Bank — proof the tech works while the authorization question stays open.",
+      "read_if": "Read if you sell into payments or compliance teams fielding 'why can't we just automate this'; skip if your deal doesn't touch transaction authorization.",
+      "key_takeaway": "PSD2 and UK Strong Customer Authentication were built on the assumption a human is present to authorize each transaction; nothing yet defines how a delegated agent mandate satisfies that requirement or who carries liability when it goes wrong, so that gap — not AI capability — is what's actually gating agentic payments rollout."
+    },
+    {
+      "title": "COBOL Modernization in 2026: Cost, Risk & the AI Path",
+      "url": "https://www.hakunamatatatech.com/our-resources/blog/cobol-modernization",
+      "source": "Hakunamatata Tech",
+      "published": "2026-08",
+      "format": "article",
+      "est_minutes": 10,
+      "level": "working",
+      "track": "banking",
+      "bite": "AI tools (the piece names IBM watsonx and Anthropic) genuinely speed up two stages of COBOL-to-Java modernization — documenting undocumented business logic and translating it into modern code — but they don't touch where the cost and risk actually concentrate: verifying behavioral equivalence and running parallel tests against production data. Any mainframe-exit pitch should be filtered through that split: which stage is the AI claim actually about?",
+      "read_if": "Read if you're evaluating or selling a mainframe modernization deal; skip if COBOL isn't in your pipeline.",
+      "key_takeaway": "AI (per IBM watsonx and Anthropic usage) meaningfully speeds up documenting undocumented COBOL business logic and translating it into a modern language, but it doesn't remove the verification, behavioral-equivalence testing, and parallel-run stages against production data where modernization cost and risk actually concentrate."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 2,
+    "terms": 5
+  }
+}

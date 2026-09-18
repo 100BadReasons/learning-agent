@@ -117,7 +117,11 @@
     "https://github.com/langchain-ai/langgraph-101": "2026-09-17",
     "https://arize.com/resources/agent-evals-from-traces": "2026-09-17",
     "https://ant-intl.com/en/news/detail": "2026-09-17",
-    "https://ccgcatalyst.com/thought-leadership/commentary/ai-in-banking-just-got-real": "2026-09-17"
+    "https://ccgcatalyst.com/thought-leadership/commentary/ai-in-banking-just-got-real": "2026-09-17",
+    "https://arxiv.org/abs/2606.24775": "2026-09-18",
+    "https://developers.openai.com/api/docs/guides/agents/guardrails-approvals": "2026-09-18",
+    "https://digitalbankexpert.com/2026/07/agentic-banking-authorisation-not-automation": "2026-09-18",
+    "https://hakunamatatatech.com/our-resources/blog/cobol-modernization": "2026-09-18"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -237,6 +241,10 @@
     "langgraph 101 hands on notebooks for building agents multi agent systems and deep agents": "2026-09-17",
     "how to build agent evals from traces a developer tutorial": "2026-09-17",
     "ant international mastercard and visa initiate collaboration on know your agent interoperability to scale agentic commerce": "2026-09-17",
-    "ai in banking just got real": "2026-09-17"
+    "ai in banking just got real": "2026-09-17",
+    "are we ready for an agent native memory system": "2026-09-18",
+    "guardrails and human review": "2026-09-18",
+    "agentic banking an authorisation problem not ai": "2026-09-18",
+    "cobol modernization in 2026 cost risk the ai path": "2026-09-18"
   }
 }
