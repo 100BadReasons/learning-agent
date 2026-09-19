@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-19",
+  "generated_at": "2026-09-19T14:05:48+00:00",
+  "intro": "Today pairs two grounding pieces on how agents actually work under the hood (memory implementation, failure diagnosis) with two pieces on the regulatory and protocol scaffolding banks will require before they let agents touch infrastructure or money.",
+  "cards": [
+    {
+      "title": "The Four Types of Memory for AI Agents (and How Claude Code Implements Each)",
+      "url": "https://alexop.dev/posts/four-types-memory-coding-agents-claude-code/",
+      "source": "alexop.dev",
+      "published": "2026-06",
+      "format": "article",
+      "est_minutes": 18,
+      "level": "working",
+      "track": "agentic",
+      "bite": "Agent memory in production isn't exotic vector-database magic — Claude Code implements the classic working/episodic/semantic/procedural distinction from cognitive science using plain files and disk state you can open and read. The riskiest kind to let an agent write to is the 'procedural' layer — anything that changes how it behaves going forward — because a bad write there compounds across every future session. This gives a grounded way to explain agent memory to a technical buyer without hand-waving about databases.",
+      "read_if": "Read if you need a concrete, non-buzzword way to explain agent memory to a technical evaluator; skip if you already know the underlying memory taxonomy.",
+      "key_takeaway": "Most production agent memory isn't a fancy vector database — it's markdown files and disk state mapped to specific cognitive-science categories, and writing to 'procedural' memory (changing how the agent behaves) is far riskier than writing to episodic or semantic memory."
+    },
+    {
+      "title": "Holistic Evaluation and Failure Diagnosis of AI Agents",
+      "url": "https://arxiv.org/abs/2605.14865",
+      "source": "arXiv (Deepchecks)",
+      "published": "2026-05",
+      "format": "paper",
+      "est_minutes": 30,
+      "level": "deep",
+      "track": "agentic",
+      "bite": "A single pass/fail score on an agent's final output tells you nothing about where in a long multi-step run it actually broke. This paper breaks an agent trace into independent spans and scores each one separately, so you can localize the exact step that failed instead of guessing across the whole trajectory. That per-step localization is what actually lets a team fix the failure and build a regression test for it.",
+      "read_if": "Read if you'll be asked how to evaluate or debug agent reliability; skip if you're not touching agent QA.",
+      "key_takeaway": "Evaluating an agent by final outcome alone hides where it broke — decomposing a trace into independent, per-span verdicts lets you localize the exact failing step, which is what actually lets a team fix and regression-test agent failures."
+    },
+    {
+      "title": "UK financial regulators to begin overseeing Critical Third Parties announced by HMT",
+      "url": "https://www.bankofengland.co.uk/news/2026/july/uk-financial-regulators-to-begin-overseeing-critical-third-parties-announced-by-hmt",
+      "source": "Bank of England",
+      "published": "2026-07",
+      "format": "docs",
+      "est_minutes": 8,
+      "level": "working",
+      "track": "banking",
+      "bite": "Starting 13 July 2026, UK regulators gain direct statutory oversight over specific named cloud entities — AWS EMEA, Google Cloud EMEA, Microsoft Ireland, Oracle UK — that most bank AI stacks actually run on. That turns 'which cloud do you run on' into a due-diligence question about whether that specific entity is a designated critical third party and what resilience obligations follow. Anyone selling AI into UK banks now needs to know that status for their own infrastructure.",
+      "read_if": "Read if you sell AI or software into UK-regulated banks; skip if your business is entirely outside UK financial services.",
+      "key_takeaway": "Under the UK's Critical Third Parties regime, effective 13 July 2026, hyperscalers underpinning bank AI deployments are now directly regulated for operational resilience — enterprise software vendors selling AI into UK banks need to know whether their infrastructure sits on a designated CTP and what that means for the bank's due diligence."
+    },
+    {
+      "title": "Announcing Agent Payments Protocol (AP2)",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol",
+      "source": "Google Cloud Blog",
+      "published": "2025-09",
+      "format": "docs",
+      "est_minutes": 10,
+      "level": "working",
+      "track": "banking",
+      "bite": "Google's Agent Payments Protocol solves agent-initiated payment trust by chaining three cryptographically signed 'mandates' — one proving what the user actually authorized, one proving what the agent selected on the user's behalf, and one proving what was actually charged. That chain is built to answer three questions a bank needs answered before it lets an agent move money: did the user really authorize this, does the agent's request reflect their true intent, and who's accountable if it goes wrong. Mastercard, Visa and PayPal are already building against this spec.",
+      "read_if": "Read if you're pitching agentic payments, checkout, or commerce automation into a bank; skip otherwise.",
+      "key_takeaway": "AP2 solves agent-payment trust by chaining cryptographically signed 'mandates' (Intent, Cart, Payment) that separately prove what the user authorized, what the agent selected, and what was charged — <cite index=\"75-6,75-7,75-8\">Authorization: Proving that a user gave an agent the specific authority to make a particular purchase, Authenticity: Enabling a merchant to be sure that an agent's request accurately reflects the user's true intent, and Accountability: Determining accountability if a fraudulent or incorrect transaction occurs</cite> are the three problems it's designed to close before a bank will let an agent move money."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 2,
+    "terms": 5
+  }
+}

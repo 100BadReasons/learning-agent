@@ -121,7 +121,11 @@
     "https://arxiv.org/abs/2606.24775": "2026-09-18",
     "https://developers.openai.com/api/docs/guides/agents/guardrails-approvals": "2026-09-18",
     "https://digitalbankexpert.com/2026/07/agentic-banking-authorisation-not-automation": "2026-09-18",
-    "https://hakunamatatatech.com/our-resources/blog/cobol-modernization": "2026-09-18"
+    "https://hakunamatatatech.com/our-resources/blog/cobol-modernization": "2026-09-18",
+    "https://alexop.dev/posts/four-types-memory-coding-agents-claude-code": "2026-09-19",
+    "https://arxiv.org/abs/2605.14865": "2026-09-19",
+    "https://bankofengland.co.uk/news/2026/july/uk-financial-regulators-to-begin-overseeing-critical-third-parties-announced-by-hmt": "2026-09-19",
+    "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol": "2026-09-19"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -245,6 +249,10 @@
     "are we ready for an agent native memory system": "2026-09-18",
     "guardrails and human review": "2026-09-18",
     "agentic banking an authorisation problem not ai": "2026-09-18",
-    "cobol modernization in 2026 cost risk the ai path": "2026-09-18"
+    "cobol modernization in 2026 cost risk the ai path": "2026-09-18",
+    "the four types of memory for ai agents and how claude code implements each": "2026-09-19",
+    "holistic evaluation and failure diagnosis of ai agents": "2026-09-19",
+    "uk financial regulators to begin overseeing critical third parties announced by hmt": "2026-09-19",
+    "announcing agent payments protocol ap2": "2026-09-19"
   }
 }
