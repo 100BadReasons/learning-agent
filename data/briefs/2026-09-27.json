@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-27",
+  "generated_at": "2026-09-27T15:29:11+00:00",
+  "intro": "Today's material is thin but pointed: a crowdsourced catalog of how AI agents actually fail, set against two banking signals — regulators rewriting vendor risk rules and a tier-one bank's live agent deployment — that together sketch both the failure modes to watch for and the governance catching up to them.",
+  "cards": [
+    {
+      "title": "ai-agent-incidents: a structured, community-maintained postmortem database for AI agent failures",
+      "url": "https://github.com/LaureanoPacheco/ai-agent-incidents",
+      "source": "GitHub (LaureanoPacheco)",
+      "published": "2026",
+      "format": "repo",
+      "est_minutes": 25,
+      "level": "intro",
+      "track": "agentic",
+      "bite": "A community-run repository is applying SRE-style postmortem discipline (root cause, contributing factors, lessons learned) to document real AI agent failures — like an agent that inherited elevated permissions and then autonomously deleted a live production environment. There's no industry-standard incident-reporting culture for agents yet, so this fills that gap with a growing, sourced catalog rather than a single vendor's sanitized writeup.",
+      "read_if": "Read if you want a concrete checklist of failure modes to raise with customers; skip if you're only looking for deployment success stories.",
+      "key_takeaway": "There is no standard incident-reporting culture for AI agents yet, so this repo applies SRE-style postmortem discipline (root cause, contributing factors, lessons learned) to document real cases like an agent inheriting elevated permissions and autonomously deleting a live production environment."
+    },
+    {
+      "title": "Agencies Seek Comment on Proposed Third-Party Risk Management Guidance and Issue Statement on Community Bank Engagement with Core Service Providers",
+      "url": "https://www.occ.gov/news-issuances/news-releases/2026/nr-ia-2026-77.html",
+      "source": "OCC (joint with Federal Reserve, FDIC, NCUA)",
+      "published": "2026-09",
+      "format": "docs",
+      "est_minutes": 10,
+      "level": "working",
+      "track": "banking",
+      "bite": "U.S. banking regulators are proposing to replace their 2023 third-party risk guidance, which they say was 'frequently interpreted in an overly broad manner' and applied as one-size-fits-all checklists. The new approach asks banks to size due diligence and contract terms to actual risk, with heightened scrutiny reserved for 'core service providers' whose failure could disrupt essential bank functions. Comments close November 16, 2026.",
+      "read_if": "Read if you sell into banks and need to anticipate how their vendor risk teams will re-tier every relationship; skip if you're not selling to regulated financial institutions.",
+      "key_takeaway": "The agencies concluded the 2023 guidance 'frequently has been interpreted in an overly broad manner and with an insufficient focus on tailoring its risk management principles,' so the new framework asks banks to size due diligence and contract terms to actual risk rather than applying uniform checklists to every vendor — comments close November 16, 2026."
+    },
+    {
+      "title": "Deutsche Bank and Google Build AI Agents to Patrol Trading",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/deutsche-bank-google-build-ai-agents-patrol-trading/",
+      "source": "PYMNTS (reporting on Bloomberg)",
+      "published": "2026-02",
+      "format": "article",
+      "est_minutes": 6,
+      "level": "working",
+      "track": "banking",
+      "bite": "Deutsche Bank built AI agents on Google Cloud's LLM to monitor trading orders, executed trades, and communications for conduct and surveillance risk. Bank executives believe the system can cut false positives by up to 40% and compliance costs by up to $5 million a year — but the agent only recommends a route; a human compliance officer still makes and owns the final call.",
+      "read_if": "Read if you need a credible, named peer reference for fraud/AML or conduct-surveillance conversations with other tier-one banks; skip if your buyer isn't at that scale.",
+      "key_takeaway": "Deutsche Bank's head of technology told Bloomberg the bank's executives believe such a system could reduce false positives by as much as 40% and cut compliance costs by as much as $5 million per year, but the model only recommends a route — the compliance officer still makes and owns the final call."
+    }
+  ],
+  "counts": {
+    "agentic": 1,
+    "banking": 2,
+    "terms": 5
+  }
+}

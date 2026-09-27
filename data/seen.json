@@ -125,7 +125,10 @@
     "https://alexop.dev/posts/four-types-memory-coding-agents-claude-code": "2026-09-19",
     "https://arxiv.org/abs/2605.14865": "2026-09-19",
     "https://bankofengland.co.uk/news/2026/july/uk-financial-regulators-to-begin-overseeing-critical-third-parties-announced-by-hmt": "2026-09-19",
-    "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol": "2026-09-19"
+    "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol": "2026-09-19",
+    "https://github.com/laureanopacheco/ai-agent-incidents": "2026-09-27",
+    "https://occ.gov/news-issuances/news-releases/2026/nr-ia-2026-77.html": "2026-09-27",
+    "https://pymnts.com/news/artificial-intelligence/2026/deutsche-bank-google-build-ai-agents-patrol-trading": "2026-09-27"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -253,6 +256,9 @@
     "the four types of memory for ai agents and how claude code implements each": "2026-09-19",
     "holistic evaluation and failure diagnosis of ai agents": "2026-09-19",
     "uk financial regulators to begin overseeing critical third parties announced by hmt": "2026-09-19",
-    "announcing agent payments protocol ap2": "2026-09-19"
+    "announcing agent payments protocol ap2": "2026-09-19",
+    "ai agent incidents a structured community maintained postmortem database for ai agent failures": "2026-09-27",
+    "agencies seek comment on proposed third party risk management guidance and issue statement on community bank engagement with core service providers": "2026-09-27",
+    "deutsche bank and google build ai agents to patrol trading": "2026-09-27"
   }
 }
