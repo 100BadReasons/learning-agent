@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-28",
+  "generated_at": "2026-09-28T18:21:06+00:00",
+  "intro": "Today pairs the technical grammar of agents (how they're built, how their memory actually works) with two live bank deployments that both put an agent between the client and the core system while keeping a human as the accountable party of last resort.",
+  "cards": [
+    {
+      "title": "CS329Z: Engineering AI Agents",
+      "url": "https://cs329z.stanford.edu/",
+      "source": "Stanford University (Diyi Yang, Michael Ryan, John Yang)",
+      "published": "2026-09",
+      "format": "course",
+      "est_minutes": 40,
+      "level": "working",
+      "track": "agentic",
+      "bite": "This is a graduate course that refuses to let students touch an agent framework until they've built one by hand: the first assignment requires the agent loop, tool calls, and retrieval to be built directly on a raw chat-completion API. The reasoning is that frameworks hide exactly the decisions that determine whether an agent works in production, and you can't evaluate what's hidden until you've built it yourself. The rest of the course is organized around the three things that actually break agent projects — breaking a task down correctly, curating the data an agent learns from, and building evaluations that catch failure before a customer does.",
+      "read_if": "Read if you want the vocabulary to tell a real agent architecture from a framework demo; skip if you just need the news.",
+      "key_takeaway": "The first assignment bans agent frameworks entirely — students build the agent loop, tool calls, and RAG with nothing but a chat-completion API call, because you can't judge what a framework abstracts away until you've built the thing it's abstracting."
+    },
+    {
+      "title": "The Missing Memory Hierarchy: Demand Paging for LLM Context Windows",
+      "url": "https://arxiv.org/abs/2603.09023",
+      "source": "arXiv (Tony Mason)",
+      "published": "2026-03",
+      "format": "paper",
+      "est_minutes": 25,
+      "level": "working",
+      "track": "agentic",
+      "bite": "The paper argues that treating an AI agent's context window as its entire memory — rather than as a fast, small cache sitting on top of a larger storage layer — is the reason long-running agents get slow, expensive, and forgetful. Measuring real production sessions, the authors found 21.8% of context space was wasted on structural overhead rather than useful information. Adding a transparent 'paging' layer that moves information in and out of the window as needed cut context consumption by up to 93% with no change the model could detect.",
+      "read_if": "Read if you need a solid, non-hand-wavy answer to 'why does this agent get worse the longer it runs'; skip if you're not fielding that question yet.",
+      "key_takeaway": "Treating the context window as the entire memory system (rather than adding an L2/paging layer) wastes measurable capacity — the paper found 21.8% structural waste across real production sessions — and a transparent demand-paging proxy can cut context consumption by up to 93% without the model noticing."
+    },
+    {
+      "title": "Morgan Stanley will soon open its trillion-dollar wealth management funnel to AI agents",
+      "url": "https://www.cnbc.com/2026/06/03/ai-agents-morgan-stanley-wealth-management-funnel.html",
+      "source": "CNBC",
+      "published": "2026-06",
+      "format": "article",
+      "est_minutes": 8,
+      "level": "working",
+      "track": "banking",
+      "bite": "Morgan Stanley is opening its wealth-management platforms so that corporate clients' own AI agents can pull data and instructions directly from systems like ShareWorks and Equity Edge, using an open standard for connecting AI models to data sources — instead of routing everything through the human-facing software interface. That flips the usual order: the screen built for people becomes a fallback, not the front door. It's also a deliberate contrast with JPMorgan and Goldman Sachs, who are running agents internally rather than letting outside agents reach into their systems.",
+      "read_if": "Read if you sell into banks and need a real example of the 'agent talks to system directly' pattern; skip if you only track internal-copilot use cases.",
+      "key_takeaway": "<cite index=\"104-1,104-3\">Morgan Stanley is leaning on the Model Context Protocol, an open-source standard that allows AI models to plug into data sources, to let clients' autonomous agents pull data and insights directly from its stock administration platforms, bypassing the traditional software interfaces built for human users</cite> — meaning the human UI stops being the system of engagement and becomes a fallback."
+    },
+    {
+      "title": "Deutsche Bank Private Bank launches Agentic AI solution for Source of Wealth KYC processes",
+      "url": "https://wealth.db.com/en/about-us/news/2026/deutsche-bank-private-bank-launches-agentic-ai-kyc-processes.html",
+      "source": "Deutsche Bank",
+      "published": "2026-09",
+      "format": "article",
+      "est_minutes": 4,
+      "level": "intro",
+      "track": "banking",
+      "bite": "Deutsche Bank's private bank has put an agentic AI system into one of the most regulator-sensitive workflows in banking: verifying a client's source of wealth. The system researches and assembles documentation from case files and approved external sources, flags gaps or inconsistencies, and prepares the assessment — but stops short of deciding, because a person still reviews and signs off. The bank was explicit on this point: tasks can be automated, but accountability stays with people.",
+      "read_if": "Read if you deal with compliance or risk teams asking who's liable when an agent touches KYC; skip if that's not your buyer.",
+      "key_takeaway": "<cite index=\"111-2,111-6\">The solution automates research, documentation and preparation of Source of Wealth data, drawing on client-case information and approved external sources, analysing documentation to flag gaps or inconsistencies and supporting the preparation of assessments for human review</cite> — and Deutsche Bank was explicit that <cite index=\"111-5\">while tasks can be automated, accountability remains with our people</cite>, a framing worth reusing when a bank's risk team asks who signs off on an agent's output."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 2,
+    "terms": 5
+  }
+}

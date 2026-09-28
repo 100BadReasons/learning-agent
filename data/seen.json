@@ -128,7 +128,11 @@
     "https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol": "2026-09-19",
     "https://github.com/laureanopacheco/ai-agent-incidents": "2026-09-27",
     "https://occ.gov/news-issuances/news-releases/2026/nr-ia-2026-77.html": "2026-09-27",
-    "https://pymnts.com/news/artificial-intelligence/2026/deutsche-bank-google-build-ai-agents-patrol-trading": "2026-09-27"
+    "https://pymnts.com/news/artificial-intelligence/2026/deutsche-bank-google-build-ai-agents-patrol-trading": "2026-09-27",
+    "https://cs329z.stanford.edu/": "2026-09-28",
+    "https://arxiv.org/abs/2603.09023": "2026-09-28",
+    "https://cnbc.com/2026/06/03/ai-agents-morgan-stanley-wealth-management-funnel.html": "2026-09-28",
+    "https://wealth.db.com/en/about-us/news/2026/deutsche-bank-private-bank-launches-agentic-ai-kyc-processes.html": "2026-09-28"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -259,6 +263,10 @@
     "announcing agent payments protocol ap2": "2026-09-19",
     "ai agent incidents a structured community maintained postmortem database for ai agent failures": "2026-09-27",
     "agencies seek comment on proposed third party risk management guidance and issue statement on community bank engagement with core service providers": "2026-09-27",
-    "deutsche bank and google build ai agents to patrol trading": "2026-09-27"
+    "deutsche bank and google build ai agents to patrol trading": "2026-09-27",
+    "cs329z engineering ai agents": "2026-09-28",
+    "the missing memory hierarchy demand paging for llm context windows": "2026-09-28",
+    "morgan stanley will soon open its trillion dollar wealth management funnel to ai agents": "2026-09-28",
+    "deutsche bank private bank launches agentic ai solution for source of wealth kyc processes": "2026-09-28"
   }
 }
