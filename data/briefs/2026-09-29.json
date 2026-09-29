@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-29",
+  "generated_at": "2026-09-29T16:43:47+00:00",
+  "intro": "Today's material lines up two views of the same gap: research showing that even top AI systems struggle to build a working agent from real, messy inputs, and banking-side evidence that few banks have gotten past pilots anyway — while the fraud landscape has already moved past detection into AI-powered social engineering of the humans in the approval chain.",
+  "cards": [
+    {
+      "title": "τ^τ-Bench: An Environment for End-To-End, Realistic Agent Construction",
+      "url": "https://arxiv.org/abs/2609.04611",
+      "source": "Sierra / Princeton University (Quan Shi, Keshav Dhandhania, Karthik Narasimhan, Victor Barres)",
+      "published": "2026-09",
+      "format": "paper",
+      "est_minutes": 40,
+      "level": "working",
+      "track": "agentic",
+      "bite": "This benchmark stops asking whether an AI agent can do a job and instead asks whether an AI system can build the agent that does the job — given the same scattered policy docs, client requirements, production API, and cost budget a real engagement hands you. The best tested setup (Claude Opus 5 under Claude Code) hits only 23.9% success against an 82.2% expert-built ceiling. The gap comes from four specific habits: skimming with keyword search instead of reading the evidence corpus, almost never asking the client clarifying questions, never trying more than one architecture, and shipping the first design that runs.",
+      "read_if": "Read if you want a grounded, non-hyped answer to 'can your AI agent-builder actually do this' — skip if you only need the one-line summary.",
+      "key_takeaway": "The strongest tested coding-agent setup (Claude Opus 5 under Claude Code) passes only 23.9% of held-out simulations versus an 82.2% expert-built ceiling, and the gap traces to four concrete failures: shallow keyword search instead of reading the evidence corpus, almost never interviewing the client, never exploring alternative agent architectures, and shipping the first design that runs."
+    },
+    {
+      "title": "How we build and use Azure SRE Agent with agentic workflows",
+      "url": "https://techcommunity.microsoft.com/blog/appsonazureblog/how-we-build-and-use-azure-sre-agent-with-agentic-workflows/4508753",
+      "source": "Microsoft Tech Community (Azure engineering)",
+      "published": "2026-04",
+      "format": "article",
+      "est_minutes": 10,
+      "level": "intro",
+      "track": "agentic",
+      "bite": "Microsoft's own account of a multi-agent operations system shows that even at real internal scale, every consequential action still routes through role-based approval and escalation — 'human in the loop' isn't a diagram, it's a specific gate a human has to clear before anything happens. The headline numbers (35,000+ incidents handled, time-to-mitigation cut from a 40.5-hour human-only average to 3 minutes) are real but come from a narrow, self-selected internal population, not an independent benchmark.",
+      "read_if": "Read if you need a concrete, first-party example of what 'human oversight' looks like in a live agent, and a reminder to read vendor-reported metrics skeptically — skip if you already assume all such numbers are cherry-picked.",
+      "key_takeaway": "Even a mature, heavily-governed production agent still routes every consequential action through role-based approval and escalation; Microsoft's own reported numbers (35,000+ incidents handled, App Service time-to-mitigation cut from a 40.5-hour human-only average to 3 minutes) come from a narrow, self-selected internal population, not a generalizable benchmark — a useful caution for how to read vendor-reported agent metrics."
+    },
+    {
+      "title": "AI messaging scam costs Italy's top bank Intesa millions, sources say",
+      "url": "https://live.euronext.com/en/financial-news/ai-messaging-scam-costs-italys-top-bank-intesa-millions-sources-say",
+      "source": "Reuters (Emilio Parodi)",
+      "published": "2026-09",
+      "format": "article",
+      "est_minutes": 4,
+      "level": "intro",
+      "track": "banking",
+      "bite": "€95 million left Intesa Sanpaolo's private bank after attackers used an AI-cloned voice and a spoofed executive WhatsApp message to talk two humans in the same authorization chain into moving the money — no system was breached. It's a clean, dated, dollar-figured case showing that dual-authorization controls which don't independently verify the communication channel itself are no longer enough against synthetic-identity social engineering.",
+      "read_if": "Read if you talk to fraud or ops leadership about what 'AI risk' means in practice — skip only if you already have a better real-world example on hand.",
+      "key_takeaway": "The attack didn't breach any bank system — it socially engineered two humans in the same authorization chain using AI voice cloning and a spoofed executive WhatsApp message, so four-eyes/dual-authorization controls that don't independently verify the communication channel itself are no longer sufficient for high-value exception payments."
+    },
+    {
+      "title": "Despite the Hype, Few Banks Deploy AI Agents",
+      "url": "https://finxtech.com/despite-the-hype-few-banks-deploy-ai-agents/",
+      "source": "FinXTech (Bank Director)",
+      "published": "2026-09",
+      "format": "article",
+      "est_minutes": 6,
+      "level": "working",
+      "track": "banking",
+      "bite": "Based on Bank Director's 2026 Technology Survey: 72% of bank executives say they use generative AI, but only 30% say their bank is deploying agentic AI at all, and 83% of those are just consuming it inside existing vendor tools (core, CRM, fraud) rather than building anything custom. ConnectOne Bank's deployment on its core provider's platform is one of the few substantive named cases. The honest read: most 'agentic AI' at banks today is a vendor's roadmap showing up in a bank's stack, not the bank's own initiative.",
+      "read_if": "Read before any regional or community bank pitch — it's the reality check on how thin actual agentic deployment still is behind the hype; skip if you already work only with money-center banks running custom builds.",
+      "key_takeaway": "72% of surveyed bank executives report using generative AI, but only 30% say their bank is deploying agentic AI — and of those, 83% are consuming it embedded inside existing vendor tools (core, CRM, fraud) rather than building custom agents, meaning most 'agentic AI' at banks today is really a vendor's roadmap, not the bank's own initiative."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 2,
+    "terms": 5
+  }
+}

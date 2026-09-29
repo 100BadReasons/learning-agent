@@ -132,7 +132,11 @@
     "https://cs329z.stanford.edu/": "2026-09-28",
     "https://arxiv.org/abs/2603.09023": "2026-09-28",
     "https://cnbc.com/2026/06/03/ai-agents-morgan-stanley-wealth-management-funnel.html": "2026-09-28",
-    "https://wealth.db.com/en/about-us/news/2026/deutsche-bank-private-bank-launches-agentic-ai-kyc-processes.html": "2026-09-28"
+    "https://wealth.db.com/en/about-us/news/2026/deutsche-bank-private-bank-launches-agentic-ai-kyc-processes.html": "2026-09-28",
+    "https://arxiv.org/abs/2609.04611": "2026-09-29",
+    "https://techcommunity.microsoft.com/blog/appsonazureblog/how-we-build-and-use-azure-sre-agent-with-agentic-workflows/4508753": "2026-09-29",
+    "https://live.euronext.com/en/financial-news/ai-messaging-scam-costs-italys-top-bank-intesa-millions-sources-say": "2026-09-29",
+    "https://finxtech.com/despite-the-hype-few-banks-deploy-ai-agents": "2026-09-29"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -267,6 +271,10 @@
     "cs329z engineering ai agents": "2026-09-28",
     "the missing memory hierarchy demand paging for llm context windows": "2026-09-28",
     "morgan stanley will soon open its trillion dollar wealth management funnel to ai agents": "2026-09-28",
-    "deutsche bank private bank launches agentic ai solution for source of wealth kyc processes": "2026-09-28"
+    "deutsche bank private bank launches agentic ai solution for source of wealth kyc processes": "2026-09-28",
+    "bench an environment for end to end realistic agent construction": "2026-09-29",
+    "how we build and use azure sre agent with agentic workflows": "2026-09-29",
+    "ai messaging scam costs italy s top bank intesa millions sources say": "2026-09-29",
+    "despite the hype few banks deploy ai agents": "2026-09-29"
   }
 }
