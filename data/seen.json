@@ -136,7 +136,11 @@
     "https://arxiv.org/abs/2609.04611": "2026-09-29",
     "https://techcommunity.microsoft.com/blog/appsonazureblog/how-we-build-and-use-azure-sre-agent-with-agentic-workflows/4508753": "2026-09-29",
     "https://live.euronext.com/en/financial-news/ai-messaging-scam-costs-italys-top-bank-intesa-millions-sources-say": "2026-09-29",
-    "https://finxtech.com/despite-the-hype-few-banks-deploy-ai-agents": "2026-09-29"
+    "https://finxtech.com/despite-the-hype-few-banks-deploy-ai-agents": "2026-09-29",
+    "https://arxiv.org/abs/2607.22368": "2026-09-30",
+    "https://lilianweng.github.io/posts/2026-07-04-harness": "2026-09-30",
+    "https://kyndryl.com/in/en/about-us/news/2026/08/agentic-ai-incore-bank": "2026-09-30",
+    "https://infosys.com/industries/financial-services/documents/banking-index-volume-6.pdf": "2026-09-30"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -275,6 +279,10 @@
     "bench an environment for end to end realistic agent construction": "2026-09-29",
     "how we build and use azure sre agent with agentic workflows": "2026-09-29",
     "ai messaging scam costs italy s top bank intesa millions sources say": "2026-09-29",
-    "despite the hype few banks deploy ai agents": "2026-09-29"
+    "despite the hype few banks deploy ai agents": "2026-09-29",
+    "do agent benchmarks measure capability protocol validity in the age of agentic ai": "2026-09-30",
+    "harness engineering for self improvement": "2026-09-30",
+    "kyndryl and incore bank collaborate with google cloud to help advance agentic ai customer onboarding": "2026-09-30",
+    "infosys bank tech index volume 6": "2026-09-30"
   }
 }
