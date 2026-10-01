@@ -140,7 +140,10 @@
     "https://arxiv.org/abs/2607.22368": "2026-09-30",
     "https://lilianweng.github.io/posts/2026-07-04-harness": "2026-09-30",
     "https://kyndryl.com/in/en/about-us/news/2026/08/agentic-ai-incore-bank": "2026-09-30",
-    "https://infosys.com/industries/financial-services/documents/banking-index-volume-6.pdf": "2026-09-30"
+    "https://infosys.com/industries/financial-services/documents/banking-index-volume-6.pdf": "2026-09-30",
+    "https://hugobowne.substack.com/p/building-agents-that-build-themselves": "2026-10-01",
+    "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/09/global-banks-collaborate-on-principles-for-trusted-agentic-comme.html": "2026-10-01",
+    "https://arxiv.org/abs/2608.18136": "2026-10-01"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -283,6 +286,9 @@
     "do agent benchmarks measure capability protocol validity in the age of agentic ai": "2026-09-30",
     "harness engineering for self improvement": "2026-09-30",
     "kyndryl and incore bank collaborate with google cloud to help advance agentic ai customer onboarding": "2026-09-30",
-    "infosys bank tech index volume 6": "2026-09-30"
+    "infosys bank tech index volume 6": "2026-09-30",
+    "building agents that build themselves": "2026-10-01",
+    "global banks collaborate on principles for trusted agentic commerce": "2026-10-01",
+    "fraudbench stress testing policy grounded banking agents against adaptive fraud": "2026-10-01"
   }
 }

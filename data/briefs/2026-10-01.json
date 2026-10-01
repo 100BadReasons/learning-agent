@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-01",
+  "generated_at": "2026-10-01T17:13:26+00:00",
+  "intro": "Today's material spans the technical guts of durable agent architecture and the hard evidence that banking agents still fail safety tests even as banks race to self-govern agentic commerce ahead of regulators.",
+  "cards": [
+    {
+      "title": "Building Agents That Build Themselves",
+      "url": "https://hugobowne.substack.com/p/building-agents-that-build-themselves",
+      "source": "Hugo Bowne-Anderson (Vanishing Gradients), with Ivan Leo (ex-Manus)",
+      "published": "2026-02",
+      "format": "article",
+      "est_minutes": 35,
+      "level": "working",
+      "track": "agentic",
+      "bite": "The real insight here is that most 'coding agents' are actually general-purpose computer-use agents that happen to be good at writing code — the same loop generalizes far beyond coding tasks. The durability trick is architectural: keep the core loop (LLM plus tool calls) minimal, and push everything else — context management, memory compaction, progressive disclosure, triggered behaviors — into hooks and hot-reloadable tools rather than hardcoding them into the loop itself. That separation is what lets an agent harness survive new tools and new failure modes without a rewrite.",
+      "read_if": "Read if you need to evaluate or explain agent reliability claims to a technical buyer; skip if you only need the business headline.",
+      "key_takeaway": "The core architectural insight is that <cite index=\"97-5\">how coding agents are really general-purpose computer use agents that happen to be great at writing code</cite>, and that durable agent design means separating the core loop from everything else via <cite index=\"97-5\">building the core agent loop with an LLM and tool calls... context management, memory compaction, and progressive disclosure... and making the agent trigger actions automatically... using hooks</cite> rather than hardcoding features into the loop itself."
+    },
+    {
+      "title": "Global Banks Collaborate on Principles for Trusted Agentic Commerce",
+      "url": "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/09/global-banks-collaborate-on-principles-for-trusted-agentic-comme.html",
+      "source": "Bank of America Newsroom (joint with ASB Bank, Capital One, Commonwealth Bank of Australia, ING Group, NatWest Group)",
+      "published": "2026-09",
+      "format": "docs",
+      "est_minutes": 12,
+      "level": "working",
+      "track": "banking",
+      "bite": "Six major banks — Bank of America, Capital One, NatWest, ING, Commonwealth Bank of Australia, and ASB — jointly published a governance framework for AI agents making purchases and payments on customers' behalf, getting ahead of any regulator. Their five principles (transparency, safety, privacy, choice, interoperability) are notable less for the principles themselves than for what they admit: nobody has yet settled who is liable when an agent exceeds its authority or makes an erroneous transaction.",
+      "read_if": "Read if you sell into payments, risk, or compliance functions at banks; skip if agentic commerce isn't on your buyer's roadmap.",
+      "key_takeaway": "The banks propose five principles (transparency, safety, privacy/data, choice, interoperability) and explicitly flag that liability allocation when an AI agent errs is still unresolved in payment network rules — a live gap vendors can sell controls against."
+    },
+    {
+      "title": "FraudBench: Stress-Testing Policy-Grounded Banking Agents Against Adaptive Fraud",
+      "url": "https://arxiv.org/abs/2608.18136",
+      "source": "arXiv (Pai & Xian)",
+      "published": "2026-08",
+      "format": "paper",
+      "est_minutes": 25,
+      "level": "deep",
+      "track": "banking",
+      "bite": "A new benchmark put four production-grade banking customer-service agents — the kind that answer balance questions and can also reset a PIN or move money — through 107 adversarial scenarios where a caller manipulates identity and authorization across a multi-turn conversation. Attack-resistance scores landed at only 49-65%, with money-mule schemes and first-party fraud the most common ways the agents got talked into doing something they shouldn't. The takeaway is blunt: agents with unrestricted account authority are not yet safe to deploy against adaptive human fraud.",
+      "read_if": "Read if you're evaluating or selling conversational banking agents with transactional authority; skip if your deployment is read-only or human-supervised.",
+      "key_takeaway": "Across four production-grade agents tested on 107 adversarial scenarios spanning ten fraud mechanisms, attack-security ranged only 49-65%, with money-mule and first-party fraud the most common failure modes — meaning current conversational banking agents are not safe to deploy with unrestricted authority."
+    }
+  ],
+  "counts": {
+    "agentic": 1,
+    "banking": 2,
+    "terms": 5
+  }
+}
