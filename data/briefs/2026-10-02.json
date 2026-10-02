@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-02",
+  "generated_at": "2026-10-02T16:26:42+00:00",
+  "intro": "Today pairs a rare inside look at how a Fortune 500 company actually runs multi-agent AI in production with the banking-specific economics and governance questions that follow once you try to deploy that at scale.",
+  "cards": [
+    {
+      "title": "Building Production Agentic AI at IBM: Architecture, Decisions, and What We Learned",
+      "url": "https://www.tonyerwin.com/2026/08/building-production-agentic-ai-at-ibm.html",
+      "source": "Tony Erwin (IBM, Chief Architect, TLS Agentic Platform)",
+      "published": "2026-08",
+      "format": "article",
+      "est_minutes": 30,
+      "level": "working",
+      "track": "agentic",
+      "bite": "A named architect walks through a six-agent system that has been running in production since fall 2025, and the hard part turns out not to be the agent code but what he calls negotiating access to systems of record. The real fight is identity: every hop between agents has to carry the original caller's identity, because the moment it gets swapped for a generic service account, authorization decisions quietly move outside the company's own control model and into the vendor's. He also weighs A2A protocol calls against simpler in-process function calls, and explains why independent agent teams made version upgrades surprisingly painful.",
+      "read_if": "Read if you need a concrete, defensible answer for what 'multi-agent in production' involves under the hood; skip if you just want headline stats.",
+      "key_takeaway": "The hardest part of shipping multi-agent systems isn't agent code, it's the 'data factory': negotiating access to systems of record and propagating the caller's real identity through every hop, because the moment identity is substituted with a service account, authorization silently leaves the enterprise's model and enters yours."
+    },
+    {
+      "title": "Agentic AI (CS 294/194-196) — Fall 2025 MOOC",
+      "url": "https://agenticai-learning.org/f25",
+      "source": "UC Berkeley RDI (Dawn Song et al.)",
+      "published": "2025-09",
+      "format": "course",
+      "est_minutes": 1200,
+      "level": "deep",
+      "track": "agentic",
+      "bite": "A free, full university course covering the entire agent stack: reasoning and planning, tool use, infrastructure, deployment, and safety, taught jointly by Berkeley faculty and guest lecturers from OpenAI, DeepMind, NVIDIA, and Block. Its core framing is simple — an agent is a loop that observes, plans, acts, and reflects, wired up to tools and retrieval — and everything else (memory, multi-agent coordination, safety) is built on top of that one idea.",
+      "read_if": "Read if you want real conceptual grounding and vocabulary over weeks, not a one-day skim; skip if you need something fast.",
+      "key_takeaway": "An LLM agent is fundamentally an observe–plan–act–reflect loop wired to tools and retrieval; the course's own framing is that 'LLM agents: enabling LLMs to interact with the environment' is the core idea everything else (memory, multi-agent coordination, safety) builds on."
+    },
+    {
+      "title": "How bottom-line-focused financial firms are finding ROI in AI",
+      "url": "https://fortune.com/2026/09/29/how-banks-are-using-ai-agents-copilots-roi",
+      "source": "Fortune",
+      "published": "2026-09",
+      "format": "article",
+      "est_minutes": 7,
+      "level": "working",
+      "track": "banking",
+      "bite": "Capital One is moving away from routing everything through big general-purpose model calls and toward smaller, task-specific open-weight models with trimmed context — because at real scale, latency and token cost, not model capability, become the binding constraint. BNY offers the scaling story: its in-house AI control plane has grown from 160 to nearly 400 production initiatives. Together they're a useful peer benchmark for what 'at scale' actually costs and looks like inside a bank.",
+      "read_if": "Read if you want named, concrete bank benchmarks for a sales conversation; skip if you already track Capital One and BNY's AI programs closely.",
+      "key_takeaway": "Leading banks are moving away from routing everything through large general-purpose model calls toward smaller, task-specific open-weight models with trimmed context, because at scale latency and token cost — not model capability — become the binding constraint."
+    },
+    {
+      "title": "How Capital One evaluates, governs its AI agents",
+      "url": "https://www.constellationr.com/insights/news/how-capital-one-evaluates-governs-its-ai-agents",
+      "source": "Constellation Research",
+      "published": "2026-09",
+      "format": "article",
+      "est_minutes": 5,
+      "level": "deep",
+      "track": "banking",
+      "bite": "Capital One governs single-LLM assistants and autonomous multi-step agents as two fundamentally different problems. The assistants get LLM-as-judge scoring with moving averages to catch drift, and the judge model itself gets periodically recalibrated by human subject-matter experts. But the piece is candid that autonomous agent chains introduce new actors and new risks that this architecture doesn't yet fully solve.",
+      "read_if": "Read if your conversations touch agent evaluation or observability tooling for regulated environments; skip if you're focused purely on cost and ROI.",
+      "key_takeaway": "Capital One treats single-LLM assistants and autonomous multi-step \"mobile agents\" as fundamentally different governance problems — the former is handled with LLM-as-judge scoring calibrated by human subject-matter experts, but autonomous agent chains introduce new actors and risks that this architecture alone doesn't yet solve."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 2,
+    "terms": 5
+  }
+}

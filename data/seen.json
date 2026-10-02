@@ -143,7 +143,11 @@
     "https://infosys.com/industries/financial-services/documents/banking-index-volume-6.pdf": "2026-09-30",
     "https://hugobowne.substack.com/p/building-agents-that-build-themselves": "2026-10-01",
     "https://newsroom.bankofamerica.com/content/newsroom/press-releases/2026/09/global-banks-collaborate-on-principles-for-trusted-agentic-comme.html": "2026-10-01",
-    "https://arxiv.org/abs/2608.18136": "2026-10-01"
+    "https://arxiv.org/abs/2608.18136": "2026-10-01",
+    "https://tonyerwin.com/2026/08/building-production-agentic-ai-at-ibm.html": "2026-10-02",
+    "https://agenticai-learning.org/f25": "2026-10-02",
+    "https://fortune.com/2026/09/29/how-banks-are-using-ai-agents-copilots-roi": "2026-10-02",
+    "https://constellationr.com/insights/news/how-capital-one-evaluates-governs-its-ai-agents": "2026-10-02"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -289,6 +293,10 @@
     "infosys bank tech index volume 6": "2026-09-30",
     "building agents that build themselves": "2026-10-01",
     "global banks collaborate on principles for trusted agentic commerce": "2026-10-01",
-    "fraudbench stress testing policy grounded banking agents against adaptive fraud": "2026-10-01"
+    "fraudbench stress testing policy grounded banking agents against adaptive fraud": "2026-10-01",
+    "building production agentic ai at ibm architecture decisions and what we learned": "2026-10-02",
+    "agentic ai cs 294 194 196 fall 2025 mooc": "2026-10-02",
+    "how bottom line focused financial firms are finding roi in ai": "2026-10-02",
+    "how capital one evaluates governs its ai agents": "2026-10-02"
   }
 }
