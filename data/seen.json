@@ -147,7 +147,11 @@
     "https://tonyerwin.com/2026/08/building-production-agentic-ai-at-ibm.html": "2026-10-02",
     "https://agenticai-learning.org/f25": "2026-10-02",
     "https://fortune.com/2026/09/29/how-banks-are-using-ai-agents-copilots-roi": "2026-10-02",
-    "https://constellationr.com/insights/news/how-capital-one-evaluates-governs-its-ai-agents": "2026-10-02"
+    "https://constellationr.com/insights/news/how-capital-one-evaluates-governs-its-ai-agents": "2026-10-02",
+    "https://arxiv.org/abs/2603.04474": "2026-10-03",
+    "https://arxiv.org/abs/2608.05263": "2026-10-03",
+    "https://ciodive.com/news/ai-shifts-mainframe-modernization-strategy/825677": "2026-10-03",
+    "https://gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes": "2026-10-03"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -297,6 +301,10 @@
     "building production agentic ai at ibm architecture decisions and what we learned": "2026-10-02",
     "agentic ai cs 294 194 196 fall 2025 mooc": "2026-10-02",
     "how bottom line focused financial firms are finding roi in ai": "2026-10-02",
-    "how capital one evaluates governs its ai agents": "2026-10-02"
+    "how capital one evaluates governs its ai agents": "2026-10-02",
+    "from spark to fire modeling and mitigating error cascades in llm based multi agent collaboration": "2026-10-03",
+    "orchestrabench evaluating multi agent orchestration failure modes recovery and decomposition quality": "2026-10-03",
+    "ai shifts mainframe modernization strategy": "2026-10-03",
+    "eu ai act omnibus agreement postponed high risk deadlines and other key changes": "2026-10-03"
   }
 }

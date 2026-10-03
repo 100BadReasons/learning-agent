@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-03",
+  "generated_at": "2026-10-03T15:01:52+00:00",
+  "intro": "Today's four pieces split cleanly into two halves: the agentic research explains mechanically why multi-agent pipelines fail and why adding reviewers or retries doesn't fix it, while the banking research gives a real vendor-vs-reality case study plus an EU regulatory timeline update that directly affects credit-decisioning AI projects.",
+  "cards": [
+    {
+      "title": "From Spark to Fire: Modeling and Mitigating Error Cascades in LLM-Based Multi-Agent Collaboration",
+      "url": "https://arxiv.org/abs/2603.04474",
+      "source": "arXiv (Xie, Zhu, Zhang, Zhu, Ye, Qi, Chen, Zhou)",
+      "published": "2026-03",
+      "format": "paper",
+      "est_minutes": 35,
+      "level": "working",
+      "track": "agentic",
+      "bite": "Errors in multi-agent pipelines don't just sit there — they spread through message dependencies into system-wide false consensus, and across six major frameworks (LangChain, MetaGPT, LangGraph, CrewAI, AutoGen, CAMEL) a single injected error reached near-total infection in most setups. The uncomfortable finding: reviewer or QA agents don't catch this because they get infected by the same false consensus too. What actually worked was tracking where each claim originated at the message level, which raised defense success from 0.32 to over 0.89 — far more effective than trusting any one agent's validation role.",
+      "read_if": "Read if you need a rigorous answer for why more agents or a 'reviewer' role can make a pipeline worse, not better; skip if you just need the one-line version.",
+      "key_takeaway": "Errors in multi-agent pipelines don't just persist, they amplify through message dependencies into system-wide false consensus — across six mainstream frameworks (LangChain, MetaGPT, LangGraph, CrewAI, AutoGen, CAMEL) a single injected error reached near-total infection in most topologies, and the fix that worked was tracking claim provenance at the message layer itself, which raised defense success from 0.32 to over 0.89, rather than trusting any single agent's validation role."
+    },
+    {
+      "title": "OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality",
+      "url": "https://arxiv.org/abs/2608.05263",
+      "source": "arXiv (Chen, Gu, Vidra, Setty, Zheng)",
+      "published": "2026-08",
+      "format": "paper",
+      "est_minutes": 30,
+      "level": "working",
+      "track": "agentic",
+      "bite": "Not all agent failures are equal, and the split doesn't move with which model you use. Tool faults recover fully, ambiguous delegation only partially, and three latent or semantic failure modes never recover — even under top-tier models. Worse, just retrying doesn't fix the latent failures, it reproduces them and delays detection, so real containment needs explicit failure attribution, not more attempts.",
+      "read_if": "Read if you'll be asked 'can it recover from its own mistakes' in a pilot review; skip if you only need the headline stat.",
+      "key_takeaway": "Agent failure recovery splits into three hard tiers that don't move with model choice — tool faults are fully recoverable (1.0), ambiguous delegation only partially (0.30), and three latent/semantic failure modes never recover (0.0) even under Sonnet, Opus, and Haiku; worse, blind retry doesn't fix latent faults, it just reproduces them and delays detection, so containment requires explicit failure attribution, not more attempts."
+    },
+    {
+      "title": "AI shifts mainframe modernization strategy",
+      "url": "https://www.ciodive.com/news/ai-shifts-mainframe-modernization-strategy/825677/",
+      "source": "CIO Dive",
+      "published": "2026-07",
+      "format": "article",
+      "est_minutes": 7,
+      "level": "working",
+      "track": "banking",
+      "bite": "Morgan Stanley's own in-house AI platform — not a third-party coding agent — has modernized more than 17 million lines of COBOL, Natural, and PERL into Java and Python, saving developers over a million hours, by having AI reverse-engineer the old code into a clear design first rather than auto-translating it line by line. A bank technology executive called a vendor's claim of fully automated COBOL modernization 'laughable.'",
+      "read_if": "Read if you're pitching mainframe modernization to a bank and need a credible, audited counter-example to vendor claims; skip if you already know the DevGen.AI story.",
+      "key_takeaway": "Morgan Stanley's in-house platform <cite index=\"65-5,65-6\">has modernized more than 17 million lines of COBOL, Software AG's Natural and PERL code into modern languages, including Java and Python, with its in-house platform DevGen.AI, saving developers in excess of 1 million hours of manual coding</cite>, by having AI reverse-engineer old code into a clear design rather than auto-translating it, with a bank technology executive calling Anthropic's claim that it could fully automate COBOL modernization <cite index=\"65-2\">\"to me, a laughable statement\"</cite>."
+    },
+    {
+      "title": "EU AI Act Omnibus Agreement — Postponed High-Risk Deadlines and Other Key Changes",
+      "url": "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/",
+      "source": "Gibson Dunn",
+      "published": "2026-05",
+      "format": "article",
+      "est_minutes": 9,
+      "level": "working",
+      "track": "banking",
+      "bite": "The EU AI Act's toughest obligations for high-risk systems — including credit scoring, recruitment, and border control tools — were pushed back over a year, to December 2, 2027. But that delay doesn't cover everything: the Article 50 transparency obligations remain on schedule, taking effect August 2, 2026.",
+      "read_if": "Read if you talk to bank compliance teams about AI Act deadlines; skip if your deals are entirely outside the EU.",
+      "key_takeaway": "The EU AI Act's toughest obligations for high-risk systems like credit scoring were deferred by over a year — <cite index=\"57-3\">stand-alone Annex III systems (covering, among others, recruitment, credit scoring, law enforcement, education, and border control tools) will now need to comply by 2 December 2027</cite> — but transparency duties were not: <cite index=\"83-9,83-10\">2 August 2026 remains an active compliance date. The Article 50 transparency obligations for AI systems largely remain on the original schedule</cite>."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 2,
+    "terms": 5
+  }
+}
