@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-04",
+  "generated_at": "2026-10-04T15:35:20+00:00",
+  "intro": "Today's four pieces converge on one idea: reliable agents come from engineering the seams — orchestration layer, tool/memory interfaces, human release step — not from a smarter model, and the banking evidence shows real institutions already betting that way.",
+  "cards": [
+    {
+      "title": "Model or Harness? An Interaction-Centric Taxonomy for Localizing Agent Failures",
+      "url": "https://arxiv.org/abs/2607.28802",
+      "source": "arXiv (Scale AI Research)",
+      "published": "2026-07",
+      "format": "paper",
+      "est_minutes": 35,
+      "level": "working",
+      "track": "agentic",
+      "bite": "A 41-failure-mode taxonomy locates agent breakdowns at specific interaction points — model-to-tool, model-to-memory, model-to-model — instead of treating every bad output as 'the AI failed.' The core finding: most visible failures trace back to scaffolding, tool integration, or context management, not the model's reasoning itself. That reframes who owns the fix.",
+      "read_if": "Read if you need precise language for explaining a failed demo to a technical buyer; skip if you're only tracking banking-specific news today.",
+      "key_takeaway": "Most visible agent failures are harness-side (scaffolding, tool integration, context management), not model-side — so the taxonomy localizes each failure to the specific interaction edge (model-tool, model-memory, model-model, etc.) where repair should actually happen, rather than blaming 'the AI.'"
+    },
+    {
+      "title": "Conductor: Deterministic orchestration for multi-agent AI workflows",
+      "url": "https://opensource.microsoft.com/blog/2026/05/14/conductor-deterministic-orchestration-for-multi-agent-ai-workflows/",
+      "source": "Microsoft Open Source Blog",
+      "published": "2026-05",
+      "format": "article",
+      "est_minutes": 15,
+      "level": "working",
+      "track": "agentic",
+      "bite": "Microsoft's engineers stopped using an LLM to orchestrate multi-agent workflows that have a known structure, replacing it with a deterministic, config-defined routing layer that costs nothing per decision — reserving actual model calls for the agents that need to reason. Their argument: an LLM orchestrator on a known-structure workflow only adds cost, latency, and unpredictability.",
+      "read_if": "Read if you're fielding 'why isn't the whole stack just one big agent' questions; skip if you already know the orchestration-layer argument cold.",
+      "key_takeaway": "If your multi-agent workflow has a known structure (most production ones do), making the orchestrator itself an LLM adds cost, latency, and unpredictability for no benefit — a YAML-defined, deterministic routing layer that consumes zero tokens is often the better architecture, reserving LLM calls for the agents that actually need to reason."
+    },
+    {
+      "title": "At Sibos 2026, Bank AI Agents Fix Payments a Person Still Releases",
+      "url": "https://www.beri.net/article/sibos-2026-recap-ai-agents-payment-repair-trade-exceptions-iso-20022-human-release",
+      "source": "beri.net",
+      "published": "2026-10",
+      "format": "article",
+      "est_minutes": 8,
+      "level": "working",
+      "track": "banking",
+      "bite": "Every production AI agent shown by BNY, BNP Paribas, Deutsche Bank, HSBC, and Citi at Sibos 2026 lives inside the exception queue — payment repair and trade-document checking — with scheme-rule validation and a mandatory human release step; none of them let a model release a payment on its own. It also maps which vendor (Cleareye, Traydstream, Conpend) each bank uses for trade-document agents, and notes one vendor's efficiency claims still have no published customer numbers behind them.",
+      "read_if": "Read before any bank call this quarter — it's the competitive map; skip only if you already track this vendor landscape closely.",
+      "key_takeaway": "Every production agent shown at Sibos 2026 lives in the exception queue (payment repair, trade-document checking) with scheme-rule validation and a human release step — none of the named banks let a model release a payment unsupervised, and the piece explicitly flags that Finastra's vendor efficiency claims have no published customer figures yet."
+    },
+    {
+      "title": "AI Customer Communications in Financial Services: The AI Production Paradox",
+      "url": "https://sinch.com/blog/ai-communications-financial-services/",
+      "source": "Sinch",
+      "published": "2026-07",
+      "format": "article",
+      "est_minutes": 10,
+      "level": "working",
+      "track": "banking",
+      "bite": "A survey of 500+ financial-services leaders found 69% of AI customer-service agents have already been rolled back for a governance failure, and the rate is highest — 80% — at the most-governed institutions, because better monitoring catches more problems rather than causing them. The leading rollback cause is PII/data exposure, which is an infrastructure gap, not a model-quality one.",
+      "read_if": "Read if you need data to reframe a bank's AI conversation away from compliance checkboxes and toward infrastructure; skip if you've already seen this survey.",
+      "key_takeaway": "69% of financial-services AI customer agents have already been rolled back for a governance failure, and the rate is highest (80%) among the most-governed institutions — because better monitoring surfaces failures others miss, not because governance itself is failing; the top rollback cause is PII/data exposure, an infrastructure problem, not a model problem."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 2,
+    "terms": 5
+  }
+}

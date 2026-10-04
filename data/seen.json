@@ -151,7 +151,11 @@
     "https://arxiv.org/abs/2603.04474": "2026-10-03",
     "https://arxiv.org/abs/2608.05263": "2026-10-03",
     "https://ciodive.com/news/ai-shifts-mainframe-modernization-strategy/825677": "2026-10-03",
-    "https://gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes": "2026-10-03"
+    "https://gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes": "2026-10-03",
+    "https://arxiv.org/abs/2607.28802": "2026-10-04",
+    "https://opensource.microsoft.com/blog/2026/05/14/conductor-deterministic-orchestration-for-multi-agent-ai-workflows": "2026-10-04",
+    "https://beri.net/article/sibos-2026-recap-ai-agents-payment-repair-trade-exceptions-iso-20022-human-release": "2026-10-04",
+    "https://sinch.com/blog/ai-communications-financial-services": "2026-10-04"
   },
   "titles": {
     "building effective agents": "2026-08-13",
@@ -305,6 +309,10 @@
     "from spark to fire modeling and mitigating error cascades in llm based multi agent collaboration": "2026-10-03",
     "orchestrabench evaluating multi agent orchestration failure modes recovery and decomposition quality": "2026-10-03",
     "ai shifts mainframe modernization strategy": "2026-10-03",
-    "eu ai act omnibus agreement postponed high risk deadlines and other key changes": "2026-10-03"
+    "eu ai act omnibus agreement postponed high risk deadlines and other key changes": "2026-10-03",
+    "model or harness an interaction centric taxonomy for localizing agent failures": "2026-10-04",
+    "conductor deterministic orchestration for multi agent ai workflows": "2026-10-04",
+    "at sibos 2026 bank ai agents fix payments a person still releases": "2026-10-04",
+    "ai customer communications in financial services the ai production paradox": "2026-10-04"
   }
 }
