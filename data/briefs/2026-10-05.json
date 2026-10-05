@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-05",
+  "generated_at": "2026-10-05T19:27:20+00:00",
+  "intro": "Today's material is narrow but substantive: two Microsoft research pieces make the case that multi-agent systems fail in ways single-agent testing simply doesn't catch, with no banking-specific research to ground it in a buyer's world.",
+  "cards": [
+    {
+      "title": "Red-teaming a network of agents: Understanding what breaks when AI agents interact at scale",
+      "url": "https://www.microsoft.com/en-us/research/blog/red-teaming-a-network-of-agents-understanding-what-breaks-when-ai-agents-interact-at-scale/",
+      "source": "Microsoft Research",
+      "published": "2026-04",
+      "format": "article",
+      "est_minutes": 18,
+      "level": "working",
+      "track": "agentic",
+      "bite": "When researchers tested AI agents that talk to each other rather than individually, safety that held at the single-agent level completely broke down. A single malicious message passed from one agent to another extracted private data at every step it traveled through, and even pulled unrelated agents into the breach. This shows that multi-agent systems carry a distinct category of risk that simply doesn't appear when you test agents one at a time.",
+      "read_if": "Read if you're explaining to a customer why a multi-agent architecture needs its own security review, not just a sign-off on each individual agent in it. Skip if you only need a general summary of agent risk.",
+      "key_takeaway": "Safety tested at the single-agent level does not compose: in Microsoft's red team tests a single malicious message passed agent-to-agent extracted private data at each hop and pulled in uninvolved agents, showing that network-level risk is a distinct failure class from individual-agent risk."
+    },
+    {
+      "title": "Updating the taxonomy of failure modes in agentic AI systems: What a year of red teaming taught us",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/04/updating-taxonomy-failure-modes-agentic-ai-systems-year-red-teaming-taught-us/",
+      "source": "Microsoft AI Red Team",
+      "published": "2026-06",
+      "format": "article",
+      "est_minutes": 20,
+      "level": "working",
+      "track": "agentic",
+      "bite": "A year of red-teaming against production agent systems has forced a bigger, more precise catalogue of what can go wrong. The update adds seven new failure categories, including attackers hiding malicious instructions inside the plain-language descriptions tools use to advertise their own capabilities, and new visual attacks targeting agents that operate a screen or interface directly. These risks only became visible once agents were handling real tool integrations and real interfaces at scale, not in lab testing.",
+      "read_if": "Read if you need sharper, more credible vocabulary for discussing agent risk categories with a security-conscious buyer. Skip if you aren't yet having agent-deployment conversations with customers.",
+      "key_takeaway": "The update adds seven failure-mode categories discovered only after agentic systems hit production, including supply-chain compromise via natural-language tool descriptions (MCP/plugin abuse) and visual attacks on computer-use agents — surfaces that didn't exist or weren't observable a year earlier."
+    }
+  ],
+  "counts": {
+    "agentic": 2,
+    "banking": 0,
+    "terms": 5
+  }
+}
