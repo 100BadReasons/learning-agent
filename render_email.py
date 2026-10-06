@@ -1,5 +1,5 @@
 """
-Renders the daily email — the FULL brief, including the glossary lesson and
+Renders the email — the FULL brief, including the glossary lesson and
 the cross-links that the public site deliberately omits.
 
 Written with inline styles and table-free markup because Gmail strips much of
@@ -142,7 +142,7 @@ def build(brief, private, include_glossary=True):
 <div style="max-width:640px;margin:0 auto;padding:28px 20px 48px;
      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;">
   <p style="margin:0 0 2px;font-size:20px;font-weight:700;color:{INK};
-     letter-spacing:-0.3px;">Daily Learning Brief</p>
+     letter-spacing:-0.3px;">Learning Brief</p>
   <p style="margin:0 0 22px;font-size:13px;color:{MUTED};">
     {esc(pretty_date(brief['date']))} &nbsp;·&nbsp;
     <a href="{esc(config.SITE_URL)}" style="color:{ACCENT};">view on the web</a>

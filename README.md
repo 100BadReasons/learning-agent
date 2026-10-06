@@ -1,11 +1,11 @@
-# Daily Learning Brief
+# Learning Brief
 
 A scheduled pipeline that researches agentic AI and AI/automation in banking,
 teaches a rotating slice of a private glossary, edits it all into a short
 daily brief, publishes the public half to GitHub Pages, and emails the whole
 thing.
 
-Runs itself every morning at 11:00 UTC. No agent session, no MCP connection,
+Runs itself every third day at 09:40 UTC. No agent session, no MCP connection,
 no interactive approval — it is plain Python on a GitHub Actions cron.
 
 ## What it produces
@@ -13,8 +13,8 @@ no interactive approval — it is plain Python on a GitHub Actions cron.
 | Where | What | Visibility |
 |---|---|---|
 | `docs/` → GitHub Pages | Research cards, linking out to sources | **Public** |
-| Daily email (primary) | Everything above **plus** the glossary lesson and cross-links | Private |
-| Daily email (extra recipients) | Research cards only, no glossary | Private |
+| Email (primary) | Everything above **plus** the glossary lesson and cross-links | Private |
+| Email (extra recipients) | Research cards only, no glossary | Private |
 
 The site has a sidebar with two axes: **Dates**, newest first — a flat list
 until there are 10 briefs, then grouped by month, then by year once there are
@@ -103,6 +103,6 @@ public. Secrets are write-only, so the local file is the source of truth and
 | `NOTIFY_EMAIL` | primary destination address |
 | `RECIPIENTS_JSON` | base64 of `recipients.json` (optional) |
 
-If the daily email stops arriving, the Gmail refresh token has most likely
+If the email stops arriving, the Gmail refresh token has most likely
 expired. `notify.py` fails loudly with the exact re-mint command rather than
 letting the run go green with nothing delivered.

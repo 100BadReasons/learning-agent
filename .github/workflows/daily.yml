@@ -8,10 +8,20 @@ name: Daily Learning Brief
 
 on:
   schedule:
-    # 11:00 UTC daily = 7am ET in summer, 6am ET in winter. GitHub's free-tier
-    # scheduler drifts 10-30 minutes under load, so treat this as "early
-    # morning", not an alarm clock.
-    - cron: "0 11 * * *"
+    # Every third day of the month at 09:40 UTC. Two deliberate choices:
+    #
+    # */3 resets at each month boundary, so the gap across the 31st can be one
+    # or two days rather than three. Exact 3-day spacing would mean running
+    # daily and having the job decide whether to proceed, which is more
+    # machinery than an occasional short gap is worth.
+    #
+    # 09:40 rather than 11:00: the first two months of runs fired four to
+    # eight HOURS after their 11:00 slot, not the 10-30 minutes the old comment
+    # claimed, because the top of the hour is when everyone else's cron fires
+    # too. An odd minute sits outside that queue, and the earlier slot leaves
+    # room for the delay to land in the morning ET rather than mid-afternoon.
+    # GitHub's free scheduler offers no guarantee either way.
+    - cron: "40 9 */3 * *"
   workflow_dispatch:
     inputs:
       skip_research:

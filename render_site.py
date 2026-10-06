@@ -287,7 +287,7 @@ def page(title, main, briefs, depth=0, active_date=None, active_topic=None):
 <body>
 <div class="wrap">
 <header>
-  <h1><a href="{up}index.html">Daily Learning Brief</a></h1>
+  <h1><a href="{up}index.html">Learning Brief</a></h1>
   <p class="tagline">Agentic AI &amp; automation in banking</p>
 </header>
 <div class="layout">
@@ -296,7 +296,7 @@ def page(title, main, briefs, depth=0, active_date=None, active_topic=None):
 {main}
 </main>
 </div>
-<footer>Generated automatically each morning. Sources link out to the original.</footer>
+<footer>Generated automatically every three days. Sources link out to the original.</footer>
 </div>
 </body>
 </html>
@@ -363,7 +363,7 @@ def render_terms_page(briefs):
 <div class="note">
   <p style="margin:0 0 0.75rem"><strong>Delivered by email, not published here.</strong></p>
   <p style="margin:0">The glossary lesson — five terms a day, plus the connections
-  between them and the day's research — goes out in the daily email. It is
+  between them and that run's research — goes out by email. It is
   internal terminology, so it is deliberately kept off this public site and out
   of the repository behind it.</p>
 </div>"""
